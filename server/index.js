@@ -2,8 +2,9 @@ const express           = require('express')
 const bodyParser        = require('body-parser')
 
 const app               = express()
+const config            = require('./config.json')
 const route             = require('./route')
-const port              = 3000
+const port              = config.port
 
 app.use(bodyParser.json())
 app.use(route)
