@@ -105,3 +105,5 @@ route.route('/:pid')
       }
     })
   })
+
+module.exports = route

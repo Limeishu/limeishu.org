@@ -115,3 +115,5 @@ route.route('/:uid')
       }
     })
   })
+
+module.exports = route
