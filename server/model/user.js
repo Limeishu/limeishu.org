@@ -11,18 +11,16 @@ route.route('/')
       permission: 2
     })
     User.findOne(account, (err, doc) => {
-      switch (true) {
-        case err:
-          res.json({
-            result: -1,
-            err
-          })
-          break
-        default:
-          res.json({
-            result: 0,
-            uid: doc._id
-          })
+      if (err || !doc) {
+        res.json({
+          result: -1,
+          err
+        })
+      } else {
+        res.json({
+          result: 0,
+          uid: doc._id
+        })
       }
     })
   })
@@ -33,38 +31,35 @@ route.route('/')
       permission: 2
     })
     User.findOne(account, (err, doc) => {
-      switch (true) {
-        case err:
-          res.json({
-            result: -1,
-            err
-          })
-          break
-        case !doc:
-          res.json({
-            result: -2
-          })
-          break
-        default:
-          User.update({ _id: req.body.uid }, {
-            user: req.body.username ? req.body.username : doc.user,
-            pwd: req.body.password ? req.body.password : doc.pwd,
-            permission: req.body.permission ? req.body.permission : doc.permission,
-            meta: req.body.meta ? req.body.meta : doc.meta
-          }, err => {
-            switch (true) {
-              case err:
-                res.json({
-                  result: -3,
-                  err
-                })
-                break
-              default:
-                res.json({
-                  result: 0
-                })
-            }
-          })
+      if (err) {
+        res.json({
+          result: -1,
+          err
+        })
+      } else if (!doc) {
+        res.json({
+          result: -2
+        })
+      } else {
+        User.update({
+          _id: req.body.uid
+        }, {
+          user: req.body.username ? req.body.username : doc.user,
+          pwd: req.body.password ? req.body.password : doc.pwd,
+          permission: req.body.permission ? req.body.permission : doc.permission,
+          meta: req.body.meta ? req.body.meta : doc.meta
+        }, err => {
+          if (err) {
+            res.json({
+              result: -3,
+              err
+            })
+          } else {
+            res.json({
+              result: 0
+            })
+          }
+        })
       }
     })
   })
@@ -77,18 +72,16 @@ route.route('/new')
       permission: 2
     })
     account.save((err, doc) => {
-      switch (true) {
-        case err:
-          res.json({
-            result: -1,
-            err
-          })
-          break
-        default:
-          res.json({
-            result: 0,
-            uid: doc._id
-          })
+      if (err || !doc) {
+        res.json({
+          result: -1,
+          err
+        })
+      } else {
+        res.json({
+          result: 0,
+          uid: doc._id
+        })
       }
     })
   })
@@ -98,20 +91,18 @@ route.route('/:uid')
     User.findOne({
       _id: req.parmas.uid
     }, (err, doc) => {
-      switch (true) {
-        case err:
-          res.json({
-            result: -1,
-            err
-          })
-          break
-        default:
-          res.json({
-            result: 0,
-            uid: doc._id,
-            user: doc.user,
-            meta: doc.meta
-          })
+      if (err || !doc) {
+        res.json({
+          result: -1,
+          err
+        })
+      } else {
+        res.json({
+          result: 0,
+          uid: doc._id,
+          user: doc.user,
+          meta: doc.meta
+        })
       }
     })
   })
