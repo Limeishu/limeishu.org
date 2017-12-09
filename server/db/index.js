@@ -68,7 +68,7 @@ mongoose.Promise = global.Promise
 mongoose.connect(
   config.db.uri, {
     user: config.db.user,
-    pwd: config.db.pwd,
+    pass: config.db.pwd,
     useMongoClient: true
   }
 )
