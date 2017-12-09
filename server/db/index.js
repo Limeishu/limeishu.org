@@ -42,15 +42,11 @@ const newsSchema = new Schema({
 })
 
 const userSchema = new Schema({
-  title: {
+  user: {
     type: String,
     require: true
   },
-  content: {
-    type: String,
-    require: true
-  },
-  date: {
+  pwd: {
     type: String,
     require: true
   },
