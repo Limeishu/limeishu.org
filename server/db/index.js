@@ -23,10 +23,49 @@ const postSchema = new Schema({
   collection: 'Post'
 })
 
+const newsSchema = new Schema({
+  title: {
+    type: String,
+    require: true
+  },
+  content: {
+    type: String,
+    require: true
+  },
+  date: {
+    type: String,
+    require: true
+  },
+  meta: Object
+}, {
+  collection: 'News'
+})
+
+const userSchema = new Schema({
+  title: {
+    type: String,
+    require: true
+  },
+  content: {
+    type: String,
+    require: true
+  },
+  date: {
+    type: String,
+    require: true
+  },
+  meta: Object
+}, {
+  collection: 'User'
+})
+
 postSchema.plugin(mongooseUV)
+userSchema.plugin(mongooseUV)
 
 const db = {
-  Post: mongoose.model('Post', postSchema)
+  Post: mongoose.model('Post', postSchema),
+  News: mongoose.model('News', newsSchema),
+  User: mongoose.model('User', userSchema)
 }
 
 mongoose.Promise = global.Promise
