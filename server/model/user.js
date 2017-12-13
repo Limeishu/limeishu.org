@@ -63,6 +63,18 @@ route.route('/')
       }
     })
   })
+  .delete((req, res) => {
+    User.remove({ _id: req.body.uid }, (err) => {
+      if (err) {
+        res.json({
+          result: -1,
+          err
+        })
+      } else {
+        res.json({ result: 0 })
+      }
+    })
+  })
 
 route.route('/new')
   .post((req, res) => {

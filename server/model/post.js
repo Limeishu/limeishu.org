@@ -97,5 +97,17 @@ route.route('/:pid')
       }
     })
   })
+  .delete((req, res) => {
+    Post.remove({ _id: req.params.pid }, (err) => {
+      if (err) {
+        res.json({
+          result: -1,
+          err
+        })
+      } else {
+        res.json({ result: 0 })
+      }
+    })
+  })
 
 module.exports = route
