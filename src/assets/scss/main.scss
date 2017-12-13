@@ -1,0 +1,16 @@
+// © Limeishu, @limeishu.org, 2018, All right reserved.
+@import 'reset';
+@import 'color';
+@import 'font';
+
+#app {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  background: $white;
+}

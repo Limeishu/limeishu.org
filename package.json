@@ -14,13 +14,26 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.0.1",
+    "@fortawesome/fontawesome-free-brands": "^5.0.1",
+    "@fortawesome/fontawesome-free-solid": "^5.0.1",
+    "@fortawesome/vue-fontawesome": "^0.0.21",
+    "axios": "^0.17.1",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "mongoose": "^4.13.6",
     "mongoose-unique-validator": "^1.0.6",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-awesome": "^2.3.4",
+    "vue-axios": "^2.0.2",
+    "vue-cookie": "^1.1.4",
+    "vue-router": "^3.0.1",
+    "vue-scroll-to": "^2.0.1",
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
