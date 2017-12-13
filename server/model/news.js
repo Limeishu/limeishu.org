@@ -1,10 +1,11 @@
-const express = require('express')
+const express           = require('express')
+const cors              = require('cors')
 
-const News = require('../db').News
-const route = express.Router()
+const News              = require('../db').News
+const route             = express.Router()
 
 route.route('/')
-  .get((req, res) => {
+  .get(cors(), (req, res) => {
     News.find({}, (err, doc) => {
       if (err || !doc) {
         res.json({
@@ -42,7 +43,7 @@ route.route('/')
   })
 
 route.route('/:pid')
-  .get((req, res) => {
+  .get(cors(), (req, res) => {
     News.findOne({
       _id: req.parmas.id
     }, (err, doc) => {

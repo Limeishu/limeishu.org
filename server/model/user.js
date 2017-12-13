@@ -1,7 +1,7 @@
-const express = require('express')
+const express           = require('express')
 
-const User = require('../db').User
-const route = express.Router()
+const User              = require('../db').User
+const route             = express.Router()
 
 route.route('/')
   .post((req, res) => {
