@@ -45,7 +45,7 @@ route.route('/')
 route.route('/:pid')
   .get(cors(), (req, res) => {
     News.findOne({
-      _id: req.parmas.id
+      _id: req.params.pid
     }, (err, doc) => {
       if (err || !doc) {
         res.json({
@@ -62,7 +62,7 @@ route.route('/:pid')
   })
   .put((req, res) => {
     News.findOne({
-      _id: req.parmas.pid
+      _id: req.params.pid
     }, (err, doc) => {
       if (err) {
         res.json({
@@ -75,7 +75,7 @@ route.route('/:pid')
         })
       } else {
         News.update({
-          _id: req.parmas.pid
+          _id: req.params.pid
         }, {
           title: req.body.title ? req.body.title : doc.title,
           content: req.body.content ? req.body.content : doc.content,

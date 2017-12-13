@@ -89,7 +89,7 @@ route.route('/new')
 route.route('/:uid')
   .get((req, res) => {
     User.findOne({
-      _id: req.parmas.uid
+      _id: req.params.uid
     }, (err, doc) => {
       if (err || !doc) {
         res.json({
