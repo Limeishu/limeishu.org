@@ -3,6 +3,8 @@
 @import 'color';
 @import 'font';
 
+@import 'menu';
+
 #app {
   width: 100vw;
   min-height: 100vh;
@@ -12,5 +14,5 @@
   position: relative;
   flex-direction: column;
   overflow: hidden;
-  background: $white;
+  background: $black;
 }
