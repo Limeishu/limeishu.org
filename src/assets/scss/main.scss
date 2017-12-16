@@ -4,9 +4,12 @@
 @import 'font';
 
 @import 'menu';
+@import 'footer';
+@import 'home';
 
 #app {
-  width: 100vw;
+  overflow-x: hidden;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   display: -webkit-box;
