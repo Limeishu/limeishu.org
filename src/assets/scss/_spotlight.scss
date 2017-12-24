@@ -1,0 +1,28 @@
+.spotlight {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  .image {
+    width: 20rem;
+    position: relative;
+    border-radius: 50%;
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 2rem);
+    padding: 1rem;
+    h1 {
+      margin: 1rem 0;
+    }
+  }
+}
