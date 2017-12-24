@@ -2,24 +2,26 @@
   outline: none;
   // display: flex;
   // height: 60vh;
-  margin: 1rem 0;
+  margin: 2rem 0;
   width: 100%;
   .slide {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
-    .image {
-      margin: 1rem;
+    img {
+      width: calc(100% - 2rem);
       display: flex;
-      border-radius: 1rem;
+      // border-radius: 1rem;
       &:before {
-        padding-top: 70%;
+        content: "";
+        display: block;
+        padding-top: 100%;
       }
     }
     .content {
-      width: 60%;
+      width: calc(100% - 2rem);
       flex-direction: column;
       padding: 1em;
       h2 {
@@ -37,6 +39,11 @@
         text-indent: 0;
         font-size: 14px;
         color: $content;
+        margin-bottom: 2rem;
+      }
+      .button {
+        position: absolute;
+        bottom: 0;
       }
     }
   }

@@ -2,9 +2,9 @@
   <div id="home">
     <div class="spotlight helf">
       <h1>最新消息</h1>
-      <carousel :autoplay="true" :loop="true" :autoplayTimeout="3000" :scrollPerPage="true" :perPage="2" :autoplayHoverPause="true" :navigationEnabled="true" class="slider-container">
+      <carousel :autoplay="true" :loop="true" :autoplayTimeout="3000" :scrollPerPage="true" :perPage="3" :autoplayHoverPause="true" :navigationEnabled="true" class="slider-container">
         <slide class="slide" v-for="news in news">
-          <div class="image" :style="{ 'background-image': `url(${news.meta.image})` }"></div>
+          <img :src="news.meta.image">
           <div class="content">
             <h2>{{ news.title }}</h2>
             <hr>
