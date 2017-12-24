@@ -7095,6 +7095,10 @@ vue-axios@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/vue-axios/-/vue-axios-2.0.2.tgz#0fe5a69f1edb09a1cd6c4a7f88c74d2fb7fe1778"
 
+vue-carousel@^0.6.5:
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/vue-carousel/-/vue-carousel-0.6.5.tgz#f04e4485ce6ac2404eaff186923f7ad057839205"
+
 vue-cookie@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/vue-cookie/-/vue-cookie-1.1.4.tgz#b8b46d112bda9f93a2f47017c2ed5282d2064fda"

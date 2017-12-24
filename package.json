@@ -29,6 +29,7 @@
     "vue": "^2.5.2",
     "vue-awesome": "^2.3.4",
     "vue-axios": "^2.0.2",
+    "vue-carousel": "^0.6.5",
     "vue-cookie": "^1.1.4",
     "vue-router": "^3.0.1",
     "vue-scroll-to": "^2.0.1",

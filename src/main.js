@@ -4,6 +4,7 @@ import VueAxios     from 'vue-axios'
 import { sync }     from 'vuex-router-sync'
 import vueScrollTo  from 'vue-scroll-to'
 import VueCookie    from 'vue-cookie'
+import VueCarousel  from 'vue-carousel'
 
 import App          from './App'
 import router       from './router'
@@ -46,7 +47,7 @@ Vue.router = router
 Vue.use(VueAxios, axios)
 
 Vue.use(vueScrollTo)
-
+Vue.use(VueCarousel)
 Vue.use(VueCookie)
 
 // require('./assets/images/favicon.ico')
