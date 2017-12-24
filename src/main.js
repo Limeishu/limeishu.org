@@ -50,6 +50,8 @@ Vue.use(vueScrollTo)
 Vue.use(VueCarousel)
 Vue.use(VueCookie)
 
+require('./assets/images/favicon.ico')
+
 // require('./assets/images/favicon.ico')
 // Enable devtools
 Vue.config.devtools = true
