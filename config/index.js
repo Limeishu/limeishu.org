@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'https://beta.limeishu.org.tw/api',
+        target: 'https://beta.limeishu.org.tw/',
         changeOrigin: true
       }
     },
