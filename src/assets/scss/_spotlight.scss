@@ -6,10 +6,14 @@
   position: relative;
   align-items: center;
   justify-content: space-around;
+  &.left {
+    flex-direction: row-reverse;
+  }
   .image {
-    width: 20rem;
+    width: 25rem;
     position: relative;
     border-radius: 50%;
+    background-size: cover;
     &:before {
       content: "";
       display: block;
@@ -23,6 +27,14 @@
     padding: 1rem;
     h1 {
       margin: 1rem 0;
+    }
+    p {
+      font-size: 14px;
+      line-height: 27px;
+      color: $content;
+      text-indent: 31px;
+      letter-spacing: 3px;
+      margin: 3px 0;
     }
   }
 }
