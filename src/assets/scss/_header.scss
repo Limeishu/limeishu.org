@@ -17,9 +17,8 @@
 #header {
   display: flex;
   z-index: 1000;
-  position: fixed;
-  height: auto;
-  min-height: 20rem;
+  position: relative;
+  height: 100vh;
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
@@ -37,17 +36,26 @@
   }
   #logo,
   .menu {
-    filter: drop-shadow(0 0 6px rgba($white, .75));
+    filter: drop-shadow(0 0 6px $white);
   }
   #logo {
     z-index: 1;
     height: auto;
     display: flex;
     margin-bottom: .5rem;
+    flex-direction: column;
+    align-items: flex-end;
+    h1, h2, p {
+      margin-right: 270px;
+      // color: $white;
+    }
+    h1, h2 {
+      font-weight: 800;
+    }
     img {
       margin: auto;
       display: block;
-      width: 50rem;
+      width: 70vw;
       position: relative;
       &:before {
         content: "";
@@ -65,7 +73,10 @@
     flex-direction: row;
     color: $black;
     background: linear-gradient(rgba($white, 0), rgba($white, 0.2) 40%, $white);
+    transition: all .3s;
     &.toggle {
+      position: fixed;
+      background: $white;
       color: $black;
       >ul>li a:before {
         border-color: $black;
