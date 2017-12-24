@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <header id="header">
-      <div class="image" :style="{ 'background-image': `url(${bannerBG[bannerAt - 1]})` }"></div>
-      <div id="logo">
+      <div v-if="!isChild" class="image" :style="{ 'background-image': `url(${bannerBG[bannerAt - 1]})` }"></div>
+      <div v-if="!isChild" id="logo">
         <img src="./assets/images/icons/logo.svg" alt="李梅樹紀念館 Logo">
         <h1 class="ming">用藝術，說土地的故事</h1>
       </div>
@@ -24,7 +24,8 @@
       return {
         bannerBG: [BG.BG1, BG.BG2, BG.BG3, BG.BG4],
         bannerAt: 1,
-        toggle: false
+        toggle: false,
+        isChild: false
       }
     },
     components: {
@@ -50,9 +51,15 @@
           this.toggle = false
         }
       }
+    },
+    watch: {
+      $route (route) {
+        route.name !== 'Home' ? this.isChild = true : this.isChild = false
+        window.scrollTo(0, 0)
+      }
     }
   }
-</script>∏
+</script>
 
 <style lang="scss">
   @import "./assets/scss/main.scss";
