@@ -4,7 +4,7 @@
       <div v-if="!isChild" class="image" :style="{ 'background-image': `url(${bannerBG[bannerAt - 1]})` }"></div>
       <div v-if="!isChild" id="logo">
         <img src="./assets/images/icons/logo.svg" alt="李梅樹紀念館 Logo">
-        <h1 class="ming">用藝術，說土地的故事</h1>
+        <h1 class="ming">{{ slogen[language] }}</h1>
       </div>
       <Navbar :class="{ 'toggle': toggle }"></Navbar>
     </header>
@@ -25,7 +25,12 @@
         bannerBG: [BG.BG1, BG.BG2, BG.BG3, BG.BG4],
         bannerAt: 1,
         toggle: false,
-        isChild: false
+        isChild: false,
+        slogen: {
+          zh_TW: '用藝術，說土地的故事',
+          en_US: 'Telling the stories of land through art'
+        },
+        language: window.navigator.language.replace('-', '_')
       }
     },
     components: {
