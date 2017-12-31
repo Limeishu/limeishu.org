@@ -90,9 +90,9 @@ export default {
       this.$refs.flickity.previous()
     },
     getNews () {
-      this.$http.get(`/api/news`)
+      this.$http.get(`https://api.limeishu.org.tw/news`)
       .then(res => {
-        this.news = res.data.doc
+        this.news = res.data.data
       })
     }
   }
