@@ -18,16 +18,14 @@ node {
 
 	stage('Deploy'){
 		echo 'Building...'
-		sh "
-				cd /home/www/webserver/v2/webroot; \
+		sh "cd /home/www/webserver/v2/webroot; \
 				ls | grep -v package.zip | xargs rm;\
 				unzip -o package.zip;\
 				yarn;\
 				yarn run build;\
 				pm2 restart startup.json;\
 				rm package.zip;\
-				ls; \
-			"
+				ls"
 	}
 
 	stage('Clean'){
