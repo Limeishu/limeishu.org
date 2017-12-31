@@ -13,7 +13,7 @@ node {
 
 		echo 'Packing files.'
 		sh "zip -r package.zip ."
-    sh "cp -f ./package.zip /home/www/webserver/v2/webroot/"
+    sh "cp -f $WORKSPACE/package.zip /home/www/webserver/v2/webroot/"
 	}
 
 	stage('Deploy'){
