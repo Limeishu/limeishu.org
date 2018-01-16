@@ -37,10 +37,14 @@ import {
          faGift,
          faShareAlt,
          faFax,
-         faPhone
+         faPhone,
+         faTrain,
+         faBus,
+         faSubway,
+         faCar
        }            from '@fortawesome/fontawesome-free-solid'
 
-FontAwesome.library.add(faFacebookF, faFax, faPhone, faYoutube, faGithub, faAngleLeft, faGithubAlt, faAngleRight, faCircle, faCircleNotch, faHome, faCaretDown, faHeart, faCartPlus, faPlus, faMinus, faCreditCard, faTruck, faEnvelope, faKey, faTimes, faCheckCircle, faExclamationCircle, faCheck, faGift, faShareAlt, faTwitter)
+FontAwesome.library.add(faFacebookF, faFax, faPhone, faTrain, faBus, faSubway, faCar, faYoutube, faGithub, faAngleLeft, faGithubAlt, faAngleRight, faCircle, faCircleNotch, faHome, faCaretDown, faHeart, faCartPlus, faPlus, faMinus, faCreditCard, faTruck, faEnvelope, faKey, faTimes, faCheckCircle, faExclamationCircle, faCheck, faGift, faShareAlt, faTwitter)
 Vue.component('FontAwesomeIcon', FontAwesomeIcon)
 
 Vue.router = router
