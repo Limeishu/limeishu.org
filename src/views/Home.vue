@@ -171,7 +171,31 @@
         </p>
       </div>
     </div>
-    <div class="spotlight bg-light"></div>
+    <div class="spotlight bg-light">
+      <div class="traffic">
+        <div class="contants">
+          <div class="container">
+            <div class="header">
+              <h1>交通資訊</h1>
+              <div class="bar">
+                <div class="item" v-for="(item, i) in map.bar" :class="{ 'active': i === map.choosed }" @click="map.choosed = i">
+                  <div class="icon">
+                    <font-awesome-icon :icon="item.icon" />
+                  </div>
+                  <span>{{ item[language] }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="block" v-for="(info, i) in map.data[map.choosed][language]">
+                <div class="syb">{{ i+1 }}</div><p>{{ info }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0443806157864!2d121.37067131500416!3d24.93055798402082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681bec4aab9289%3A0x19406de61e70b2d4!2z5p2O5qKF5qi557SA5b-16aSo!5e0!3m2!1szh-TW!2stw!4v1516105422004" frameborder="0" class="map" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -180,7 +204,118 @@ import { mapGetters } from 'vuex'
 export default {
   data () {
     return {
-      news: ''
+      news: '',
+      map: {
+        bar: [
+          {
+            'en-US': 'HSR & TRA',
+            'zh-TW': '高鐵＆火車',
+            'ja': '高鉄＆鉄道',
+            icon: ['fas', 'train']
+          },
+          {
+            'en-US': 'MRT',
+            'zh-TW': '捷運',
+            'ja': 'MRT（捷運）',
+            icon: ['fas', 'subway']
+          },
+          {
+            'en-US': 'Bus',
+            'zh-TW': '公車',
+            'ja': '路線バス',
+            icon: ['fas', 'bus']
+          },
+          {
+            'en-US': 'Drive',
+            'zh-TW': '自行開車',
+            'ja': '自家用車',
+            icon: ['fas', 'car']
+          }
+        ],
+        data: [
+          {
+            'zh-TW': [
+              '搭乘臺鐵或高鐵至板橋火車站。',
+              '循站內指標前往板橋公車站。',
+              '搭乘公車（台北客運 910）至安溪國小站（李梅樹紀念館）下車。',
+              '下車後步行約2分鐘內可到達李梅樹紀念館。'
+            ],
+            'en-US': [
+              'Take Taiwan Railway or HSR to Banqiao Train Station.',
+              'Follow in-station signs to proceed to Banqiao Bus Stop.',
+              'Take bus (910) to get off at Anxi Elementary School Stop (Li Mei-Shu Memorial Gallery).',
+              'Get off the bus and walk for two minutes to arrive to Li Mei-Shu Memorial Gallery.'
+            ],
+            'ja': [
+              '台湾高速鉄道または台湾鉄道で板橋駅へ',
+              '駅内の表示に従い、板橋バスターミナル（板橋公車站）へ',
+              '路線バス910で「安渓国小」駅（李梅樹記念館）にて下車',
+              '下車後、徒歩約2分で李梅樹記念館に到着!'
+            ]
+          },
+          {
+            'zh-TW': [
+              '乘坐臺北捷運BL藍線（板南線）。',
+              '於新埔站、板橋站、永寧站及頂埔站皆可下車，循站內指標前往公車站。',
+              '搭乘公車至李梅樹紀念館（參考"公車"路線標籤）。'
+            ],
+            'en-US': [
+              'Take Taipei MRT BL Blue Line (Bannan Line).',
+              'Get off the bus from Xinpu Stop, Banqiao Stop, Yongning Stop, and Dingpu Stop. Follow the sign for proceeding to bus stop.',
+              'Take the bus to get to Li Mei-shi Memorial Gallery (refer to “Bus” Route Label).'
+            ],
+            'ja': [
+              '台北MRT（捷運）の青いライン（板南線）に乗車',
+              '新埔駅、板橋駅、永寧駅、頂埔駅のいずれかにて下車、駅内の表示に従いバス停へ',
+              '路線バスで李梅樹記念館へ（「路線バス」での交通案内を参照）'
+            ]
+          },
+          {
+            'zh-TW': [
+              '板橋、新埔的朋友，你可以搭乘910、940路線公車到安溪國小(李梅樹紀念館)站下車，再步行約3分鐘就可到達',
+              '土城、頂埔，可搭乘705、706公車到礁溪里站步行約10分鐘；或搭916公車到三峽老街站步行約10分鐘',
+              '台北市東區，可搭939公車到台北大學三峽校區站，步行約20分鐘',
+              '樹林、新莊，可搭885、802公車，到三峽老街站，再步行約10分',
+              '中、永和，可搭908公車到三峽國小站，再步行約15分'
+            ],
+            'en-US': [
+              'Take bus 910 and 940 from Banqiao and Xinpu to Anxi Elementary School (Li Mei-Shu Memorial Gallery) Stop to get off the bus and then walk for 3 minutes.',
+              'Take Bus 705 and 706 from Tucheng and Dingpu to Jiaoxi Village Stop and then walk for about 10 minutes. Or take Bus 916 to Sanxia Old Street Stop and walk for about 10 minutes.',
+              'Take Bus 939 from Eastern District of Taipei City and arrive to National Taipei University Sanxia Campus Stop. Walk for about 20 minutes.',
+              'Take Bus 885 and 802 from Shulin and Xinzhuang to Sanxia Old Street Stop, then walk for about 10 minutes.',
+              'Take Bus 908 from Zhonghe and Yonghe to Sanxia Elementary School Stop, then walk for 15 minutes.'
+            ],
+            'ja': [
+              '板橋・新埔より、路線バス910、940で「安渓国小」駅（李梅樹記念館)下車、徒歩約3分',
+              '土城・頂埔より、路線バス705、706で「礁渓里」駅下車、徒歩約10分鐘。または、路線バス916で「三峡老街」駅下車、徒歩約10分',
+              '台北市東区より、路線バス939で「台北大学三峡校区」駅下車、徒歩約20分',
+              '樹林・新荘より、路線バス885、802で「三峡老街」駅下車、徒歩約10分',
+              '中和・永和より、路線バス908で「三峡国小」下車、徒歩約15分'
+            ]
+          },
+          {
+            'zh-TW': [
+              '行駛國道三號並於三峽交流道離開高速公路。',
+              '下交流道後轉110縣道（復興路）並沿路直行。',
+              '右轉中華路直行後在＂安溪國小＂前路口右轉。',
+              '於長福停車場停車（長福停車場位於光明路右測）。'
+            ],
+            'en-US': [
+              'Take National Highway No. 3 and get off Sanxia Interchange.',
+              'After getting off the interchange, turn to County Road 110 (Fuxing Road) and go straight along the road.',
+              'Turn right to Zhonghua Road and go straight. Turn right at the front intersection of “Anxi Elementary School”.',
+              'Park at Changfu Parking Lot (Changfu Parking Lot is located on the right of Guangming Road).'
+            ],
+            'ja': [
+              '国道三号線「三峡」インターチェンジより一般道へ',
+              'インターチェンジを降りた後、市道110（復興路）を道沿いに直進',
+              '中華路を右折し直進した後、「安渓国民小学校」前の道を右折',
+              '長福駐車場に駐車（長福駐車場は光明路の右側にあります）'
+            ]
+          }
+        ],
+        choosed: 0
+      }
     }
   },
   computed: {
