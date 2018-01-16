@@ -1,7 +1,8 @@
 <template>
   <div id="home">
     <div class="spotlight half">
-      <h1>最新消息</h1>
+      <h1 v-show="language === 'zh-TW'">最新消息</h1>
+      <h1 v-show="language === 'en-US'">What's New</h1>
       <carousel :loop="true" :autoplayTimeout="3000" :perPage="3" :autoplayHoverPause="true" :navigationEnabled="true" :navigationPrevLabel="'&#xf104;'" :navigationNextLabel="'&#xf105;'"
         class="slider-container">
         <slide v-for="news in news" :key="news">
@@ -62,7 +63,7 @@
         </router-link>
       </div>
     </div>
-    <div class="spotlight left bg-light">
+    <div class="spotlight left">
       <div class="image" :style="{ 'background-image': `url(${require('../assets/images/hend.jpg')})` }"></div>
       <div class="content" v-show="language === 'zh-TW'">
         <h1>認識李梅樹</h1>
@@ -141,12 +142,15 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
   data () {
     return {
-      language: window.navigator.language,
       news: ''
     }
+  },
+  computed: {
+    ...mapGetters(['language'])
   },
   created () {
     this.getNews()

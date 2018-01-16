@@ -17,6 +17,7 @@ const store = new Vuex.Store({
     menu
   },
   state: {
+    language: window.navigator.language,
     user: {},
     toggle: false
   },

@@ -16,6 +16,7 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
   import * as BG from './assets/images/BG'
   import {
     Navbar,
@@ -38,6 +39,9 @@
     components: {
       Navbar,
       mainFooter
+    },
+    computed: {
+      ...mapGetters(['language'])
     },
     mounted () {
       this.changeBanner()
