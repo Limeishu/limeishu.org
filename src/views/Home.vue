@@ -109,7 +109,7 @@
         </router-link>
       </div>
     </div>
-    <div class="spotlight bg-gray">
+    <div class="spotlight bg-gray half">
       <div class="list" v-show="language === 'zh-TW'">
         <h1>參觀須知</h1>
         <li>本館採收費參觀制，清潔費每位100元、敬老/學生/軍警每位80元、嬰幼兒免費。</li>
