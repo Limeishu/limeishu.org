@@ -17,3 +17,39 @@
 .bg-light {
   background-color: $light;
 }
+
+@keyframes downArrow {
+  0% {
+    transform: translateY(0em);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(4em);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0em);
+    opacity: 0;
+  }
+}
+
+.next {
+  position: absolute;
+  bottom: 9%;
+  height: 100pt;
+  left: 50%;
+  right: 50%;
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(0 0 8px $black);
+  -webkit-filter: drop-shadow(0 0 8px $black);
+  cursor: pointer;
+  @media screen and (max-width: 667px) {
+    transform: scale(.7);
+  }
+  img {
+    animation: downArrow 2s infinite;
+    width: 108pt;
+    height: 50pt;
+  }
+}

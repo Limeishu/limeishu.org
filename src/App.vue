@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <header id="header">
-      <div v-if="!isChild" class="image" :style="{ 'background-image': `url(${bannerBG[bannerAt - 1]})` }"></div>
+      <div v-if="!isChild" class="image" :style="{ 'background-image': `url(${bannerBG[bannerAt - 1]})` }">
+        <div class="next" v-scroll-to="'#home, 0'"><img src="./assets/images/down-arrow.svg" alt=""></div>
+      </div>
       <div v-if="!isChild" id="logo">
         <img src="./assets/images/icons/logo.svg" alt="李梅樹紀念館 Logo">
         <h1 class="ming">{{ slogen[language] }}</h1>
