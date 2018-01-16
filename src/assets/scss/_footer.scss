@@ -37,6 +37,12 @@
     font-size: 12px;
     p {
       margin: 3px 0;
+      letter-spacing: 1px;
+      a {
+        color: $black;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
     }
   }
 }

@@ -5,6 +5,7 @@
     </ul>
     <div class="copyright">
       <p v-for="text in copyright">{{ text }}</p>
+      <p>We recommend <a href="https://www.mozilla.org/firefox/new/">Firefox Quantum</a> for a better browsing experience</p>
     </div>
   </div>
 </template>
