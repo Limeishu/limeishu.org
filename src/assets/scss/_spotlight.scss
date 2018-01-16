@@ -5,9 +5,16 @@
   min-height: 100vh;
   position: relative;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   &.left {
     flex-direction: row-reverse;
+  }
+  &.right {
+    flex-direction: row;
+  }
+  &.left, &.right {
+    min-height: auto;
+    padding: 2rem 0;
   }
   &.half {
     flex-direction: column;
@@ -19,6 +26,7 @@
     position: relative;
     border-radius: 50%;
     background-size: cover;
+    margin: 0 1rem;
     &:before {
       content: "";
       display: block;
@@ -28,7 +36,7 @@
   >.content {
     display: flex;
     flex-direction: column;
-    width: calc(50% - 2rem);
+    max-width: 65%;
     padding: 1rem;
     h1 {
       margin: 1rem 0;
