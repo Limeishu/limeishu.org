@@ -31,7 +31,8 @@
         isChild: false,
         slogen: {
           zh_TW: '用藝術，說土地的故事',
-          en_US: 'Telling the stories of land through art'
+          en_US: 'Telling the stories of land through art',
+          ja: '芸術からこの地の物語をつむぐ'
         },
         language: window.navigator.language.replace('-', '_')
       }

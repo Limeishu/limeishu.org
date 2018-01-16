@@ -10,6 +10,8 @@ import menu         from './modules/menu'
 
 Vue.use(Vuex)
 
+const available = ['en-US', 'zh-TW', 'ja']
+
 const store = new Vuex.Store({
   strict: true,
   modules: {
@@ -17,7 +19,7 @@ const store = new Vuex.Store({
     menu
   },
   state: {
-    language: window.navigator.language,
+    language: available.find(e => { return e === window.navigator.language }) ? window.navigator.language : 'en-US',
     user: {},
     toggle: false
   },
