@@ -2,18 +2,20 @@
   <div id="home">
     <div class="spotlight half">
       <h1>最新消息</h1>
-      <carousel :autoplay="true" :loop="true" :autoplayTimeout="3000" :perPage="3" :autoplayHoverPause="true" :navigationEnabled="true"
+      <carousel :loop="true" :autoplayTimeout="3000" :perPage="3" :autoplayHoverPause="true" :navigationEnabled="true" :navigationPrevLabel="'&#xf104;'" :navigationNextLabel="'&#xf105;'"
         class="slider-container">
-        <slide class="slide" v-for="news in news" :key="news">
-          <img :src="news.meta.image">
-          <div class="content">
-            <h2>{{ news.title }}</h2>
-            <hr>
-            <p>{{ `${news.content.substring(0, 100)}...` }}</p>
-            <router-link :to="`/culture/news/${news._id}`" class="button">
-              <span>了解更多</span>
-              <font-awesome-icon icon="angle-right" />
-            </router-link>
+        <slide v-for="news in news" :key="news">
+          <div class="slider">
+            <img :src="news.meta.image">
+            <div class="content">
+              <h2>{{ news.title }}</h2>
+              <hr>
+              <p>{{ `${news.content.substring(0, 100)}...` }}</p>
+              <router-link :to="`/culture/news/${news._id}`" class="button">
+                <span>了解更多</span>
+                <font-awesome-icon icon="angle-right" />
+              </router-link>
+            </div>
           </div>
         </slide>
       </carousel>

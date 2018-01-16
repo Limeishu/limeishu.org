@@ -1,19 +1,50 @@
 .slider-container {
   outline: none;
-  // display: flex;
-  // height: 60vh;
   margin: 2rem 0;
-  width: 100%;
-  .slide {
+  .VueCarousel-dot--active .VueCarousel-dot-inner {
+    background-color: $tone !important;
+  }
+  .VueCarousel-navigation-button {
+    z-index: 2;
+    display: flex;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: $tone;
+    color: $white !important;
+    border-radius: 50%;
+    font-family: 'FontAwesome';
+    filter: drop-shadow(0 0 2pt rgba($black, .5));
+    &.VueCarousel-navigation-prev {
+      transform: translate(1rem, -50%);
+    }
+    &.VueCarousel-navigation-next {
+      transform: translate(-1rem, -50%);
+    }
+  }
+  .slider {
+    z-index: 1;
+    margin: 1rem .5rem;
+    padding: 1rem;
+    height: calc(100% - 2rem);
+    border-radius: 3pt;
+    box-sizing: border-box;
+    box-shadow: 1pt 1pt 2pt rgba($black, .5);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     position: relative;
     img {
-      width: calc(100% - 2rem);
+      width: 100%;
       display: flex;
-      // border-radius: 1rem;
+      box-shadow: 0 0 1pt rgba($black, .5);
+      margin-bottom: 1rem;
       &:before {
         content: "";
         display: block;
@@ -21,9 +52,9 @@
       }
     }
     .content {
-      width: calc(100% - 2rem);
+      margin-top: auto;
+      width: 100%;
       flex-direction: column;
-      padding: 1em;
       h2 {
         font-size: 20px;
         line-height: 24px;

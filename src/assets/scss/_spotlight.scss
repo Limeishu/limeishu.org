@@ -12,7 +12,7 @@
   &.half {
     flex-direction: column;
     min-height: 50vh;
-    margin-top: 6rem;
+    margin-top: 10rem;
   }
   .image {
     width: 25rem;
@@ -25,7 +25,7 @@
       padding-top: 100%;
     }
   }
-  .content {
+  >.content {
     display: flex;
     flex-direction: column;
     width: calc(50% - 2rem);
