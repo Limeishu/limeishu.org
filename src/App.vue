@@ -8,7 +8,7 @@
         <img src="./assets/images/icons/logo.svg" alt="李梅樹紀念館 Logo">
         <h1 class="ming">{{ slogen[language] }}</h1>
       </div>
-      <Navbar :class="{ 'toggle': toggle }"></Navbar>
+      <Navbar :class="{ 'toggle': toggle || isChild }"></Navbar>
     </header>
     <router-view></router-view>
     <mainFooter></mainFooter>
