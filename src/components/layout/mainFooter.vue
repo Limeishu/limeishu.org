@@ -47,7 +47,7 @@ export default {
         }
       ],
       copyright: {
-        text: `© ${new Date().getFullYear()}. 李梅樹紀念館 Li Mei-shu Memorial Gallery.`,
+        text: `© 1995 - ${new Date().getFullYear()}. 李梅樹紀念館 Li Mei-shu Memorial Gallery.`,
         design: 'Design: LIT Team',
         license: 'This work is licensed under the Creative Commons License, CC BY-NC-ND 4.0 ISO'
       }
