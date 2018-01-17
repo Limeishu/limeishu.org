@@ -1,10 +1,17 @@
 <template>
   <div id="footer">
-    <ul class="icon">
-      <li v-for="link in socialLink"><a target="_blank" :href="link.href"><font-awesome-icon :icon="link.icon" /></a></li>
-    </ul>
-    <div class="copyright" v-html="copyright[language]">
+    <div class="icon">
+      <div class="logo">
+        <img src="../../assets/images/icons/logo-min.svg" alt="">
+      </div>
+      <ul>
+        <li v-for="link in socialLink"><a target="_blank" :href="link.href"><font-awesome-icon :icon="link.icon" /></a></li>
+      </ul>
+      <div class="policy">
+        <router-link v-for="item in policy[language]" :to="item.link">{{ item.name }}</router-link>
+      </div>
     </div>
+    <div class="copyright" v-html="copyright[language]"></div>
   </div>
 </template>
 
@@ -45,6 +52,18 @@ export default {
           href: 'https://www.youtube.com/channel/UCJNhAJ83HO8rTeJHdoMtZJQ'
         }
       ],
+      policy: {
+        'zh-TW': [
+          {
+            name: '隱私權政策',
+            link: 'policy'
+          },
+          {
+            name: 'Cookie',
+            link: 'policy#cookie'
+          }
+        ]
+      },
       copyright: {
         'zh-TW': `<p>© 1995 - ${new Date().getFullYear()} 李梅樹紀念館</p><p>本著作係採用 <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/beta/LICENSE" target="_blank">MIT 授權條款</a> 授權.</p><p>我們推薦使用 <a href="https://www.mozilla.org/firefox/new/" target="_blank">Firefox Quantum</a> 瀏覽以獲得更好的瀏覽體驗。</p>`,
         'en-US': `<p>© 1995 - ${new Date().getFullYear()} Li Mei-shu Memorial Gallery</p><p>This work is licensed under the <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/beta/LICENSE" target="_blank">MIT License</a>.</p><p>We recommend <a href="https://www.mozilla.org/firefox/new/" target="_blank">Firefox Quantum</a> for a better browsing experience.</p>`,

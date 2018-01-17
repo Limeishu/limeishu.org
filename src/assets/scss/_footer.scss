@@ -1,6 +1,6 @@
 #footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   color: $black;
@@ -8,33 +8,67 @@
   max-height: 30vh;
   padding: 1rem;
   background: $white;
-  ul.icon {
-    display: flex;
-    flex-direction: row;
-    width: 25%;
-    justify-content: space-around;
-    align-items: center;
-    li {
-      display: flex;
-      position: relative;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.25rem;
-      width: 2rem;
-      height: 2rem;
-      a {
-        width: 100%;
+  .icon {
+    display: grid;
+    width: 20%;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    font-size: 12px;
+    grid-template-areas:
+      "logo icon"
+      "policy policy";
+    grid-template-columns: auto 1fr;
+    .logo {
+      height: 3rem;
+      grid-area: logo;
+      img {
         height: 100%;
-        color: inherit;
+      }
+    }
+    .policy {
+      grid-area: policy;
+      a {
+        margin-right: 2rem;
+        color: $black;
+        font-weight: 600;
+      }
+    }
+    ul {
+      margin: 1rem;
+      display: flex;
+      flex-direction: row;
+      width: calc(100% - 2rem);
+      justify-content: space-between;
+      align-items: center;
+      grid-area: icon;
+      li {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        a {
+          display: flex;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          color: inherit;
+        }
       }
     }
   }
   .copyright {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     font-size: 12px;
+    width: 20%;
+    margin: 1rem 2rem;
     p {
       margin: 3px 0;
       letter-spacing: 1px;
