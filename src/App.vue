@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header id="header">
-      <div class="image" v-for="(img, i) in bannerBG" v-show="i === bannerAt % 4" :style="{ 'background-image': `url(${img})` }">
+      <div v-if="!isChild" class="image" v-for="(img, i) in bannerBG" v-show="i === bannerAt % 4" :style="{ 'background-image': `url(${img})` }">
         <div class="next" v-scroll-to="'#home, 0'"><img src="./assets/images/down-arrow.svg" alt=""></div>
       </div>
       <div v-if="!isChild" id="logo">
