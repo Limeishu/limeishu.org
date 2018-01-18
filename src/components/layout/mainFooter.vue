@@ -8,7 +8,7 @@
         <li v-for="link in socialLink"><a target="_blank" :href="link.href"><font-awesome-icon :icon="link.icon" /></a></li>
       </ul>
       <div class="policy">
-        <router-link v-for="item in policy[language]" :to="item.link">{{ item.name }}</router-link>
+        <router-link v-for="item in policy[language]" :to="item.link" :key="item.name">{{ item.name }}</router-link>
       </div>
     </div>
     <div class="copyright" v-html="copyright[language]"></div>
@@ -59,7 +59,27 @@ export default {
             link: 'policy'
           },
           {
-            name: 'Cookie',
+            name: 'Cookies',
+            link: 'policy#cookie'
+          }
+        ],
+        'en-US': [
+          {
+            name: 'Privacy Notice',
+            link: 'policy'
+          },
+          {
+            name: 'Cookies',
+            link: 'policy#cookie'
+          }
+        ],
+        'ja': [
+          {
+            name: 'プライバシー通知',
+            link: 'policy'
+          },
+          {
+            name: 'Cookies',
             link: 'policy#cookie'
           }
         ]
