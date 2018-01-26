@@ -14,6 +14,7 @@
     background-position: bottom;
   }
 }
+
 #header {
   display: flex;
   z-index: 1000;
@@ -23,6 +24,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  /* #REGIN Banner */
   .image {
     position: absolute;
     height: 100%;
@@ -42,34 +44,29 @@
     width: 100%;
     display: grid;
     position: relative;
-    grid-template-areas:
-      "banner space01 space02"
-      "space10 logo   space12"
-      "spece21 slogen spece22";
+    grid-template-areas: "banner space01 space02" "space10 logo   space12" "spece21 slogen spece22";
     grid-template-columns: 25vw 50vw 25vw;
-    grid-template-rows:    33.33vh 33.33vh 33.33vh;
-//#REGIN RWD for 5.5' mobile display: template: iPhone 6s Plus
+    grid-template-rows: 33.33vh 33.33vh 33.33vh;
+    /* #REGIN RWD for 5.5' mobile display: template: iPhone 6s Plus */
     @media screen and (max-width: 414px) {
-      grid-template-areas:
-        "banner"
-        "logo"
-        "slogen";
+      grid-template-areas: "banner" "logo" "slogen";
       grid-template-columns: 1fr;
-      grid-template-rows:    40vh 20vh 40vh;
+      grid-template-rows: 40vh 20vh 40vh;
     }
-//#ENDREGIN
-    h1, h2 {
+    /* #ENDREGIN */
+    h1,
+    h2 {
       grid-area: slogen;
       display: flex;
       justify-content: flex-end;
       font-weight: 800;
       margin: 1rem 1.3rem;
-//#REGIN RWD for 5.5' mobile display: template: iPhone 6s Plus
+      /* #REGIN RWD for 5.5' mobile display: template: iPhone 6s Plus */
       @media screen and (max-width: 414px) {
         font-size: 14pt;
         margin: .5rem .8rem;
       }
-//#ENDREGIN
+      /* #ENDREGIN */
     }
     img {
       position: relative;
@@ -80,11 +77,11 @@
         grid-area: banner;
         position: absolute;
         transform: scale(2) translate(25%, 20%);
-//#REGIN RWD for 5.5' mobile display: template: iPhone 6s Plus
+        /* #REGIN RWD for 5.5' mobile display: template: iPhone 6s Plus */
         @media screen and (max-width: 414px) {
           transform: translateX(-1.75rem);
         }
-//#ENDREGIN
+        /* #ENDREGIN */
       }
       &:before {
         content: "";
@@ -93,6 +90,8 @@
       }
     }
   }
+  /* #ENDREGIN */
+  /* #REGIN MENU */
   .menu {
     z-index: 2;
     width: 100%;
@@ -106,6 +105,14 @@
     color: $black;
     opacity: 0;
     pointer-events: none;
+    /* #REGIN RWD for mobile */
+    @media screen and (max-width: 768px) {
+      height: 100vh;
+      width: 80%;
+      flex-direction: column;
+      box-shadow: 0 0 16pt rgba($black, .5);
+    }
+    /* #ENDREGIN */
     &.toggle {
       pointer-events: initial;
       opacity: 1;
@@ -118,6 +125,13 @@
       flex-direction: row;
       justify-content: flex-start;
       box-shadow: 0 2pt 2pt -2pt rgba($black, .5);
+      /* #REGIN RWD for mobile */
+      @media screen and (max-width: 768px) {
+        height: auto;
+        flex-direction: column;
+        box-shadow: none;
+      }
+      /* #ENDREGIN */
       >li {
         width: 9rem;
         height: 100%;
@@ -125,6 +139,12 @@
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
+        /* #REGIN RWD for mobile */
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          height: auto;
+        }
+        /* #ENDREGIN */
         &:first-child {
           >a:before {
             border-color: transparent;
@@ -141,6 +161,17 @@
           text-decoration: none;
           color: inherit;
           font-size: 14px;
+          /* #REGIN RWD for mobile */
+          @media screen and (max-width: 768px) {
+            justify-content: flex-start;
+            padding: 0 2rem;
+            height: 4rem;
+            width: auto;
+            &:before {
+              display: none;
+            }
+          }
+          /* #ENDREGIN */
           &:before {
             z-index: -1;
             width: 100%;
@@ -161,14 +192,17 @@
         }
         @for $i from 1 through 5 {
           &:nth-child(#{$i})>ul {
-            left: calc(100% * -1 * #{($i - 1)});
-            padding-left: calc(9rem * #{($i - 1)});
+            /* #REGIN RWD for mobile */
+            @media screen and (min-width: 769px) {
+              left: calc(100% * -1 * #{($i - 1)});
+              padding-left: calc(9rem * #{($i - 1)});
+            }
+            /* #ENDREGIN */
           }
         }
         >ul {
           transition: all .3s;
           z-index: -1;
-          transition: all .3;
           display: none;
           position: absolute;
           flex-direction: row;
@@ -177,7 +211,17 @@
           height: 4rem;
           top: 4rem;
           background: $paper;
-          box-shadow: 0 2pt 2pt -2pt rgba($black, .5);          
+          box-shadow: 0 2pt 2pt -2pt rgba($black, .5);
+          /* #REGIN RWD for mobile */
+          @media screen and (max-width: 768px) {
+            position: relative;
+            flex-direction: column;
+            top: 0;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+          }
+          /* #ENDREGIN */
           >li {
             width: 9rem;
             height: 100%;
@@ -185,6 +229,12 @@
             position: relative;
             color: $black;
             transition: all .3s;
+            /* #REGIN RWD for mobile */
+            @media screen and (max-width: 768px) {
+              width: 100%;
+              height: 4rem;
+            }
+            /* #ENDREGIN */
             &:hover {
               color: $tone;
             }
@@ -197,10 +247,19 @@
               text-decoration: none;
               color: inherit;
               font-size: 14px;
+              /* #REGIN RWD for mobile */
+              @media screen and (max-width: 768px) {
+                justify-content: flex-start;
+                padding: 0 2rem;
+                height: 4rem;
+                // width: auto;
+              }
+              /* #ENDREGIN */
             }
           }
         }
       }
     }
   }
+  /* #ENDREGIN */
 }
