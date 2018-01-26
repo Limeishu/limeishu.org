@@ -4,7 +4,7 @@
       <h1 v-show="language === 'zh-TW'">最新消息</h1>
       <h1 v-show="language === 'en-US'">What's New</h1>
       <h1 v-show="language === 'ja'">最新ニュース</h1>
-      <carousel :loop="true" :autoplayTimeout="3000" :perPage="3" :autoplayHoverPause="true" :navigationEnabled="true" :navigationPrevLabel="'&#xf104;'" :navigationNextLabel="'&#xf105;'"
+      <carousel :loop="true" :autoplayTimeout="3000" :perPage="device.isMobile ? 1 : 3" :autoplayHoverPause="true" :navigationEnabled="true" :navigationPrevLabel="'&#xf104;'" :navigationNextLabel="'&#xf105;'"
         class="slider-container">
         <slide v-for="news in news" :key="news">
           <div class="slider">
@@ -319,7 +319,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['language'])
+    ...mapGetters(['language', 'device'])
   },
   created () {
     this.getNews()

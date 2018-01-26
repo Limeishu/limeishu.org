@@ -22,9 +22,15 @@
     filter: drop-shadow(0 0 2pt rgba($black, .5));
     &.VueCarousel-navigation-prev {
       transform: translate(1rem, -50%);
+      @media screen and (max-width: 768px) {
+        transform: translate(1rem, 14.5rem);
+      }
     }
     &.VueCarousel-navigation-next {
       transform: translate(-1rem, -50%);
+      @media screen and (max-width: 768px) {
+        transform: translate(-1rem, 14.5rem);
+      }
     }
   }
   .slider {
