@@ -1,3 +1,4 @@
+/* #REGIN Banner animation */
 @keyframes banner {
   0% {
     opacity: 0.1;
@@ -14,6 +15,21 @@
     background-position: bottom;
   }
 }
+/* #ENDREGIN */
+
+/* #Element Nav menu toggle */
+@keyframes rotate {
+  0% {
+    transform: rotate(-180deg)
+  }
+  80% {
+    transform: rotate(30deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+/* #ENDREGIN */
 
 #header {
   display: flex;
@@ -105,17 +121,49 @@
     color: $black;
     opacity: 0;
     pointer-events: none;
+    >.mobile {
+      display: none;
+      background-color: $tone;
+      .toggle-btn {
+        position: absolute;
+        transform: translateX(-4rem);
+        height: 3rem;
+        width: 3rem;
+        margin: .5rem;
+        background: $white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1pt 1pt 2pt rgba($black, .5);
+        svg {
+          animation: rotate .3s;
+        }
+      }
+    }
     /* #REGIN RWD for mobile */
     @media screen and (max-width: 768px) {
       height: 100vh;
       width: 80%;
       flex-direction: column;
-      box-shadow: 0 0 16pt rgba($black, .5);
+      opacity: 1;
+      pointer-events: initial;
+      transform: translateX(100%);
+      >.mobile {
+        display: flex;
+      }
+      &.toggle {
+        transform: translateX(0);
+        box-shadow: 0 0 16pt rgba($black, .5);
+      }
     }
     /* #ENDREGIN */
     &.toggle {
       pointer-events: initial;
       opacity: 1;
+      .mobile .toggle-btn {
+        box-shadow: 0 0 16pt rgba($black, .5);
+      }
     }
     >ul {
       width: 100%;

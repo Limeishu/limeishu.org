@@ -9,7 +9,7 @@
         <img src="./assets/images/icons/logo-min.svg" alt="李梅樹紀念館 Logo">
         <h1 class="ming">{{ slogen[language] }}</h1>
       </div>
-      <Navbar :class="{ 'toggle': toggle || isChild }"></Navbar>
+      <Navbar :class="{ 'toggle': device.isMobile ? navbar.opened : (toggle || isChild) }"></Navbar>
     </header>
     <router-view></router-view>
     <mainFooter></mainFooter>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
+  import { mapGetters, mapActions } from 'vuex'
   import * as BG from './assets/images/BG'
   import {
     Navbar,
@@ -42,13 +42,15 @@
       mainFooter
     },
     computed: {
-      ...mapGetters(['language'])
+      ...mapGetters(['language', 'navbar', 'device'])
     },
     mounted () {
       this.changeBanner()
       window.addEventListener('scroll', this.scroll)
+      this.toggleDevice(document.querySelector('#app').offsetWidth <= 768 ? 'mobile' : null)
     },
     methods: {
+      ...mapActions(['toggleDevice', 'toggleNavbar']),
       changeBanner () {
         setInterval(() => {
           this.bannerAt++
@@ -66,6 +68,7 @@
     watch: {
       $route (route) {
         route.name !== 'Home' ? this.isChild = true : this.isChild = false
+        this.toggleNavbar(false)
         window.scrollTo(0, 0)
       }
     }

@@ -1,8 +1,15 @@
 <template>
   <div id="nav" class="menu">
+    <div class="mobile">
+      <div class="toggle-btn" @click="toggle(!navbar.opened)">
+        <font-awesome-icon icon="bars" v-show="!navbar.opened" />
+        <font-awesome-icon icon="angle-right" v-show="navbar.opened" />
+      </div>
+      <img src="../../assets/images/icons/logo.svg" alt="">
+    </div>
     <ul>
       <li v-for="(item, i) in menu">
-        <router-link :to="item.path" v-if="item.path">
+        <router-link :to="item.children ? '' : item.path" v-if="item.path">
           <span class="uppercase">{{ item.meta.label[0] || item.name }}</span>
         </router-link>
         <ul v-if="item.children">
@@ -18,10 +25,14 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
   computed: {
-    ...mapGetters({ menu: 'menuitems' })
+    ...mapGetters({ menu: 'menuitems' }),
+    ...mapGetters(['navbar'])
+  },
+  methods: {
+    ...mapActions({ toggle: 'toggleNavbar' })
   }
 }
 </script>
