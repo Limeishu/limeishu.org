@@ -9,6 +9,12 @@
       </ul>
       <div class="policy">
         <router-link v-for="item in policy[language]" :to="item.link" :key="item.name">{{ item.name }}</router-link>
+        <p>
+          <font-awesome-icon icon="globe" />
+          <select name="" id="" v-model="selectLang">
+            <option :value="i" v-for="(lang, i) in langLocalize">{{ lang }}</option>
+          </select>
+        </p>
       </div>
     </div>
     <div class="copyright" v-html="copyright[language]"></div>
@@ -16,10 +22,16 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
   data () {
     return {
+      selectLang: '',
+      langLocalize: {
+        'zh-TW': '繁體中文',
+        'en-US': 'English',
+        'ja': '日本語'
+      },
       socialLink: [
         {
           icon: ['fab', 'facebook-f'],
@@ -93,6 +105,17 @@ export default {
   },
   computed: {
     ...mapGetters(['language'])
+  },
+  created () {
+    this.selectLang = this.language
+  },
+  methods: {
+    ...mapActions(['changeLang'])
+  },
+  watch: {
+    selectLang: function (lang) {
+      this.changeLang(lang)
+    }
   }
 }
 </script>

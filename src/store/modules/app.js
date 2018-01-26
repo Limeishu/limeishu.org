@@ -28,10 +28,20 @@ const mutations = {
   [types.TOGGLE_NAVBAR] (state, status) {
     state.navbar.opened = typeof status.opened !== 'undefined' ? status.opened : state.navbar.opened
     state.navbar.hidden = typeof status.hidden !== 'undefined' ? status.hidden : state.navbar.hidden
+  },
+
+  [types.LANGUAGE] (state, lang) {
+    state.language = lang
   }
 }
 
 const actions = {
+
+  async changeLang ({ commit },
+  lang) {
+    commit(types.LANGUAGE, lang)
+  },
+
   async toggleNavbar ({ commit },
   status) {
     commit(types.TOGGLE_NAVBAR, status)

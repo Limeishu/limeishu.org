@@ -42,11 +42,18 @@
       }
     }
     .policy {
+      display: flex;
+      flex-direction: row;
       grid-area: policy;
       a {
         margin-right: 2rem;
         color: $black;
         font-weight: 600;
+      }
+      p {
+        span {
+          margin-left: 5px;
+        }
       }
     }
     ul {
