@@ -60,7 +60,7 @@
       line-height: 27px;
       color: $content;
       text-indent: 31px;
-      letter-spacing: 3px;
+      letter-spacing: 1px;
       margin: 3px 0;
     }
   }
@@ -78,7 +78,7 @@
     li, p {
       line-height: 32px;
       color: $skin;
-      letter-spacing: 3px;
+      letter-spacing: 1px;
       text-align: left;
       @media screen and (max-width: 768px) {
         font-size: 10pt;
