@@ -6,7 +6,8 @@ const state = {
     isTablet: false
   },
   navbar: {
-    opened: false
+    opened: false,
+    hidden: false
   },
   effect: {
     translate3d: true
@@ -24,15 +25,16 @@ const mutations = {
     state.device.isTablet = device === 'tablet'
   },
 
-  [types.TOGGLE_NAVBAR] (state, opened) {
-    state.navbar.opened = opened
+  [types.TOGGLE_NAVBAR] (state, status) {
+    state.navbar.opened = typeof status.opened !== 'undefined' ? status.opened : state.navbar.opened
+    state.navbar.hidden = typeof status.hidden !== 'undefined' ? status.hidden : state.navbar.hidden
   }
 }
 
 const actions = {
   async toggleNavbar ({ commit },
-  opened) {
-    commit(types.TOGGLE_NAVBAR, opened)
+  status) {
+    commit(types.TOGGLE_NAVBAR, status)
   },
 
   async toggleDevice ({ commit },

@@ -1,7 +1,7 @@
 <template>
   <div id="nav" class="menu">
     <div class="mobile">
-      <div class="toggle-btn" @click="toggle(!navbar.opened)">
+      <div class="toggle-btn" :class="{ hidden: navbar.hidden }" @click="toggle({ opened: !navbar.opened })">
         <font-awesome-icon icon="bars" v-show="!navbar.opened" />
         <font-awesome-icon icon="angle-right" v-show="navbar.opened" />
       </div>
