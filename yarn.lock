@@ -4134,6 +4134,10 @@ koa-static@^4.0.2:
     debug "^2.6.8"
     koa-send "^4.1.0"
 
+koa2-connect-history-api-fallback@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/koa2-connect-history-api-fallback/-/koa2-connect-history-api-fallback-0.0.6.tgz#671bd0166497e79981313a70a17fbb539093b757"
+
 koa@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/koa/-/koa-2.4.1.tgz#d449cfb970a7e9da571f699eda40bb9e32eb1484"
