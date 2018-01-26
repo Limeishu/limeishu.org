@@ -6,12 +6,16 @@ const state = {
     isTablet: false
   },
   navbar: {
-    opened: false,
-    hidden: false
+    opened: false
   },
   effect: {
     translate3d: true
-  }
+  },
+  language: ['en-US', 'zh-TW', 'ja'].find(e => { return e === window.navigator.language }) ? window.navigator.language : 'en-US'
+}
+
+const getters = {
+  language: state => state.language
 }
 
 const mutations = {
@@ -21,15 +25,34 @@ const mutations = {
   },
 
   [types.TOGGLE_NAVBAR] (state, opened) {
-    if (state.device.isMobile) {
-      state.navbar.opened = opened
-    } else {
-      state.navbar.opened = true
+    state.navbar.opened = opened
+  }
+}
+
+const actions = {
+  async toggleNavbar ({ commit },
+  opened) {
+    commit(types.TOGGLE_NAVBAR, opened)
+  },
+
+  async toggleDevice ({ commit },
+  device) {
+    commit(types.TOGGLE_DEVICE, device)
+  },
+
+  expandMenu ({ commit },
+    menuItem) {
+    if (menuItem) {
+      menuItem.expanded = menuItem.expanded || false
+      commit(types.EXPAND_MENU, menuItem)
     }
   }
+
 }
 
 export default {
   state,
+  getters,
+  actions,
   mutations
 }

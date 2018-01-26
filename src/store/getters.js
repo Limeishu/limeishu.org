@@ -3,7 +3,6 @@ const user              = (state) => state.user
 const device            = (state) => state.app.device
 const navbar            = (state) => state.app.navbar
 const menuitems         = (state) => state.menu.items
-const language          = (state) => state.language
 const componententry    = (state) => {
   return state.menu.items.filter((c) => c.meta && c.meta.label === 'Components')[0]
 }
@@ -14,6 +13,5 @@ export {
   navbar,
   menuitems,
   componententry,
-  user,
-  language
+  user
 }
