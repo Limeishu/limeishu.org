@@ -68,9 +68,9 @@
     color: $white;
     align-items: flex-start;
     width: 50%;
+    padding: 2rem;
     @media screen and (max-width: 768px) {
       width: calc(100% - 4rem);
-      padding: 2rem;
     }
     h1 {
       margin-bottom: 1rem;
