@@ -35,27 +35,57 @@
     background-repeat: no-repeat;
   }
   #logo {
+    pointer-events: none;
     filter: drop-shadow(0 0 6px $white);
-  }
-  #logo {
     z-index: 1;
-    height: auto;
-    display: flex;
-    margin-bottom: .5rem;
-    flex-direction: column;
-    align-items: flex-end;
-    h1, h2, p {
-      margin-right: 26.5%;
-      // color: $white;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    position: relative;
+    grid-template-areas:
+      "banner space01 space02"
+      "space10 logo   space12"
+      "spece21 slogen spece22";
+    grid-template-columns: 25vw 50vw 25vw;
+    grid-template-rows:    33.33vh 33.33vh 33.33vh;
+//#REGIN RWD for 5.5' mobile display: template: iPhone 6s Plus
+    @media screen and (max-width: 414px) {
+      grid-template-areas:
+        "banner"
+        "logo"
+        "slogen";
+      grid-template-columns: 1fr;
+      grid-template-rows:    40vh 20vh 40vh;
     }
+//#ENDREGIN
     h1, h2 {
+      grid-area: slogen;
+      display: flex;
+      justify-content: flex-end;
       font-weight: 800;
+      margin: 1rem 1.3rem;
+//#REGIN RWD for 5.5' mobile display: template: iPhone 6s Plus
+      @media screen and (max-width: 414px) {
+        font-size: 14pt;
+        margin: .5rem .8rem;
+      }
+//#ENDREGIN
     }
     img {
-      margin: auto;
-      display: block;
-      width: 70vw;
       position: relative;
+      grid-area: logo;
+      width: 100%;
+      height: 100%;
+      &:first-child {
+        grid-area: banner;
+        position: absolute;
+        transform: scale(2) translate(25%, 20%);
+//#REGIN RWD for 5.5' mobile display: template: iPhone 6s Plus
+        @media screen and (max-width: 414px) {
+          transform: translateX(-1.75rem);
+        }
+//#ENDREGIN
+      }
       &:before {
         content: "";
         display: block;

@@ -5,7 +5,8 @@
         <div class="next" v-scroll-to="'#home, 0'"><img src="./assets/images/down-arrow.svg" alt=""></div>
       </div>
       <div v-if="!isChild" id="logo">
-        <img src="./assets/images/icons/logo.svg" alt="李梅樹紀念館 Logo">
+        <img src="./assets/images/icons/banner.svg" alt="">
+        <img src="./assets/images/icons/logo-min.svg" alt="李梅樹紀念館 Logo">
         <h1 class="ming">{{ slogen[language] }}</h1>
       </div>
       <Navbar :class="{ 'toggle': toggle || isChild }"></Navbar>
