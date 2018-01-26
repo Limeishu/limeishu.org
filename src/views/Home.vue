@@ -176,7 +176,9 @@
         <div class="contants">
           <div class="container">
             <div class="header">
-              <h1>交通資訊</h1>
+              <h1 v-show="language === 'zh-TW'">交通資訊</h1>
+              <h1 v-show="language === 'en-US'">Traffic Information</h1>
+              <h1 v-show="language === 'ja'">交通信息</h1>
               <div class="bar">
                 <div class="item" v-for="(item, i) in map.bar" :class="{ 'active': i === map.choosed }" @click="map.choosed = i">
                   <div class="icon">
