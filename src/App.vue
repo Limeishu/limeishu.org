@@ -68,7 +68,7 @@
     watch: {
       $route (route) {
         route.name !== 'Home' ? this.isChild = true : this.isChild = false
-        this.toggleNavbar(false)
+        this.toggleNavbar({ opened: false })
         window.scrollTo(0, 0)
       }
     }
