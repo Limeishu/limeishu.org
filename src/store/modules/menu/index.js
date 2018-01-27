@@ -7,7 +7,11 @@ const state = {
       name: 'Home',
       path: '/',
       meta: {
-        label: ['首頁'],
+        label: {
+          'zh-TW': '首頁',
+          'en-US': 'Home',
+          'ja': 'ホーム'
+        },
         link: 'Home.vue'
       },
       components: lazyLoader('Home')
@@ -16,7 +20,11 @@ const state = {
       name: 'Culture',
       path: '/culture',
       meta: {
-        label: ['文化活動'],
+        label: {
+          'zh-TW': '文化活動',
+          'en-US': 'Culture',
+          'ja': '文化活動'
+        },
         link: 'Culture.vue'
       },
       components: lazyLoader('Culture'),
@@ -25,28 +33,44 @@ const state = {
           name: 'News',
           path: '/culture/news',
           meta: {
-            label: ['最新消息']
+            label: {
+              'zh-TW': '最新消息',
+              'en-US': 'What\'s News',
+              'ja': '最新ニュース'
+            }
           }
         },
         {
           name: 'Reports',
           path: '/culture/reports',
           meta: {
-            label: ['相關報導']
+            label: {
+              'zh-TW': '相關報導',
+              'en-US': 'Reports',
+              'ja': 'ニュース'
+            }
           }
         },
         {
           name: 'Mei-shu Month',
           path: '/msm',
           meta: {
-            label: ['梅數月']
+            label: {
+              'zh-TW': '梅樹月',
+              'en-US': 'Mei-Shu Month',
+              'ja': '梅樹月'
+            }
           }
         },
         {
           name: 'Sanxia Master Temple',
           path: '/culture/temple',
           meta: {
-            label: ['三峽祖師廟']
+            label: {
+              'zh-TW': '三峽祖師廟',
+              'en-US': 'Sanxia Zushi Temple',
+              'ja': '三峡祖師廟'
+            }
           }
         }
       ]
@@ -55,7 +79,11 @@ const state = {
       name: 'About',
       path: '/about',
       meta: {
-        label: ['關於我們'],
+        label: {
+          'zh-TW': '關於我們',
+          'en-US': 'About',
+          'ja': '私たちに関しては'
+        },
         link: 'About.vue'
       },
       components: lazyLoader('About'),
@@ -64,14 +92,22 @@ const state = {
           name: 'About Gallery',
           path: '/about/gallery',
           meta: {
-            label: ['關於紀念館']
+            label: {
+              'zh-TW': '關於紀念館',
+              'en-US': 'Gallery',
+              'ja': '記念館について'
+            }
           }
         },
         {
           name: 'Cooperation',
           path: '/about/cooperation',
           meta: {
-            label: ['與我們合作']
+            label: {
+              'zh-TW': '與我們合作',
+              'en-US': 'Cooperation',
+              'ja': 'ご協力'
+            }
           }
         }
       ]
@@ -80,7 +116,11 @@ const state = {
       name: 'Li-Mei Shu',
       path: '/intro',
       meta: {
-        label: ['李梅樹'],
+        label: {
+          'zh-TW': '認識李梅樹',
+          'en-US': 'Li-Mei Shu',
+          'ja': '李梅樹'
+        },
         link: 'Intro.vue'
       },
       components: lazyLoader('About'),
@@ -89,14 +129,22 @@ const state = {
           name: 'Introduction Article',
           path: '/intro/article',
           meta: {
-            label: ['畫家介紹']
+            label: {
+              'zh-TW': '畫家介紹',
+              'en-US': 'Introduction to Artist',
+              'ja': '画家の紹介'
+            }
           }
         },
         {
           name: 'History',
           path: '/about/history',
           meta: {
-            label: ['年度大記事']
+            label: {
+              'zh-TW': '年度大記事',
+              'en-US': 'Annual chronicles',
+              'ja': '画家年表'
+            }
           }
         }
       ]
@@ -105,7 +153,14 @@ const state = {
       name: 'Open Source & Culture',
       path: '/open',
       meta: {
-        label: ['開源 x 文史']
+        label: {
+          'zh-TW': '開源 × 文史',
+          'en-US': 'Open Source × Culture',
+          'ja': 'オープンソース × 文化活動'
+        }
+      },
+      beforeEnter: (to, from, next) => {
+        window.open('https://open.limeishu.org.tw', '_blank')
       }
     }
   ]

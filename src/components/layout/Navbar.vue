@@ -10,12 +10,12 @@
     <ul>
       <li v-for="(item, i) in menu">
         <router-link :to="item.children ? '' : item.path" v-if="item.path">
-          <span class="uppercase">{{ item.meta.label[0] || item.name }}</span>
+          <span class="uppercase">{{ item.meta.label[language] || item.name }}</span>
         </router-link>
         <ul v-if="item.children">
           <li v-for="item in item.children">
             <router-link :to="item.path" v-if="item.path">
-              <span class="uppercase">{{ item.meta.label[0] || item.name }}</span>
+              <span class="uppercase">{{ item.meta.label[language] || item.name }}</span>
             </router-link>
           </li>
         </ul>
@@ -29,7 +29,7 @@ import { mapGetters, mapActions } from 'vuex'
 export default {
   computed: {
     ...mapGetters({ menu: 'menuitems' }),
-    ...mapGetters(['navbar'])
+    ...mapGetters(['navbar', 'language'])
   },
   methods: {
     ...mapActions({ toggle: 'toggleNavbar' })
