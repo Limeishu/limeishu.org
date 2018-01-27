@@ -180,7 +180,7 @@
       }
       /* #ENDREGIN */
       >li {
-        width: 9rem;
+        min-width: 9rem;
         height: 100%;
         position: relative;
         display: flex;
@@ -196,6 +196,9 @@
           >a:before {
             border-color: transparent;
           }
+        }
+        &:last-child a span {
+          padding: 0 1rem;
         }
         >a {
           z-index: 0;
@@ -302,6 +305,11 @@
                 // width: auto;
               }
               /* #ENDREGIN */
+              span {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+              }
             }
           }
         }
