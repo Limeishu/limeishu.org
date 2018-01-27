@@ -197,8 +197,10 @@
             border-color: transparent;
           }
         }
-        &:last-child a span {
-          padding: 0 1rem;
+        @media screen and (min-width: 769px) {
+          &:last-child a span {
+            padding: 0 1rem;
+          }
         }
         >a {
           z-index: 0;
