@@ -54,7 +54,7 @@
       changeBanner () {
         setInterval(() => {
           this.bannerAt++
-        }, 10000)
+        }, 5000)
       },
       scroll () {
         let scrolled = document.querySelector('#app').getBoundingClientRect().y
