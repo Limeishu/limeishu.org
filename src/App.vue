@@ -81,6 +81,9 @@
         this.childDetect()
         this.toggleNavbar({ opened: false })
         window.scrollTo(0, 0)
+      },
+      language () {
+        this.$ua.changeSessionLanguage(this.language)
       }
     }
   }
