@@ -6,7 +6,7 @@
       <h1 v-show="language === 'ja'">最新ニュース</h1>
       <carousel :loop="true" :autoplayTimeout="3000" :perPage="device.isMobile ? 1 : 3" :autoplayHoverPause="true" :navigationEnabled="true" :navigationPrevLabel="'&#xf104;'" :navigationNextLabel="'&#xf105;'"
         class="slider-container">
-        <slide v-for="(news, i) in news" :key="i">
+        <slide v-for="(news, i) in news.data" :key="i">
           <div class="slider">
             <img :src="news.meta.image">
             <div class="content">
@@ -202,11 +202,10 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
   data () {
     return {
-      news: '',
       map: {
         bar: [
           {
@@ -321,23 +320,18 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['language', 'device'])
+    ...mapGetters(['language', 'device', 'news'])
   },
-  created () {
+  mounted () {
     this.getNews()
   },
   methods: {
+    ...mapActions({ getNews: 'getAllNews' }),
     next () {
       this.$refs.flickity.next()
     },
     previous () {
       this.$refs.flickity.previous()
-    },
-    getNews () {
-      this.$http.get(`https://api.limeishu.org.tw/news`)
-      .then(res => {
-        this.news = res.data.data
-      })
     }
   }
 }
