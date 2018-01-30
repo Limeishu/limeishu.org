@@ -45,6 +45,7 @@
       ...mapGetters(['language', 'navbar', 'device'])
     },
     mounted () {
+      this.childDetect()
       this.changeBanner()
       window.addEventListener('scroll', this.scroll)
       this.toggleDevice(document.querySelector('#app').offsetWidth <= 768 ? 'mobile' : null)
@@ -63,11 +64,19 @@
         } else {
           this.toggle = false
         }
+      },
+      childDetect () {
+        if (this.$route.name !== 'Home') {
+          this.isChild = true
+        } else {
+          this.isChild = false
+          this.toggle = false
+        }
       }
     },
     watch: {
       $route (route) {
-        route.name !== 'Home' ? this.isChild = true : this.isChild = false
+        this.childDetect()
         this.toggleNavbar({ opened: false })
         window.scrollTo(0, 0)
       }
