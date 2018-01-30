@@ -53,3 +53,57 @@
     height: 50pt;
   }
 }
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 720px;
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 8pt);
+    margin: 4pt;
+    position: relative;
+    box-shadow: 1pt 1pt 2pt rgba($black, .5);
+    border-radius: 2pt;
+    overflow: hidden;
+    .image {
+      border-radius: 0;
+      height: 200px;
+      width: 100%;
+      margin: 0;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      &:before {
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        content: '';
+        background-color: rgba($black, .5);
+      }
+      h2 {
+        z-index: 1;
+        padding: 8pt;
+        color: $white;
+        font-size: 16pt;
+      }
+    }
+    .content {
+      margin: 8pt;
+      width: calc(100% - 16pt);
+      .date {
+        color: $skin-dark;
+        font-size: 10pt;
+      }
+      p {
+        margin: 8pt 0;
+      }
+    }
+  }
+}
