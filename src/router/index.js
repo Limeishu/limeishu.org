@@ -7,7 +7,12 @@ Vue.use(Router)
 const router =  new Router({
   mode: 'history',
   routes: [
-    ...generateRoutesFromMenu(menuModule.state.items)
+    ...generateRoutesFromMenu(menuModule.state.items),
+    {
+      name: 'News',
+      path: '/culture/news/:id',
+      component: (resolve) => { require(['@/components/layout/Reader.vue'], resolve) }
+    }
   ]
 })
 
