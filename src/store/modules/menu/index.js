@@ -60,6 +60,9 @@ const state = {
               'en-US': 'Mei-Shu Month',
               'ja': '梅樹月'
             }
+          },
+          beforeEnter: (to, from, next) => {
+            window.open('https://msm.limeishu.org.tw', '_blank')
           }
         },
         {
