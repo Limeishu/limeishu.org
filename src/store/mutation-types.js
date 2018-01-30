@@ -6,6 +6,8 @@ export const EXPAND_MENU = 'EXPAND_MENU'
 
 export const LANGUAGE  = 'LANGUAGE'
 
+export const NEWS = 'NEWS'
+
 export default {
   SET_USER: (state, user) => {
     state.user = user
