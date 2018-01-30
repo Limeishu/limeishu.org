@@ -5,14 +5,14 @@
         <img src="../../assets/images/icons/logo-min.svg" alt="">
       </div>
       <ul>
-        <li v-for="link in socialLink"><a target="_blank" :href="link.href"><font-awesome-icon :icon="link.icon" /></a></li>
+        <li v-for="(link, i) in socialLink" :key="i"><a target="_blank" :href="link.href"><font-awesome-icon :icon="link.icon" /></a></li>
       </ul>
       <div class="policy">
         <router-link v-for="item in policy[language]" :to="item.link" :key="item.name">{{ item.name }}</router-link>
         <p>
           <font-awesome-icon icon="globe" />
           <select name="" id="" v-model="selectLang">
-            <option :value="i" v-for="(lang, i) in langLocalize">{{ lang }}</option>
+            <option :value="i" v-for="(lang, i) in langLocalize" :key="i">{{ lang }}</option>
           </select>
         </p>
       </div>
@@ -68,11 +68,11 @@ export default {
         'zh-TW': [
           {
             name: '隱私權政策',
-            link: 'policy'
+            link: '/about/policy'
           },
           {
             name: 'Cookies',
-            link: 'policy#cookie'
+            link: '/about/policy#cookie'
           }
         ],
         'en-US': [
