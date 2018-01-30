@@ -28,7 +28,7 @@
       }
     },
     methods: {
-      ...mapActions(['getAllNews', 'getNewsByID'])
+      ...mapActions(['getAllNews'])
     }
   }
 </script>
