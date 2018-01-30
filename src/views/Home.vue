@@ -6,7 +6,7 @@
       <h1 v-show="language === 'ja'">最新ニュース</h1>
       <carousel :loop="true" :autoplayTimeout="3000" :perPage="device.isMobile ? 1 : 3" :autoplayHoverPause="true" :navigationEnabled="true" :navigationPrevLabel="'&#xf104;'" :navigationNextLabel="'&#xf105;'"
         class="slider-container">
-        <slide v-for="news in news" :key="news">
+        <slide v-for="(news, i) in news" :key="i">
           <div class="slider">
             <img :src="news.meta.image">
             <div class="content">
@@ -180,7 +180,7 @@
               <h1 v-show="language === 'en-US'">Traffic Information</h1>
               <h1 v-show="language === 'ja'">交通信息</h1>
               <div class="bar">
-                <div class="item" v-for="(item, i) in map.bar" :class="{ 'active': i === map.choosed }" @click="map.choosed = i">
+                <div class="item" v-for="(item, i) in map.bar" :class="{ 'active': i === map.choosed }" @click="map.choosed = i" :key="i">
                   <div class="icon">
                     <font-awesome-icon :icon="item.icon" />
                   </div>
@@ -189,7 +189,7 @@
               </div>
             </div>
             <div class="content">
-              <div class="block" v-for="(info, i) in map.data[map.choosed][language]">
+              <div class="block" v-for="(info, i) in map.data[map.choosed][language]" :key="i">
                 <div class="syb">{{ i+1 }}</div><p>{{ info }}</p>
               </div>
             </div>
