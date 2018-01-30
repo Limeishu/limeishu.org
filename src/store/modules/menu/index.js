@@ -112,6 +112,24 @@ const state = {
               'ja': 'ご協力'
             }
           }
+        },
+        {
+          name: 'Privacy Notice',
+          path: '/about/privacy',
+          meta: {
+            label: {
+              'zh-TW': '隱私權政策',
+              'en-US': 'Privacy Notice',
+              'ja': 'プライバシー通知'
+            }
+          }
+        },
+        {
+          name: 'Cookie',
+          path: '/about/privacy#cookie',
+          meta: {
+            label: {}
+          }
         }
       ]
     },
@@ -140,12 +158,23 @@ const state = {
           }
         },
         {
+          name: 'Personal Statement of the Artist',
+          path: '/intro/statement',
+          meta: {
+            label: {
+              'zh-TW': '畫家自述',
+              'en-US': 'Personal Statement',
+              'ja': '画家の言葉'
+            }
+          }
+        },
+        {
           name: 'History',
           path: '/about/history',
           meta: {
             label: {
               'zh-TW': '年度大記事',
-              'en-US': 'Annual chronicles',
+              'en-US': 'Annual Chronicles',
               'ja': '画家年表'
             }
           }
