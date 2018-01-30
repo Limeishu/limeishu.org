@@ -68,31 +68,31 @@ export default {
         'zh-TW': [
           {
             name: '隱私權政策',
-            link: '/about/policy'
+            link: '/about/privacy'
           },
           {
             name: 'Cookies',
-            link: '/about/policy#cookie'
+            link: '/about/privacy#cookie'
           }
         ],
         'en-US': [
           {
             name: 'Privacy Notice',
-            link: 'policy'
+            link: '/about/privacy'
           },
           {
             name: 'Cookies',
-            link: 'policy#cookie'
+            link: '/about/privacy#cookie'
           }
         ],
         'ja': [
           {
             name: 'プライバシー通知',
-            link: 'policy'
+            link: '/about/privacy'
           },
           {
             name: 'Cookies',
-            link: 'policy#cookie'
+            link: '/about/privacy#cookie'
           }
         ]
       },
