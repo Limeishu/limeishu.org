@@ -176,15 +176,20 @@
         &.toggle .page-nav {
           position: fixed;
           top: 0;
+          box-shadow: 0 0 2pt rgba($black, .5);
+          background-color: $white;
         }
       }
     }
     .page-nav {
+      background-color: $paper;
+      transition: box-shadow ease .3s;
       z-index: -2;
       position: absolute;
       display: none;
       top: 4rem;
       width: 720px;
+      padding: 0 calc((100% - 720px) / 2);
       height: 4rem;
       grid-template-areas:
         "parent parent  parent  parent"
@@ -215,6 +220,7 @@
           text-align: center;
           color: inherit;
           text-decoration: none;
+          line-height: 16pt;
         }
         &.active {
           align-items: flex-start;
