@@ -1,6 +1,6 @@
 <template>
   <div class="spotlight inner">
-
+    
   </div>
 </template>
 

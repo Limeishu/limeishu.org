@@ -9,7 +9,7 @@
         <img src="./assets/images/icons/logo-min.svg" alt="李梅樹紀念館 Logo">
         <h1 class="ming">{{ slogen[language] }}</h1>
       </div>
-      <Navbar :class="{ 'toggle': device.isMobile ? navbar.opened : (toggle || isChild) }"></Navbar>
+      <Navbar :class="{ 'toggle': device.isMobile ? navbar.opened : toggle, 'is-child': isChild }"></Navbar>
     </header>
     <router-view></router-view>
     <mainFooter></mainFooter>
@@ -34,7 +34,8 @@
           'zh-TW': '用藝術，說土地的故事',
           'en-US': 'Telling the stories of land through art',
           'ja': '芸術からこの地の物語をつむぐ'
-        }
+        },
+        height: 0
       }
     },
     components: {
@@ -59,7 +60,7 @@
       },
       scroll () {
         let scrolled = document.querySelector('#app').getBoundingClientRect().y
-        if (scrolled < -(document.querySelector('#header').clientHeight - 64)) {
+        if (scrolled < this.height) {
           this.toggle = true
         } else {
           this.toggle = false
@@ -68,9 +69,10 @@
       childDetect () {
         if (this.$route.name !== 'Home') {
           this.isChild = true
+          this.height = -64
         } else {
+          this.height = -(document.querySelector('#header').clientHeight - 64)
           this.isChild = false
-          this.toggle = false
         }
       }
     },
