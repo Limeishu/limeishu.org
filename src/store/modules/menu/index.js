@@ -14,7 +14,7 @@ const state = {
         },
         link: 'Home.vue'
       },
-      components: lazyLoader('Home')
+      components: lazyLoader('views/Home')
     },
     {
       name: 'Culture',
@@ -27,7 +27,7 @@ const state = {
         },
         link: 'Culture.vue'
       },
-      components: lazyLoader('Culture'),
+      components: lazyLoader('views/Culture'),
       children: [
         {
           name: 'News',
@@ -38,18 +38,20 @@ const state = {
               'en-US': 'What\'s News',
               'ja': '最新ニュース'
             }
-          }
+          },
+          components: lazyLoader('components/Culture/News')
         },
         {
-          name: 'Reports',
-          path: '/culture/reports',
+          name: 'Report',
+          path: '/culture/report',
           meta: {
             label: {
               'zh-TW': '相關報導',
               'en-US': 'Reports',
               'ja': 'ニュース'
             }
-          }
+          },
+          components: lazyLoader('components/Culture/Report')
         },
         {
           name: 'Mei-shu Month',
@@ -66,7 +68,7 @@ const state = {
           }
         },
         {
-          name: 'Sanxia Master Temple',
+          name: 'Sanxia Zushi Temple',
           path: '/culture/temple',
           meta: {
             label: {
@@ -74,7 +76,8 @@ const state = {
               'en-US': 'Sanxia Zushi Temple',
               'ja': '三峡祖師廟'
             }
-          }
+          },
+          components: lazyLoader('components/Culture/Temple')
         }
       ]
     },
@@ -89,7 +92,7 @@ const state = {
         },
         link: 'About.vue'
       },
-      components: lazyLoader('About'),
+      components: lazyLoader('views/About'),
       children: [
         {
           name: 'About Gallery',
@@ -100,7 +103,8 @@ const state = {
               'en-US': 'Gallery',
               'ja': '記念館について'
             }
-          }
+          },
+          components: lazyLoader('components/About/Gallery')
         },
         {
           name: 'Cooperation',
@@ -111,7 +115,8 @@ const state = {
               'en-US': 'Cooperation',
               'ja': 'ご協力'
             }
-          }
+          },
+          components: lazyLoader('components/About/Cooperation')
         },
         {
           name: 'Privacy Notice',
@@ -122,7 +127,8 @@ const state = {
               'en-US': 'Privacy Notice',
               'ja': 'プライバシー通知'
             }
-          }
+          },
+          components: lazyLoader('components/About/Privacy')
         },
         {
           name: 'Cookie',
@@ -144,7 +150,7 @@ const state = {
         },
         link: 'Intro.vue'
       },
-      components: lazyLoader('About'),
+      components: lazyLoader('views/About'),
       children: [
         {
           name: 'Introduction Article',

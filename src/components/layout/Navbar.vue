@@ -25,7 +25,7 @@
       <div class="parent"><span>{{ item.meta.label[language] || item.name }}</span><font-awesome-icon icon="angle-right" /></div>
       <li v-for="(item, j) in item.children" :key="j" :class="{ 'active': selected[1] === j }">
         <router-link :to="item.path">
-          <span class="uppercase">{{ item.meta.label[language] || item.name }}</span>
+          <span>{{ item.meta.label[language] || item.name }}</span>
         </router-link>
       </li>
     </div>

@@ -189,7 +189,7 @@
       grid-template-areas:
         "parent parent  parent  parent"
         "active child-0 child-1 child-2";
-      grid-template-columns: auto .15fr .15fr .15fr;
+      grid-template-columns: auto .2fr .2fr .2fr;
       grid-template-rows: 1fr 26pt;
       .parent {
         display: flex;
@@ -204,13 +204,15 @@
       }
       li {
         list-style: none;
-        font-size: 10pt;
+        font-size: 9pt;
+        letter-spacing: 1px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
         height: 26pt;
         a {
+          text-align: center;
           color: inherit;
           text-decoration: none;
         }
