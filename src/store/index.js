@@ -8,6 +8,7 @@ import mutations    from './mutation-types'
 import app          from './modules/app'
 import menu         from './modules/menu'
 import news         from './modules/news'
+import docs         from './modules/docs'
 
 Vue.use(Vuex)
 
@@ -16,7 +17,8 @@ const store = new Vuex.Store({
   modules: {
     app,
     menu,
-    news
+    news,
+    docs
   },
   state: {
     user: {},
