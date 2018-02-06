@@ -107,3 +107,49 @@
     }
   }
 }
+
+.paragraph {
+  width: 720px;
+  h1 {
+    margin: 3rem 0 1rem 0;
+    font-weight: 500;
+  }
+  p, ul {
+    margin: 1rem 0;
+    line-height: 1.6;
+    font-size: 12pt;
+    color: $content;
+  }
+  p {
+    text-indent: 25pt;
+  }
+  ul {
+    background-color: $light;
+    padding: 1rem;
+    border-radius: 2pt;
+    li {
+      text-indent: 0;
+      list-style: disc;
+      margin: 0 0 1rem 1rem;
+      line-height: 1.6;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  h2 {
+    position: relative;
+    padding-left: 2rem;
+    margin: 2rem 0 1rem 0;
+    font-weight: 500;
+    &:before {
+      pointer-events: none;
+      transform: translateX(-2rem);
+      color: $tone;
+      content: "#";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
