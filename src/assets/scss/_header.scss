@@ -79,9 +79,9 @@
       font-weight: 800;
       margin: 1rem 1.3rem;
       /* #REGIN RWD for 5.5' mobile display: template: iPhone 6s Plus */
-      @media screen and (max-width: 414px) {
+      @media screen and (max-width: 768px) {
         font-size: 14pt;
-        margin: .5rem .8rem;
+        margin: 1.2rem .8rem;
       }
       /* #ENDREGIN */
     }
@@ -93,6 +93,7 @@
         grid-area: banner;
         position: absolute;
         transform: scale(2) translate(25%, 20%);
+        text-align: right;
         /* #REGIN RWD for 5.5' mobile display: template: iPhone 6s Plus */
         @media screen and (max-width: 414px) {
           transform: translateX(-1.75rem);
