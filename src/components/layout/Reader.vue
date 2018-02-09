@@ -1,6 +1,6 @@
 <template>
   <div class="spotlight inner">
-    <div class="reader" v-html="news.paragraph">
+    <div class="reader paragraph" v-html="news.paragraph">
     </div>
   </div>
 </template>
