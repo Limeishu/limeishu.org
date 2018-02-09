@@ -58,6 +58,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 720px;
+  justify-content: center;
   .card {
     display: flex;
     flex-direction: column;
@@ -114,6 +115,9 @@
   max-width: 720px;
   @media screen and (max-width: 768px) {
     padding: 1.2rem;
+  }
+  img {
+    width: 100%;
   }
   h1 {
     margin: 3rem 0 1rem 0;
