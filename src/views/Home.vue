@@ -135,40 +135,45 @@
     <div class="spotlight bg-gray half">
       <div class="list" v-show="language === 'zh-TW'">
         <h1>參觀須知</h1>
-        <li>本館採收費參觀制，清潔費每位100元、敬老/學生/軍警每位80元、嬰幼兒免費。</li>
-        <li>開放參觀時間:每週六、日，10:00AM ~ 05:00PM。其餘時段，歡迎團體預約參觀。(團體預約參觀時間，可提早自上午九點開始，詳情請洽詢本館)</li>
-        <li>可安排團體導覽三峽祖師廟、李梅樹紀念館、三峽老街及海山學文物展覽館，共需時約三小時。(若要參觀海山學文物展覽館，需提前兩週預約)</li>
-        <li>額外行程視情況酌收額外導覽費。</li>
-        <li>入館參觀請勿攝影，請勿飲食，請勿吸煙。</li>
-        <li>未滿12歲兒童請由家長陪伴參觀。</li>
-        <p>其他參觀細則請洽
-          <a href="tel:0226732333">(02)2673-2333</a> 或 E-mail :
-          <a href="malito:limeishu@gmail.com">limeishu@gmail.com</a>
-        </p>
+        <ul>
+          <li>本館採收費參觀制，清潔費每位100元、敬老/學生/軍警每位80元、嬰幼兒免費。</li>
+          <li>開放參觀時間:每週六、日，10:00AM ~ 05:00PM。其餘時段，歡迎團體預約參觀。(團體預約參觀時間，可提早自上午九點開始，詳情請洽詢本館)</li>
+          <li>可安排團體導覽三峽祖師廟、李梅樹紀念館、三峽老街及海山學文物展覽館，共需時約三小時。(若要參觀海山學文物展覽館，需提前兩週預約)</li>
+          <li>額外行程視情況酌收額外導覽費。</li>
+          <li>入館參觀請勿攝影，請勿飲食，請勿吸煙。</li>
+          <li>未滿12歲兒童請由家長陪伴參觀。</li>
+          <p>其他參觀細則請洽
+            <a href="tel:0226732333">(02)2673-2333</a> 或 E-mail :
+            <a href="malito:limeishu@gmail.com">limeishu@gmail.com</a>
+          </p>
+        </ul>
       </div>
       <div class="list" v-show="language === 'en-US'">
         <h1>Instructions for Visit</h1>
-        <li>The gallery admission charges each person with a cleaning fee of NT100 and NT80 for elderly/student/military and police. The gallery admission for infants and babies are free.</li>
-        <li>Opening hours for visits are Saturdays and Sundays, from 10:00AM to 05:00PM. In other times, group reservation for visit is encouraged (The visit time for group reservation starts as early at 9A.M. Please consult with the gallery for more information).</li>
-        <li>A group tour on Sanxia Zushi Temple, Li Mei-Shu Memorial Gallery, Sanxia Old Street, and Center for Haishan Research can be arranged for a total of 3 hours. (Visit to Center for Haishan Research requires reservation in two weeks in advance).</li>
-        <li>Additional itinerary might charge additional guide fees depending on the situation.</li>
-        <li>入Do not film the gallery when admitted for visit. Food, drinks and smoking are prohibited.</li>
-        <li>Children visiting under 12 years old require the company of parents.</li>
-        <p>Please contact
-          <a href="tel:0226732333">(02)2673-2333</a> or E-mail :
-          <a href="malito:limeishu@gmail.com">limeishu@gmail.com</a>for more information on the visit.
-        </p>
+        <ul>
+          <li>The gallery admission charges each person with a cleaning fee of NT100 and NT80 for elderly/student/military and police. The gallery admission for infants and babies are free.</li>
+          <li>Opening hours for visits are Saturdays and Sundays, from 10:00AM to 05:00PM. In other times, group reservation for visit is encouraged (The visit time for group reservation starts as early at 9A.M. Please consult with the gallery for more information).</li>
+          <li>A group tour on Sanxia Zushi Temple, Li Mei-Shu Memorial Gallery, Sanxia Old Street, and Center for Haishan Research can be arranged for a total of 3 hours. (Visit to Center for Haishan Research requires reservation in two weeks in advance).</li>
+          <li>Additional itinerary might charge additional guide fees depending on the situation.</li>
+          <li>入Do not film the gallery when admitted for visit. Food, drinks and smoking are prohibited.</li>
+          <li>Children visiting under 12 years old require the company of parents.</li>
+            <p>Please contact
+              <a href="tel:0226732333">(02)2673-2333</a> or E-mail :
+              <a href="malito:limeishu@gmail.com">limeishu@gmail.com</a>for more information on the visit.
+            </p>
+        </ul>
       </div>
       <div class="list" v-show="language === 'ja'">
         <h1>参観案内</h1>
-        <li>本館は有料参観制で、清掃費として以下の料金を頂いております。一般 NTD 100元、敬老／学生／軍警 NTD 80元、乳幼児無料。</li>
-        <li>開館時間:毎週土・日祝、午前10:00-午後5:00。その他の時間については、団体予約による参観をお待ちしています。(団体予約の参観時間は午前9時開始も可能です。詳細は本館にお問合せ下さい。)</li>
-        <li>三峡祖師廟、李梅樹記念館、三峡老街、海山学文物展覧館の団体ガイドツアーを組むことも可能です。総時間は約三時間です。(海山学文物展覧館の参観をご希望の場合は、二週間前までにご予約下さい。)</li>
-        <li>これ以外のコースについては、状況により追加ガイド費を徴収する場合があります。</li>
-        <li>入館時における、写真撮影・飲食・喫煙はご遠慮下さい。</li>
-        <li>12歳未満の児童の参観には、保護者の方の付き添いが必要です。</li>
-        <p>その他、参観に関することについては、こちらまでお問合せ下さい。<br>電話 : <a href="tel:0226732333">(02)2673-2333</a>、E-mail : <a href="malito:limeishu@gmail.com">limeishu@gmail.com</a>
-        </p>
+        <ul>
+          <li>本館は有料参観制で、清掃費として以下の料金を頂いております。一般 NTD 100元、敬老／学生／軍警 NTD 80元、乳幼児無料。</li>
+          <li>開館時間:毎週土・日祝、午前10:00-午後5:00。その他の時間については、団体予約による参観をお待ちしています。(団体予約の参観時間は午前9時開始も可能です。詳細は本館にお問合せ下さい。)</li>
+          <li>三峡祖師廟、李梅樹記念館、三峡老街、海山学文物展覧館の団体ガイドツアーを組むことも可能です。総時間は約三時間です。(海山学文物展覧館の参観をご希望の場合は、二週間前までにご予約下さい。)</li>
+          <li>これ以外のコースについては、状況により追加ガイド費を徴収する場合があります。</li>
+          <li>入館時における、写真撮影・飲食・喫煙はご遠慮下さい。</li>
+          <li>12歳未満の児童の参観には、保護者の方の付き添いが必要です。</li>
+          <p>その他、参観に関することについては、こちらまでお問合せ下さい。<br>電話 : <a href="tel:0226732333">(02)2673-2333</a>、E-mail : <a href="malito:limeishu@gmail.com">limeishu@gmail.com</a></p>
+        </ul>
       </div>
     </div>
     <div class="spotlight bg-light">
