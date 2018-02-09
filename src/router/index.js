@@ -17,6 +17,10 @@ const router =  new Router({
       name: 'Error',
       path: '/error/:status',
       component: (resolve) => { require(['@/components/layout/Error.vue'], resolve) }
+    },
+    {
+      path: '*',
+      redirect: '/error/404'
     }
   ]
 })
