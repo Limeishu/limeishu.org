@@ -57,11 +57,12 @@
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  width: 720px;
+  max-width: 720px;
   .card {
     display: flex;
     flex-direction: column;
     width: calc(50% - 8pt);
+    min-width: 320px;
     margin: 4pt;
     position: relative;
     box-shadow: 1pt 1pt 2pt rgba($black, .5);
@@ -109,7 +110,10 @@
 }
 
 .paragraph {
-  width: 720px;
+  max-width: 720px;
+  @media screen and (max-width: 768px) {
+    padding: 1.2rem;
+  }
   h1 {
     margin: 3rem 0 1rem 0;
     font-weight: 500;
@@ -158,7 +162,7 @@
 }
 
 .timeline-container {
-  width: 720px;
+  max-width: 720px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -167,6 +171,10 @@
     flex-direction: row;
     position: relative;
     width: 100%;
+    overflow: hidden;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
     &:nth-child(odd) {
       background-color: rgba($tone, .1)
     }
@@ -176,6 +184,11 @@
       padding: .5rem;
       display: flex;
       justify-content: flex-end;
+      @media screen and (max-width: 768px) {
+        justify-content: flex-start;
+        width: auto;
+        padding: 0 1.5rem;
+      }
       span {
         line-height: 1.6;
       }
@@ -186,6 +199,9 @@
       display: flex;
       flex-direction: column;
       padding: 0 1.5rem;
+      @media screen and (max-width: 768px) {
+        width: auto;
+      }
       &:before {
         top: calc(6px + .5rem);
         border: 6px solid $tone;
@@ -193,6 +209,10 @@
         position: absolute;
         border-radius: 50%;
         transform: translateX(calc(-100% - 1.5rem / 2));
+        @media screen and (max-width: 768px) {
+          top: 7px;
+          transform: translateX(calc(-100% - 7px));
+        }
       }
       &:after {
         border: 1px solid $tone;
@@ -200,6 +220,9 @@
         position: absolute;
         transform: translateX(calc(-1.5rem + 5px));
         height: 100%;
+        @media screen and (max-width: 768px) {
+          transform: translateX(calc(-100% - 12px));
+        }
       }
       h3 {
         margin: .5rem 0;

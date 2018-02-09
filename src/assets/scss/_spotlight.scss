@@ -91,5 +91,9 @@
   &.inner {
     padding-top: 4rem;
     min-height: calc(100vh - 4rem);
+    @media screen and (max-width: 768px) {
+      padding-top: 0;
+      min-height: calc(100vh);
+    }
   }
 }
