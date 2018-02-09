@@ -12,6 +12,11 @@ const router =  new Router({
       name: 'News',
       path: '/culture/news/:id',
       component: (resolve) => { require(['@/components/layout/Reader.vue'], resolve) }
+    },
+    {
+      name: 'Error',
+      path: '/error/:status',
+      component: (resolve) => { require(['@/components/layout/Error.vue'], resolve) }
     }
   ]
 })

@@ -240,3 +240,29 @@
     }
   }
 }
+
+.error {
+  z-index: 10000;
+  display: flex;
+  height: 70vh;
+  width: 100%;
+  background-image: url('https://limeishu.org.tw/images/404.jpg');
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  .msg {
+    color: $white;
+    text-align: center;
+    filter: drop-shadow(0 0 5pt rgba($black, 1));
+    h1 {
+      line-height: 32pt;
+      font-size: 150pt;
+      span {
+        font-size: 32pt;
+      }
+    }
+    p {
+      font-size: 18pt;
+    }
+  }
+}
