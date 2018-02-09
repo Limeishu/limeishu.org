@@ -150,7 +150,7 @@ const state = {
         },
         link: 'Intro.vue'
       },
-      components: lazyLoader('views/About'),
+      components: lazyLoader('views/Intro'),
       children: [
         {
           name: 'Introduction Article',
@@ -161,7 +161,8 @@ const state = {
               'en-US': 'Introduction to Artist',
               'ja': '画家の紹介'
             }
-          }
+          },
+          components: lazyLoader('components/Intro/Article')
         },
         {
           name: 'Personal Statement of the Artist',
@@ -172,7 +173,8 @@ const state = {
               'en-US': 'Personal Statement',
               'ja': '画家の言葉'
             }
-          }
+          },
+          components: lazyLoader('components/Intro/Statement')
         },
         {
           name: 'History',
@@ -183,7 +185,8 @@ const state = {
               'en-US': 'Annual Chronicles',
               'ja': '画家年表'
             }
-          }
+          },
+          components: lazyLoader('components/Intro/History')
         }
       ]
     },
