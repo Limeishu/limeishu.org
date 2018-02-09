@@ -32,7 +32,7 @@
         <p>此外，熱心公益的李梅樹教授，於1935至1958年間，陸續以三峽街庄協議員，縣議員等身分服務鄉里。日後並於藝專(現國立台灣藝術學院)、文化、師大等校任教。終其一生，李氏身兼藝術家，教育家，政治家與廟宇建築家，81年多采多姿的藝術生涯，在台灣美術史上寫下燦爛傳奇的一頁。</p>
         <p>本館除了展出李梅樹教授不同時期的畫作，另一方面，李梅樹生前的書信文件，畫具和畫稿等，也於館內的文物陳列室一一展出；期盼透過本館的展覽，不僅使參觀者得以體會藝術家創作生涯的心路歷程，更能進一步明瞭，李梅樹的一生正是台灣美術走向本土化的縮影。</p>
         <p>期盼透過本館的展覽，不僅使參觀者得以體會藝術家創作生涯的心路歷程，更能進一步明瞭，李梅樹的一生正是台灣美術走向本土化的縮影。</p>
-        <router-link to="/about" class="button">
+        <router-link to="/about/gallery" class="button">
           <span>了解更多</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
@@ -59,7 +59,7 @@
           and sketches before Li’s death, were also displayed at the cultural display room of the gallery.</p>
         <p>The gallery expects to help visitors experience the course of the creation career as an artist through the exhibition
           but also further understand the life of Li Mei-Shu was a miniature of the progress of Taiwan’s art towards localization.</p>
-        <router-link to="/about" class="button">
+        <router-link to="/about/gallery" class="button">
           <span>Read More</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
@@ -72,7 +72,7 @@
         <p>また、公共活動にも熱心であった李梅樹は、1935年から1958年の間、三峡街庄協議員、県議員等の役職に就いて郷里のために尽くしました。その後、国立台湾芸術専科学校(現在の国立台湾芸術大学)、文化大学、師範大学でも教壇に立ちました。その一生に渡って、李梅樹は芸術家・教育家・政治家・寺廟建築家といった身分を兼ね備え、81年間の多彩で多様なその芸術の生涯は、台湾美術史上において輝かしい一ページを残しました。</p>
         <p>本館では李梅樹の様々な時期の作品を展示しているほか、李梅樹の生前の書簡、絵画道具、画稿などを館内の文物陳列室にともに展示しています。</p>
         <p>本館の展示を通じ、ご来館の皆様にこの芸術家の画家人生における心の旅路を感じて頂くとともに、李梅樹の一生が台湾美術の本土化への縮図であったことを理解して頂くことを願っております。</p>
-        <router-link to="/about" class="button">
+        <router-link to="/about/gallery" class="button">
           <span>詳細</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
@@ -83,7 +83,7 @@
       <div class="content" v-show="language === 'zh-TW'">
         <h1>認識李梅樹</h1>
         <p>李梅樹（1902～1983）早年就讀總督府國語學校師範部，深受西洋繪畫的薰染，習畫的意念油然興起。早期畫作1927《靜物》；1928《三峽的町裡》先後入選第一、二屆臺展。1928年赴東京，奔波習畫於川端、同舟社及本鄉三個繪畫研究所。翌年，通過東京美術學校（東京藝大前身）入學試，師事畫壇大師長原孝太郎、小林萬吾及岡田三郎助等，奠定其後寫實風格的深厚基礎。1934年與友陳澄波、顏水龍、楊三郎、廖繼春、陳清汾、李石樵、立石鐵臣共創《臺陽美術協會》。1935年《小憩之女》獲第九屆臺展特選第一席，受頒「臺灣總督獎」。1939年，《紅衣》入選第三屆文展（原日本帝展）。1940年《花與女》入選第四屆文展（奉祝展），自此奠定其為臺灣傑出之西洋美術家的歷史地位。1946年應聘首屆省展審查委員，參展之《星期日》由省府購呈蔣總統。1948年《黃昏》、《郊遊》等大幅畫作被視為具代表性之作品。1945年臺灣光復後，除涉足三峽地方政治，並於1947年受公推主持長福巖清水祖師廟重建工作。此後畫作題材、風格日益趨向鄉土寫實，表現其特立獨行，傲視群倫的大家風範。1962年以後歷任文化大學、國立藝專、師大等美術教授、主任等教職。指導藝專等雕塑科學生參與三峽祖師廟金屬浮雕工程，將學院專業技藝投注於傳統寺廟建築實務中，乃臺灣藝術教育史之創舉。李教授對美術教育推廣的貢獻，除學院正規教育外，並以嚴謹、精湛的美學素養，指導祖師廟聘請的諸多傳統木石雕刻師，造就祖師廟成為雕刻精品推砌而成的「東方藝術殿堂」，為臺灣現代寺廟建築的經典名作。晚年受美術界推選歷任油畫學會理事長、美協理事長、油畫學會榮譽理事長等崇高之職位。</p>
-        <router-link to="/intro" class="button">
+        <router-link to="/intro/statement" class="button">
           <span>了解更多</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
@@ -118,7 +118,7 @@
           and Zushi Temple became the classic masterpiece of modern temple building in Taiwan. In his late years, he was
           recommended by the Art Industry and selected as the Oil Painting Association Director, Art Association Director,
           Oil Painting Association Honorary Director, and may esteemed positions. </p>
-        <router-link to="/intro" class="button">
+        <router-link to="/intro/statement" class="button">
           <span>Read More</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
@@ -126,7 +126,7 @@
       <div class="content" v-show="language === 'ja'">
         <h1>画家の紹介</h1>
         <p>李梅樹（1902～1983）は、早年に総督府国語学校師範部に学び、そこで西洋絵画の薫陶を受けて、絵画を学びたいという願いが湧き起こりました。初期の作品である1927年の《静物》、1928年の《三峡の町裏》は、第一回、第二回台湾美術展覧会にそれぞれ入選。1928年には東京に渡り、川端美術学校、同舟社、本郷美術学校の三ヵ所の絵画研究所で絵を学びました。翌年、東京美術学校（東京芸大の前身）の入学試験に合格し、長原孝太郎、小林萬吾、岡田三郎助ら当時の画壇の重鎮に師事、その後に続く写実的スタイルの基礎を固めました。1934年に友人の陳澄波、顔水龍、楊三郎、廖継春、陳清汾、李石樵、立石鉄臣らとともに「台陽美術協会」を創設。1935年に《憩ふ女》が第九回台展の特選第一等となり、「台湾総督賞」を受賞します。1939年には、《赤い衣》が日本で第三回新文展に入選、1940年に《花と女》が第三回新文展（奉祝展）に入選するなど、以後台湾の優れた西洋美術家としての歴史地位を確かなものとしました。1946年、第一回台湾省美術展覧会の審査委員となり、出品した《星期日（日曜日）》は台湾省政府から蒋介石総統に贈呈されました。1948年の《黄昏》、《郊遊（ピクニック）》といった大作は、画家の代表作とされています。1945年の台湾光復後、三峡の地方政治に足を踏み入れたほか、1947年には長福巌清水祖師廟再建工事の責任者に推挙されました。その後から、作品の題材やスタイルはしだいに郷土の写実へと向かい、その表現は独自の道を歩み、傑出した大家としての風格を帯びて行きます。1962年以後は、文化大学、国立芸術専科学校、師範大学などの美術教授や主任などの教職を歴任。芸専等の雕塑科学生を指導して三峡祖師廟の金属浮雕工事に参加させ、アカデミックな専門技術を伝統寺廟建築の現場に投入したことは、台湾芸術教育史において初めての試みでした。李梅樹による美術教育推進への貢献は、大学での正規教育以外にも、厳粛で精緻な美的素養でもって、祖師廟に招いた多くの伝統的木彫・石彫師らを指導し、祖師廟は彫刻の名品がつまった「東方芸術の殿堂」へと作り上げられ、現代台湾寺廟建築の古典的名作となりました。晩年には、美術界からの推薦により、油画学会理事長、美協理事長、油画学会栄誉理事長等の職を歴任しました。</p>
-        <router-link to="/intro" class="button">
+        <router-link to="/intro/statement" class="button">
           <span>詳細</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
