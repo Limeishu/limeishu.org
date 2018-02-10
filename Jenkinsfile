@@ -18,13 +18,13 @@ node {
 
   stage('Push'){
 		echo 'Connecting to the server.'
-		sh "scp -r -P 2047 $WORKSPACE/package.zip www@172.104.117.236:/home/www/webserver/v2/webroot"
+		sh "scp -r -P 2047 $WORKSPACE/package.zip www@172.104.117.236:/home/www/webserver/v2/beta"
 	}
 
 	stage('Deploy'){
     echo 'Connecting to the server.'
     sh "ssh www@172.104.117.236 -p 2047 '\
-          cd /home/www/webserver/v2/webroot; \
+          cd /home/www/webserver/v2/beta; \
           unzip -o package.zip; \
           ls -lah; \
           npm install; \
