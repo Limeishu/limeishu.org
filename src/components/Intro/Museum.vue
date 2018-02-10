@@ -7,7 +7,7 @@
           <h2>{{ creation.name }}</h2>
         </div>
         <div class="content">
-          <span class="date">{{ new Date(creation.date).toLocaleDateString() }}</span>
+          <span class="date">{{ `${creation.date}, ${creation.meta.type} ${creation.meta['size-cm']}` }}</span>
           <p>{{ `${creation.content[language][0].substring(0, 50)}...` }}</p>
           <router-link :to="`/intro/museum/${creation._id}`" class="button">
             <span>詳細內容</span>
