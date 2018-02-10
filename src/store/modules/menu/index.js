@@ -178,7 +178,7 @@ const state = {
         },
         {
           name: 'History',
-          path: '/about/history',
+          path: '/intro/history',
           meta: {
             label: {
               'zh-TW': '年度大記事',
