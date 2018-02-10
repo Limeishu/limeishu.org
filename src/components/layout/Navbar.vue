@@ -21,7 +21,7 @@
         </ul>
       </li>
     </ul>
-    <div class="page-nav" v-for="(item, i) in menu" :key="i" v-if="selected[0] === i && item.children && !device.isMobile">
+    <div class="page-nav" v-for="(item, i) in menu" :key="i" v-if="selected[0] === i && item.children && !device.isMobile && $route.name !== 'Error'">
       <div class="parent"><span>{{ item.meta.label[language] || item.name }}</span><font-awesome-icon icon="angle-right" /></div>
       <li v-for="(item, j) in item.children" :key="j" :class="{ 'active': selected[1] === j }">
         <router-link :to="item.path">
