@@ -8,6 +8,8 @@ export const LANGUAGE  = 'LANGUAGE'
 
 export const NEWS = 'NEWS'
 
+export const CREATION = 'CREATION'
+
 export default {
   SET_USER: (state, user) => {
     state.user = user

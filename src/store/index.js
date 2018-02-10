@@ -9,6 +9,7 @@ import app          from './modules/app'
 import menu         from './modules/menu'
 import news         from './modules/news'
 import docs         from './modules/docs'
+import creation     from './modules/creation'
 
 Vue.use(Vuex)
 
@@ -18,7 +19,8 @@ const store = new Vuex.Store({
     app,
     menu,
     news,
-    docs
+    docs,
+    creation
   },
   state: {
     user: {},

@@ -178,7 +178,7 @@ const state = {
         },
         {
           name: 'History',
-          path: '/about/history',
+          path: '/intro/history',
           meta: {
             label: {
               'zh-TW': '年度大記事',
@@ -187,6 +187,18 @@ const state = {
             }
           },
           components: lazyLoader('components/Intro/History')
+        },
+        {
+          name: 'Museum',
+          path: '/intro/museum',
+          meta: {
+            label: {
+              'zh-TW': '線上美術館',
+              'en-US': 'Online Museum',
+              'ja': 'デジタル美術館'
+            }
+          },
+          components: lazyLoader('components/Intro/Museum')
         }
       ]
     },

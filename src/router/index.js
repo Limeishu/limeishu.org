@@ -18,6 +18,11 @@ const router =  new Router({
       component: (resolve) => { require(['@/components/layout/Reader.vue'], resolve) }
     },
     {
+      name: 'Museum',
+      path: '/intro/museum/:id',
+      component: (resolve) => { require(['@/components/layout/CreationView.vue'], resolve) }
+    },
+    {
       name: 'Error',
       path: '/error/:status',
       component: (resolve) => { require(['@/components/layout/Error.vue'], resolve) }
