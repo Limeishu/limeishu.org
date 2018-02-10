@@ -59,11 +59,11 @@ Vue.use(VueCookie)
 
 Vue.use(VueAnalytics, {
   // [Required] The name of your app as specified in Google Analytics.
-  appName: 'Beta',
+  appName: 'limeishu.org',
   // [Required] The version of your app.
-  appVersion: 'v1.0.0',
+  appVersion: 'v2.0.0',
   // [Required] Your Google Analytics tracking ID.
-  trackingId: 'UA-97328395-2',
+  trackingId: 'UA-97328395-1',
   // If you're using vue-router, pass the router instance here.
   vueRouter: router
 })
