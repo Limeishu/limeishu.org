@@ -1,7 +1,0 @@
-{
-  "apps": [{
-    "name": "Beta-LMS-Webroot",
-    "script": "./server/index.js",
-    "watch": true
-  }]
-}
