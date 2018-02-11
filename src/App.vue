@@ -49,7 +49,10 @@
       this.childDetect()
       this.changeBanner()
       window.addEventListener('scroll', this.scroll)
-      this.toggleDevice(document.querySelector('#app').offsetWidth <= 768 ? 'mobile' : null)
+      window.onresize = () => {
+        this.rwdDetect()
+      }
+      this.rwdDetect()
     },
     methods: {
       ...mapActions(['toggleDevice', 'toggleNavbar']),
@@ -57,6 +60,9 @@
         setInterval(() => {
           this.bannerAt++
         }, 5000)
+      },
+      rwdDetect () {
+        this.toggleDevice(document.querySelector('#app').offsetWidth <= 768 ? 'mobile' : null)
       },
       scroll () {
         let scrolled = document.querySelector('#app').getBoundingClientRect().y
