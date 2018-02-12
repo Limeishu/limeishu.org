@@ -22,7 +22,8 @@ const actions = {
     if (state.news.length > 0) {
       return state.news
     }
-    const res = await axios.get('https://api.limeishu.org.tw/news')
+    let res = await axios.get('https://api.limeishu.org.tw/news')
+    res.data.data.sort((a, b) => { return new Date(a.date).getTime() - new Date(b.date).getTime() }).reverse()
     commit(types.NEWS, res.data)
     return res.data.data
   },
