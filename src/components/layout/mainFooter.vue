@@ -97,9 +97,9 @@ export default {
         ]
       },
       copyright: {
-        'zh-TW': `<p>© 1995 - ${new Date().getFullYear()} 李梅樹紀念館</p><p>本著作係採用 <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/beta/LICENSE" target="_blank">MIT 授權條款</a> 授權.</p><p>我們推薦使用 <a href="https://www.mozilla.org/firefox/new/" target="_blank">Firefox Quantum</a> 瀏覽以獲得更好的瀏覽體驗。</p>`,
-        'en-US': `<p>© 1995 - ${new Date().getFullYear()} Li Mei-shu Memorial Gallery</p><p>This work is licensed under the <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/beta/LICENSE" target="_blank">MIT License</a>.</p><p>We recommend <a href="https://www.mozilla.org/firefox/new/" target="_blank">Firefox Quantum</a> for a better browsing experience.</p>`,
-        'ja': `<p>© 1995 - ${new Date().getFullYear()} 李梅樹記念館</p><p>この作品は、<a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/beta/LICENSE" target="_blank">MIT ライセンス</a> の下でライセンスされています。</p><p>より良いブラウジングエクスペリエンスのために <a href="https://www.mozilla.org/firefox/new/" target="_blank">Firefox Quantum</a> をお勧めします。</p>`
+        'zh-TW': `<p>© 1995 - ${new Date().getFullYear()} 李梅樹紀念館</p><p>本著作係採用 <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/beta/LICENSE" target="_blank">MIT 授權條款</a> 授權.</p><p>我們推薦使用 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 瀏覽以獲得更好的瀏覽體驗。</p>`,
+        'en-US': `<p>© 1995 - ${new Date().getFullYear()} Li Mei-shu Memorial Gallery</p><p>This work is licensed under the <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/beta/LICENSE" target="_blank">MIT License</a>.</p><p>We recommend <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> for a better browsing experience.</p>`,
+        'ja': `<p>© 1995 - ${new Date().getFullYear()} 李梅樹記念館</p><p>この作品は、<a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/beta/LICENSE" target="_blank">MIT ライセンス</a> の下でライセンスされています。</p><p>より良いブラウジングエクスペリエンスのために <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> をお勧めします。</p>`
       }
     }
   },
