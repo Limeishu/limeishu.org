@@ -131,6 +131,9 @@
   }
   p {
     text-indent: 25pt;
+    >a {
+      margin: 0;
+    }
   }
   ul {
     background-color: $light;
