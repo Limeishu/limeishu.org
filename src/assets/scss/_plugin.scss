@@ -135,6 +135,9 @@
       margin: 0;
     }
   }
+  p > img {
+    transform: translateX(-25pt);
+  }
   ul {
     background-color: $light;
     padding: 1rem;
