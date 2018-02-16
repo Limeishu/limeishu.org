@@ -28,6 +28,11 @@ const router =  new Router({
       component: (resolve) => { require(['@/components/layout/Error.vue'], resolve) }
     },
     {
+      name: 'News',
+      path: '/culture/news/:id/index.html',
+      component: (resolve) => { require(['@/components/layout/Reader.vue'], resolve) }
+    },
+    {
       path: '*',
       redirect: '/error/404'
     }
