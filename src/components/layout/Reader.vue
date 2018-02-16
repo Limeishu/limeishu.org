@@ -26,6 +26,10 @@
           if (res.data) {
             this.news = res.data
             document.title = `${this.news.title} - 李梅樹紀念館`
+            let head = document.querySelectorAll('head>meta')
+            head[4].content = res.data.content
+            head[5].content = document.title
+            head[8].content = res.data.meta.image
           } else {
             this.$router.push(`/error/${res.code}`)
           }
