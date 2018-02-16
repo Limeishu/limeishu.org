@@ -87,6 +87,7 @@
         this.childDetect()
         this.toggleNavbar({ opened: false })
         window.scrollTo(0, 0)
+        document.title = `${route.meta.label ? route.meta.label[this.language] + ' - ' : ''}李梅樹紀念館`
       },
       language () {
         this.$ua.changeSessionLanguage(this.language)

@@ -33,6 +33,7 @@
         try {
           const res = await this.getCreationByID(this.$route.params.id)
           this.creation = res.data
+          document.title = `${this.creation.name} - 李梅樹紀念館`
         } catch (err) {
           console.log(new Error(err))
         }

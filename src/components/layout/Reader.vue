@@ -24,6 +24,7 @@
         try {
           const res = await this.getNewsByID(this.$route.params.id)
           this.news = res.data
+          document.title = `${this.news.title} - 李梅樹紀念館`
         } catch (err) {
           console.log(new Error(err))
         }
