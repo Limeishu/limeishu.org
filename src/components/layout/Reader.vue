@@ -23,8 +23,12 @@
       async getNews () {
         try {
           const res = await this.getNewsByID(this.$route.params.id)
-          this.news = res.data
-          document.title = `${this.news.title} - 李梅樹紀念館`
+          if (res.data) {
+            this.news = res.data
+            document.title = `${this.news.title} - 李梅樹紀念館`
+          } else {
+            this.$router.push(`/error/${res.code}`)
+          }
         } catch (err) {
           console.log(new Error(err))
         }

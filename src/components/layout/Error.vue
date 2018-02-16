@@ -1,6 +1,6 @@
 <template>
   <div class="error">
-    <div class="msg" @click="$router.go(-1)">
+    <div class="msg" @click="$router.push('/')">
       <h1>{{ warnMsg[$route.params.status] ? $route.params.status : '!' }}<span>{{ warnMsg[$route.params.status] ? warnMsg[$route.params.status][language][0] : warnMsg['!'][language][0] }}</span></h1>
       <p>{{ warnMsg[$route.params.status] ? warnMsg[$route.params.status][language][1] : warnMsg['!'][language][1] }} <font-awesome-icon icon="angle-right" /></p>
     </div>

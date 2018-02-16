@@ -29,8 +29,17 @@ const actions = {
   },
 
   async getNewsByID ({ commit }, nid) {
-    const res = await axios.get(`https://api.limeishu.org.tw/news/${nid}`)
-    return res.data
+    try {
+      const res = await axios.get(`https://api.limeishu.org.tw/news/${nid}`)
+      if (res.data.result === 0) {
+        return res.data
+      } else {
+        return {code: 404}
+      }
+    } catch (err) {
+      console.log(err)
+      return {code: '!'}
+    }
   }
 
 }
