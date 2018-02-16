@@ -6,29 +6,28 @@ node {
 		checkout scm
 	}
 
-	stage('Prepare'){
+	stage('Build'){
 		echo 'Cleaning old files.'
-		sh "rm -rf package.zip"
-		sh "rm -rf node_modules"
+		sh "cp -f /home/limeishu/jenkins/limeishu.org/config.json ./server/"
     sh "rm -rf .git"
-
+		sh "ls -lah"
+		sh "yarn"
+		sh "yarn run build"
 		echo 'Packing files.'
 		sh "zip -r package.zip ."
 	}
 
-  stage('Push'){
+  stage('Push to Remote Server'){
 		echo 'Connecting to the server.'
-		sh "scp -r -P 2047 $WORKSPACE/package.zip www@172.104.117.236:/home/www/webserver/v2/webroot"
+		sh "scp -r -P 2047 $WORKSPACE/package.zip www@ssh.limeishu.org.tw:/home/www/webserver/v2/webroot"
 	}
 
-	stage('Deploy'){
+	stage('Active Service'){
     echo 'Connecting to the server.'
-    sh "ssh www@172.104.117.236 -p 2047 '\
+    sh "ssh www@ssh.limeishu.org.tw -p 2047 '\
           cd /home/www/webserver/v2/webroot; \
           unzip -o package.zip; \
           ls -lah; \
-          yarn; \
-          yarn run build; \
           pm2 restart startup.json; \
           rm package.zip; \
           ls -lah; \
