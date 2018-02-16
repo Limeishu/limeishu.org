@@ -29,8 +29,17 @@ const actions = {
   },
 
   async getCreationByID ({ commit }, cid) {
-    const res = await axios.get(`https://api.limeishu.org.tw/creation/${cid}`)
-    return res.data
+    try {
+      const res = await axios.get(`https://api.limeishu.org.tw/creation/${cid}`)
+      if (res.data.result === 0) {
+        return res.data
+      } else {
+        return {code: 404}
+      }
+    } catch (err) {
+      console.log(err)
+      return {code: '!'}
+    }
   }
 
 }
