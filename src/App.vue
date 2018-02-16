@@ -104,11 +104,4 @@
 
 <style lang="scss">
 @import "./assets/scss/main.scss";
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('./assets/fonts/fontawesome-webfont.eot');
-  src: url('./assets/fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('./assets/fonts/fontawesome-webfont.woff2') format('woff2'), url('./assets/fonts/fontawesome-webfont.woff') format('woff'), url('./assets/fonts/fontawesome-webfont.ttf') format('truetype'), url('./assets/fonts/fontawesome-webfont.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 </style>
