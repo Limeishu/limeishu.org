@@ -81,6 +81,6 @@ const app = new Vue({
   router,
   store,
   ...App
-}).$mount('#LMS')
+}).$mount('#app')
 
 export { app, router, store, FontAwesome }
