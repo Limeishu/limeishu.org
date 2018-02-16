@@ -19,7 +19,7 @@
               <h2>{{ news.title }}</h2>
               <hr>
               <p>{{ `${news.content.substring(0, 100)}...` }}</p>
-              <router-link :to="`/culture/news/${news._id}`" class="button">
+              <router-link :to="`/culture/news/${news._id}/index.html`" class="button">
                 <span>了解更多</span>
                 <font-awesome-icon icon="angle-right" />
               </router-link>
