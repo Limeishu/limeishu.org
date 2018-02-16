@@ -1,6 +1,6 @@
 node {
 	def app
-	def project_name = 'Beta-Limeishu-Website'
+	def project_name = 'LMS-Website'
 
 	stage('Clone repo'){
 		checkout scm
@@ -27,8 +27,8 @@ node {
           cd /home/www/webserver/v2/webroot; \
           unzip -o package.zip; \
           ls -lah; \
-          npm install; \
-          npm run build; \
+          yarn; \
+          yarn run build; \
           pm2 restart startup.json; \
           rm package.zip; \
           ls -lah; \
