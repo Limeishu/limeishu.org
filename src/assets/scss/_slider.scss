@@ -1,6 +1,7 @@
 .slider-container {
   outline: none;
   margin: 2rem 0;
+  max-width: 100vw;
   .VueCarousel-dot--active .VueCarousel-dot-inner {
     background-color: $tone !important;
   }
@@ -52,7 +53,6 @@
       box-shadow: 0 0 1pt rgba($black, .5);
       margin-bottom: 1rem;
       background-color: $tone;
-      // min-height: 320px;
       &:before {
         content: "";
         display: block;
