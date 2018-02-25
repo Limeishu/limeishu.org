@@ -133,6 +133,9 @@
     >.mobile {
       display: none;
       background-color: $tone;
+      > img {
+        max-height: 15vh;
+      }
       .toggle-btn {
         position: absolute;
         transform: translateX(-4rem);
