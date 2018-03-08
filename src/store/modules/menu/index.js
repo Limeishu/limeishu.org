@@ -48,7 +48,7 @@ const state = {
             label: {
               'zh-TW': '相關報導',
               'en-US': 'Reports',
-              'ja': 'ニュース'
+              'ja': '報道'
             }
           },
           components: lazyLoader('components/Culture/Report')
