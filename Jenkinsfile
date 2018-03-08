@@ -1,6 +1,6 @@
 node {
 	def app
-	def project_name = 'LMS-Website'
+	def project_name = 'Beta-LMS-Website'
 
 	stage('Clone repo'){
 		checkout scm
@@ -8,7 +8,7 @@ node {
 
 	stage('Build'){
 		echo 'Cleaning old files.'
-		sh "cp -f /home/limeishu/jenkins/limeishu.org/config.json ./server/"
+		sh "cp -f /home/limeishu/jenkins/beta/config.json ./server/"
     sh "rm -rf .git"
 		sh "ls -lah"
 		sh "yarn"
@@ -19,13 +19,13 @@ node {
 
   stage('Push to Remote Server'){
 		echo 'Connecting to the server.'
-		sh "scp -r -P 2047 $WORKSPACE/package.zip www@ssh.limeishu.org.tw:/home/www/webserver/v2/webroot"
+		sh "scp -r -P 2047 $WORKSPACE/package.zip www@ssh.limeishu.org.tw:/home/www/webserver/v2/beta"
 	}
 
 	stage('Active Service'){
     echo 'Connecting to the server.'
     sh "ssh www@ssh.limeishu.org.tw -p 2047 '\
-          cd /home/www/webserver/v2/webroot; \
+          cd /home/www/webserver/v2/beta; \
           unzip -o package.zip; \
           ls -lah; \
           pm2 restart startup.json; \
