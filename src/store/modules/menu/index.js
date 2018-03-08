@@ -34,9 +34,9 @@ const state = {
           path: '/culture/news',
           meta: {
             label: {
-              'zh-TW': '最新消息',
-              'en-US': 'What\'s News',
-              'ja': '最新ニュース'
+              'zh-TW': '活動消息',
+              'en-US': 'News',
+              'ja': 'ニュース'
             }
           },
           components: lazyLoader('components/Culture/News')
