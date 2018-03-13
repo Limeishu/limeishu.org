@@ -2,7 +2,7 @@
   <div class="spotlight inner">
     <div class="paragraph" v-if="creation.meta">
       <h1>{{ creation.name }}</h1>
-      <img :src="`https://image.limeishu.org.tw/images/museum/${creation.image}.jpg`" alt="">
+      <img :src="`https://image.limeishu.org.tw/images/museum/${creation.image}.jpg`" :alt="`${creation.name}, 李梅樹`">
       <ul>
         <li>{{ creation.category }}</li>
         <li>{{ `${creation.meta.type} ${creation.meta['size-cm']} (${creation.meta.size})` }}</li>
@@ -34,7 +34,11 @@
           const res = await this.getCreationByID(this.$route.params.id)
           if (res.data) {
             this.creation = res.data
-            document.title = `${this.news.title} - 李梅樹紀念館`
+            document.title = `${this.creation.name} - 李梅樹紀念館`
+            let head = document.querySelectorAll('head>meta')
+            head[4].content = head[10].content = res.data.content[this.language]
+            head[5].content = document.title
+            head[8].content = `https://image.limeishu.org.tw/images/museum/${res.data.image}.jpg`
           } else {
             this.$router.push(`/error/${res.code}`)
           }
