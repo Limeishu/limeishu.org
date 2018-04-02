@@ -109,6 +109,9 @@
       }
       a {
         color: $black;
+        &:hover {
+          text-decoration-line: none;
+        }
       }
     }
   }
