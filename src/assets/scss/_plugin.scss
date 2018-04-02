@@ -107,6 +107,9 @@
       p {
         margin: 8pt 0;
       }
+      a {
+        color: $black;
+      }
     }
   }
 }
@@ -151,6 +154,9 @@
       &:last-child {
         margin-bottom: 0;
       }
+      >a {
+        margin: 0;
+      }
     }
   }
   h2 {
@@ -170,6 +176,12 @@
   }
   a {
     margin-right: 2rem;
+    color: $tone;
+    font-weight: 500;
+    text-decoration-line: none;
+    &:hover {
+      text-decoration-line: underline;
+    }
   }
 }
 
