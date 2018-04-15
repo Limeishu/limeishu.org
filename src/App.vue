@@ -65,7 +65,7 @@
       changeBanner () {
         setInterval(() => {
           this.bannerAt++
-        }, 5000)
+        }, 7500)
       },
       rwdDetect () {
         this.toggleDevice(document.querySelector('#app').offsetWidth <= 768 ? 'mobile' : null)
