@@ -9,6 +9,7 @@
         <li>李梅樹, {{ creation.date }}</li>
       </ul>
       <p v-for="(content, i) in creation.content[language]" :key="i">{{ content }}</p>
+      <p v-if="creation.meta.wikiLink">本畫作同時以 CC BY-SA 4.0 方式授權並分享於維基媒體。<a :href="creation.meta.wikiLink" target="_blank" class="button"><span>點此前往查看</span><font-awesome-icon icon="angle-right" /></a></p>
     </div>
   </div>
 </template>
