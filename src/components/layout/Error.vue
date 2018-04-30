@@ -18,6 +18,11 @@
             'en-US': ['Not Found', 'Sorry, that page does not exist. Go Back'],
             'ja': ['Not Found', 'このページは見つかりませんでした。戻る']
           },
+          '403': {
+            'zh-TW': ['你沒有權限', '迷路了？要不小憩之女我帶你去別的地方看看吧'],
+            'en-US': ['Forbidden', 'Sorry, that page does not exist. Go Back'],
+            'ja': ['禁じられた', 'このページは見つかりませんでした。戻る']
+          },
           '-1': {
             'zh-TW': ['頁面維護中或未建立', '迷路了？要不小憩之女我帶你去別的地方看看吧'],
             'en-US': ['Site Maintenance', 'This page is under maintenance. Go Back'],
