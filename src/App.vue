@@ -17,7 +17,6 @@
 </template>
 
 <script>
-  import asciiArt from './assets/asciiArt'
   import { mapGetters, mapActions } from 'vuex'
   import * as BG from './assets/images/BG'
   import {
@@ -40,7 +39,6 @@
       }
     },
     created () {
-      console.info('%c' + asciiArt, 'color: #cc5757;')
       console.info('%c尼想幹嘛 (ˊ。ω。ˋ)', 'font-size: 100px;')
       console.info('%c李梅樹紀念館資訊組歡迎你的加入！請來信：limeishugallery@gmail.com', 'color: #040487; background-color: #ffffff;')
     },
