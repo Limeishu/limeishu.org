@@ -144,7 +144,6 @@
         <ul>
           <li>本館採收費參觀制，清潔費每位 100 元、敬老 / 學生 / 軍警每位 80 元，身心障礙者及其必要陪伴者一人每人清潔費50元；嬰幼兒免費</li>
           <li>開放參觀時間: 每週六、日，10:00AM ~ 05:00PM。其餘時段，歡迎團體預約參觀（團體預約參觀時間，可提早自上午九點開始，詳情請洽詢本館）</li>
-          <li>可安排團體導覽三峽祖師廟、李梅樹紀念館、三峽老街，共需時約三小時</li>
           <li>額外行程視情況酌收額外導覽費</li>
           <li>入館參觀請勿攝影、飲食、吸煙</li>
           <li>未滿 12 歲兒童請由家長陪伴參觀</li>
@@ -159,7 +158,6 @@
         <ul>
           <li>The gallery admission charges each person with a cleaning fee of NT100 and NT80 for elderly/student/military and police. The gallery admission for infants and babies are free.</li>
           <li>Opening hours for visits are Saturdays and Sundays, from 10:00AM to 05:00PM. In other times, group reservation for visit is encouraged (The visit time for group reservation starts as early at 9A.M. Please consult with the gallery for more information).</li>
-          <li>A group tour on Sanxia Zushi Temple, Li Mei-Shu Memorial Gallery, Sanxia Old Street can be arranged for a total of 3 hours.</li>
           <li>Additional itinerary might charge additional guide fees depending on the situation.</li>
           <li>入Do not film the gallery when admitted for visit. Food, drinks and smoking are prohibited.</li>
           <li>Children visiting under 12 years old require the company of parents.</li>
@@ -174,7 +172,6 @@
         <ul>
           <li>本館は有料参観制で、清掃費として以下の料金を頂いております。一般 NTD 100元、敬老／学生／軍警 NTD 80元、乳幼児無料。</li>
           <li>開館時間:毎週土・日祝、午前10:00-午後5:00。その他の時間については、団体予約による参観をお待ちしています。(団体予約の参観時間は午前9時開始も可能です。詳細は本館にお問合せ下さい。)</li>
-          <li>三峡祖師廟、李梅樹記念館、三峡老街の団体ガイドツアーを組むことも可能です。総時間は約三時間です。</li>
           <li>これ以外のコースについては、状況により追加ガイド費を徴収する場合があります。</li>
           <li>入館時における、写真撮影・飲食・喫煙はご遠慮下さい。</li>
           <li>12歳未満の児童の参観には、保護者の方の付き添いが必要です。</li>
