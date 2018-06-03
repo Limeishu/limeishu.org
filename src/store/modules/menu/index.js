@@ -10,7 +10,8 @@ const state = {
         label: {
           'zh-TW': '首頁',
           'en-US': 'Home',
-          'ja': 'ホーム'
+          'ja': 'ホーム',
+          'ko': '홈'
         },
         link: 'Home.vue'
       },
@@ -23,7 +24,8 @@ const state = {
         label: {
           'zh-TW': '文化活動',
           'en-US': 'Culture',
-          'ja': '文化活動'
+          'ja': '文化活動',
+          'ko': '문화 활동'
         },
         link: 'Culture.vue'
       },
@@ -36,7 +38,8 @@ const state = {
             label: {
               'zh-TW': '活動消息',
               'en-US': 'News',
-              'ja': 'ニュース'
+              'ja': 'ニュース',
+              'ko': '뉴스'
             }
           },
           components: lazyLoader('components/Culture/News')
@@ -48,7 +51,8 @@ const state = {
             label: {
               'zh-TW': '相關報導',
               'en-US': 'Reports',
-              'ja': '報道'
+              'ja': '報道',
+              'ko': '보도'
             }
           },
           components: lazyLoader('components/Culture/Report')
@@ -60,7 +64,8 @@ const state = {
             label: {
               'zh-TW': '梅樹月',
               'en-US': 'Mei-Shu Month',
-              'ja': '梅樹月'
+              'ja': '梅樹月',
+              'ko': '梅樹月'
             }
           },
           beforeEnter: (to, from, next) => {
@@ -74,7 +79,8 @@ const state = {
             label: {
               'zh-TW': '三峽祖師廟',
               'en-US': 'Sanxia Zushi Temple',
-              'ja': '三峡祖師廟'
+              'ja': '三峡祖師廟',
+              'ko': '삼협 소시 묘'
             }
           },
           components: lazyLoader('components/Culture/Temple')
@@ -88,7 +94,8 @@ const state = {
         label: {
           'zh-TW': '關於我們',
           'en-US': 'About',
-          'ja': '私たちに関しては'
+          'ja': '私たちに関しては',
+          'ko': '우리 관해서는'
         },
         link: 'About.vue'
       },
@@ -101,7 +108,8 @@ const state = {
             label: {
               'zh-TW': '關於紀念館',
               'en-US': 'Gallery',
-              'ja': '記念館について'
+              'ja': '記念館について',
+              'ko': '기념관 대해'
             }
           },
           components: lazyLoader('components/About/Gallery')
@@ -113,7 +121,8 @@ const state = {
             label: {
               'zh-TW': '與我們合作',
               'en-US': 'Cooperation',
-              'ja': 'ご協力'
+              'ja': 'ご協力',
+              'ko': '협력'
             }
           },
           components: lazyLoader('components/About/Cooperation')
@@ -125,7 +134,8 @@ const state = {
             label: {
               'zh-TW': '隱私權政策',
               'en-US': 'Privacy Notice',
-              'ja': 'プライバシー通知'
+              'ja': 'プライバシー通知',
+              'ko': '개인 정보 보호 알림'
             }
           },
           components: lazyLoader('components/About/Privacy')
@@ -146,7 +156,8 @@ const state = {
         label: {
           'zh-TW': '認識李梅樹',
           'en-US': 'Li-Mei Shu',
-          'ja': '李梅樹'
+          'ja': '李梅樹',
+          'ko': '李梅 나무'
         },
         link: 'Intro.vue'
       },
@@ -159,7 +170,8 @@ const state = {
             label: {
               'zh-TW': '畫家介紹',
               'en-US': 'Introduction to Artist',
-              'ja': '画家の紹介'
+              'ja': '画家の紹介',
+              'ko': '화가의 소개'
             }
           },
           components: lazyLoader('components/Intro/Article')
@@ -171,7 +183,8 @@ const state = {
             label: {
               'zh-TW': '畫家自述',
               'en-US': 'Personal Statement',
-              'ja': '画家の言葉'
+              'ja': '画家の言葉',
+              'ko': '화가의 말'
             }
           },
           components: lazyLoader('components/Intro/Statement')
@@ -183,7 +196,8 @@ const state = {
             label: {
               'zh-TW': '年度大記事',
               'en-US': 'Annual Chronicles',
-              'ja': '画家年表'
+              'ja': '画家年表',
+              'ko': '화가 연표'
             }
           },
           components: lazyLoader('components/Intro/History')
@@ -195,7 +209,8 @@ const state = {
             label: {
               'zh-TW': '線上美術館',
               'en-US': 'Online Museum',
-              'ja': 'デジタル美術館'
+              'ja': 'デジタル美術館',
+              'ko': '디지털 미술관'
             }
           },
           components: lazyLoader('components/Intro/Museum')
@@ -209,7 +224,8 @@ const state = {
         label: {
           'zh-TW': '開源 × 文史',
           'en-US': 'Open Source × Culture',
-          'ja': 'オープンソース × 文化活動'
+          'ja': 'オープンソース × 文化活動',
+          'ko': '오픈 소스 × 문화 활동'
         }
       },
       beforeEnter: (to, from, next) => {

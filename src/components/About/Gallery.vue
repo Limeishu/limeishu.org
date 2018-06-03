@@ -13,7 +13,6 @@
       <ul>
         <li>本館採收費參觀制，清潔費每位100元、敬老/學生/軍警每位80元、嬰幼兒免費。</li>
         <li>開放參觀時間:每週六、日，10:00AM ~ 05:00PM。其餘時段，歡迎團體預約參觀。(團體預約參觀時間，可提早自上午九點開始，詳情請洽詢本館)</li>
-        <li>可安排團體導覽三峽祖師廟、李梅樹紀念館、三峽老街及海山學文物展覽館，共需時約三小時。(若要參觀海山學文物展覽館，需提前兩週預約)</li>
         <li>額外行程視情況酌收額外導覽費。</li>
         <li>入館參觀請勿攝影，請勿飲食，請勿吸煙。</li>
         <li>未滿12歲兒童請由家長陪伴參觀。</li>
@@ -46,7 +45,6 @@
       <ul>
         <li>本館は有料参観制で、清掃費として以下の料金を頂いております。一般 NTD 100元、敬老／学生／軍警 NTD 80元、乳幼児無料。</li>
         <li>開館時間:毎週土・日祝、午前10:00-午後5:00。その他の時間については、団体予約による参観をお待ちしています。(団体予約の参観時間は午前9時開始も可能です。詳細は本館にお問合せ下さい。)</li>
-        <li>三峡祖師廟、李梅樹記念館、三峡老街、海山学文物展覧館の団体ガイドツアーを組むことも可能です。総時間は約三時間です。(海山学文物展覧館の参観をご希望の場合は、二週間前までにご予約下さい。)</li>
         <li>これ以外のコースについては、状況により追加ガイド費を徴収する場合があります。</li>
         <li>入館時における、写真撮影・飲食・喫煙はご遠慮下さい。</li>
         <li>12歳未満の児童の参観には、保護者の方の付き添いが必要です。</li>
@@ -75,7 +73,7 @@
       <ul>
         <li>The gallery admission charges each person with a cleaning fee of NT100 and NT80 for elderly/student/military and police. The gallery admission for infants and babies are free.</li>
         <li>Opening hours for visits are Saturdays and Sundays, from 10:00AM to 05:00PM. In other times, group reservation for visit is encouraged (The visit time for group reservation starts as early at 9A.M. Please consult with the gallery for more information).</li>
-        <li>A group tour on Sanxia Zushi Temple, Li Mei-Shu Memorial Gallery, Sanxia Old Street, and Center for Haishan Research can be arranged for a total of 3 hours. (Visit to Center for Haishan Research requires reservation in two weeks in advance).</li>          <li>Additional itinerary might charge additional guide fees depending on the situation.</li>
+        <li>Additional itinerary might charge additional guide fees depending on the situation.</li>
         <li>入Do not film the gallery when admitted for visit. Food, drinks and smoking are prohibited.</li>
         <li>Children visiting under 12 years old require the company of parents.</li>
           <p>Please contact
@@ -92,6 +90,35 @@
       <p>Hand-drawn drafts are safe-guarded by Li Mei-Shu Cultural and Educational Foundation and the National Library, where the yellowed paper and faint traces of the drawing are reproduced to the lifelong commitment of artist Li Mei-Shu in care for local and art movement, demonstrating the most zeal warmth of life.</p>
       <p>We look forward to art fans of all industries to make contribution to Li Mei-Shu Cultural and Educational Foundation.</p>
       <a href="https://nas.limeishu.org.tw/share/%E5%9F%BA%E9%87%91%E6%9C%83%E7%AB%A0%E7%A8%8B.pdf" class="button" target="_blank"><span>Articles of Incorporation of the Foundation</span><font-awesome-icon icon="angle-right" /></a>
+    </div>
+    <div class="paragraph" v-show="language === 'ko'">
+      <h1>기념관에 대해서</h1>
+      <h2>소개</h2>
+      <p>본 기념관은 1990년에 설립되었으며,  원래 이름은 리우칭강(劉清港)의사와 리메이수(李梅樹)교수의 곤중기념관(昆仲紀念館)이였는데 1995년 4월 현재의 신베이시싼샤구중화로43항10호로 이전하고, 정식명칭을 리메이수(李梅樹)기념관으로 개칭하였습니다.</p>
+      <p>기념관의 설립 취지는 대만 제1세대 화가 리메이수(李梅樹)교수를 기념하고, 싼샤에서 태어나고 자란  리메이수(李梅樹)교수(1902~1983)는 일생을 예술창작활동과 미술운동에 주력하였고, 평생동안 도쿄미술학교(東京美術學校) 에서 습득한 사실주의로, 대만 향토의 아름다움을 표현하였습니다. 이는 대만미술운동의 만리장성「萬里長城」이라고 불리웁니다.</p>
+      <p>1947년을 시작으로 리메이수(李梅樹)교수는 싼샤주스절(三峽祖師廟)의 재건사업에 일생을 바쳤고,  창작예술의 정신과 민간예술및 아카데미미술을 결합하여 동방예술전당「東方藝術殿堂」을 완성시켰습니다.</p>
+      <p>이외에 공익활동에도 열정적이셨던 리메이수(李梅樹)교수는 1935년~1958년까지 싼샤(三峽)가장(街庄)협의원(協議員)과 현(縣)의원의 직책을 맡고, 고향을 위해 봉사하였습니다. 일제시대이후에는 예술전문대학(현 국립대만예술대학) , 문화대학,사범대학등에서 교수를 역임하였고, 그는 평생에 걸쳐 예술가, 교육자, 정치인및 사원재건건축가등의 신분으로 81 년간 다채롭고 다양한 예술로 평생을 대만 미술 사상에 빛나는 한 페이지 장식하였습니다.</p>
+      <p>본 기념관은 리메이수(李梅樹)교수의 시기별로 그림작품들이 전시되어 있을뿐만 아니라, 리메이수(李梅樹)생전의 편지와 그림도구와 초고(草稿)등이 기념관내의 유물 전시실에 함께 전시하고 있습니다.</p>
+      <p>본 기념관의 전시를 통해서, 관람객여러분들이 예술가의 창작생애를 좀 더 깊이 이해하고 , 리메이수(李梅樹)의 일생은 대만예술의 본토화를 상징함을 알아주셨으면 합니다.</p>
+      <h2>관람안내</h2>
+      <ul>
+        <li>관람비용:  유료관람제이며,  일반인 대만달러100원, 경로/학생/군경 대만달러80원 ,유아무료입니다.</li>
+        <li>개관시간: 매주 토요일과 일요일 오전10시~오후 5시, 평일 단체예약관람을 환영합니다. 단체예약관람시간은 오전9시부터 가능하고 ,기타문의사항은 기념관에 문의바랍니다.</li>
+        <li>이외 일정은 소액의 가이드비용이 추가됩니다. </li>
+        <li>본 기념관내에서는 촬영 및 음식물섭취를 금지하고 있으며, 금연구역입니다.</li>
+        <li>12세미만아동은 보호자가 동행하여야만 관람이 가능합니다.</li>
+        <p>기타관람문의는<br>전화： <a href="tel:0226732333">(02)2673-2333</a>, 혹은 이메일：<a href="malito:limeishu@gmail.com">limeishu@gmail.com</a>로 문의 바랍니다.</p>
+      </ul>
+      <h2>기금회소개</h2>
+      <p>1990년에 개관한 리메이수(李梅樹)기념관는 대만을 대표하는 개인미술관이며, 행정부산하 문화건설위원회[文建會]로부터  [지방문화관] 으로 공식지정되어, 신베이시의 레저 교육 · 관광의 거점이되고 있습니다.</p>
+      <p>리메이수(李梅樹)는 싼샤주스절(三峽祖師廟)의 재건사업에 일생을 바쳤으며, 공익활동에서 적극적이여서 지방의회의원, 농회(農會)이사장으로도 활동하였습니다. 일본유학에서 돌아온 후로는 대만예술전문학교(현 대만예술대학),문화대학,사범대학등에서 교수를 역임하였습니다. 리메이수(李梅樹)는 예술가, 교육자,정치인, 사찰건축가로 81년의 다채로운예술활동으로 대만미술사의 찬란한 한 페이지를 장식했습니다.  리메이수(李梅樹) 가족들은  리메이수(李梅樹)의 정신이 담겨진 다양한 작품들과 유품들을 기리기 위하여, 1990년 싼샤(三峽)에  리메이수(李梅樹)기념관을 설립하였고, 리메이수(李梅樹)기금회를 만들어 오늘에 이르고 있습니다.</p>
+      <p>리메이수(李梅樹)기념관 관장 리징광(李景光)은 「장소」· 「경비」· 「상속」의 문제가 지금 기념관에 직면해온 난제 였다고 합니다. 왜냐하면 리메이수(李梅樹) 생전에 그림을 판매하거나 전시회를 열지 않고, 자신의 작품을 보관하였습니다. 리메이수(李梅樹)슬하의 삼남오녀의 자녀들은 기념관을 앞으로도 지속적으로 경영 할 것을 바라고 있습니다.</p>
+      <p>현재, 싼샤민성지에(三峽民生街)에 리메이수(李梅樹)문물기념관을 준비하고 있습니다. 이 기념관에는 가족들이 소장한 골동품을 전시하여 대만문화를 계승하고자 합니다.</p>
+      <p>리메이수(李梅樹)기념관은 미술교육 및 싼샤주스절(三峽祖師廟)의 전통예술의 미학을 널리 알리기 위하여  지역사회와 학교가 협력하며 평생 학습에 기여하고,사람들이 예술, 인문, 역사, 풍습, 주변 환경의 변화를 체험 하기를 권유합니다. 뿐만아니라 그림속 실제의 경치나 광경, 인물관계를 교재로 대중들과 학생들이 미학에 대해서 쉽게 이해 할수 있습니다. 오늘날 기념관은 지방문화관으로 확실한 성과를 올리고 있습니다.</p>
+      <p>리메이수(李梅樹)기금회는 리메이수(李梅樹)의 작품 관리 및 보존에 최선을 다하고 있습니다. 리메이수(李梅樹)가 그린 「싼샤주스절(三峽祖師廟)설계도안」은 초창기의 예술 구상을 확인할 수 있으며, 예술가가 창작과 생활 공간과 상호 융합하고 있던 모습을 보여주고 있습니다.</p>
+      <p>리메이수(李梅樹)가 그린 싼샤주스절(三峽祖師廟) 초벌도안은 현재  리메이수(李梅樹)기금회와 국가도서관에서 잘 보관하고 있으며, 누렇게 변한 종이와 희미해진 글씨의 흔적에서 평생을 고향을 사랑하며, 예술운동에 평생을 다바친 예술가 리메이수(李梅樹)의  뜨거운 열정을 짐작할 수 있습니다.</p>
+      <p>예술을 사랑하는 여러분들이 리메이수(李梅樹)기금회를 후원해 주시기 바랍니다.</p>
+      <a href="https://nas.limeishu.org.tw/share/%E5%9F%BA%E9%87%91%E6%9C%83%E7%AB%A0%E7%A8%8B.pdf" class="button"><span>기금회약관</span><font-awesome-icon icon="angle-right" /></a>
     </div>
   </div>
 </template>

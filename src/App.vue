@@ -33,7 +33,8 @@
         slogen: {
           'zh-TW': '用藝術，說土地的故事',
           'en-US': 'Telling the stories of land through art',
-          'ja': '芸術からこの地の物語をつむぐ'
+          'ja': '芸術からこの地の物語をつむぐ',
+          'ko': '예술로 향토를 이야기하다'
         },
         height: 0
       }

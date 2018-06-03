@@ -30,7 +30,8 @@ export default {
       langLocalize: {
         'zh-TW': '繁體中文',
         'en-US': 'English',
-        'ja': '日本語'
+        'ja': '日本語',
+        'ko': '한국어'
       },
       socialLink: [
         {
@@ -94,12 +95,23 @@ export default {
             name: 'Cookies',
             link: '/about/privacy#cookie'
           }
+        ],
+        'ko': [
+          {
+            name: '개인 정보 보호 알림',
+            link: '/about/privacy'
+          },
+          {
+            name: 'Cookies',
+            link: '/about/privacy#cookie'
+          }
         ]
       },
       copyright: {
         'zh-TW': `<p>© 1995 - ${new Date().getFullYear()} 李梅樹紀念館</p><p>本著作係採用 <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT 授權條款</a> 授權.</p><p>我們推薦使用 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 瀏覽以獲得更好的瀏覽體驗。</p>`,
         'en-US': `<p>© 1995 - ${new Date().getFullYear()} Li Mei-shu Memorial Gallery</p><p>This work is licensed under the <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT License</a>.</p><p>We recommend <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> for a better browsing experience.</p>`,
-        'ja': `<p>© 1995 - ${new Date().getFullYear()} 李梅樹記念館</p><p>この作品は、<a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT ライセンス</a> の下でライセンスされています。</p><p>より良いブラウジングエクスペリエンスのために <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> をお勧めします。</p>`
+        'ja': `<p>© 1995 - ${new Date().getFullYear()} 李梅樹記念館</p><p>この作品は、<a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT ライセンス</a> の下でライセンスされています。</p><p>より良いブラウジングエクスペリエンスのために <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> をお勧めします。</p>`,
+        'ko': `<p>© 1995 - ${new Date().getFullYear()} 리메이수(李梅樹)기념관</p><p>이 작품은 <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT 라이센스</a> 하에서 허가 된입니다.</p><p>더 좋은 브라우징 경험을 위해 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 권장합니다.</p>`
       }
     }
   },

@@ -12,7 +12,7 @@ const state = {
   effect: {
     translate3d: true
   },
-  language: ['en-US', 'zh-TW', 'ja'].find(e => { return e === window.navigator.language }) ? window.navigator.language : 'en-US'
+  language: ['en-US', 'zh-TW', 'ja', 'ko'].find(e => { return e === window.navigator.language }) ? window.navigator.language : 'en-US'
 }
 
 const getters = {
