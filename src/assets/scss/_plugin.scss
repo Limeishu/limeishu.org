@@ -121,6 +121,7 @@
   max-width: 720px;
   @media screen and (max-width: 768px) {
     padding: 1.2rem;
+    max-width: calc(100vw - 1.2rem * 2);
   }
   img {
     width: 100%;
