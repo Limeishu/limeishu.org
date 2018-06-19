@@ -5,6 +5,10 @@ node {
 	stage('Clone repo'){
 		checkout scm
 	}
+  
+  stage('Generate Config'){
+    sh "node /home/limeishu/prerender-autoconfig/serve/app.js"
+  }
 
 	stage('Build'){
 		echo 'Cleaning old files.'
