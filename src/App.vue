@@ -30,8 +30,8 @@
         toggle: false,
         isChild: false,
         slogen: {
-          'zh-TW': '用藝術，說土地的故事',
-          'en-US': 'Telling the stories of land through art',
+          'zh': '用藝術，說土地的故事',
+          'en': 'Telling the stories of land through art',
           'ja': '芸術からこの地の物語をつむぐ',
           'ko': '예술로 향토를 이야기하다'
         },
@@ -47,7 +47,7 @@
       mainFooter
     },
     computed: {
-      ...mapGetters(['language', 'navbar', 'device'])
+      ...mapGetters(['language', 'navbar', 'device', 'title'])
     },
     mounted () {
       this.childDetect()
@@ -84,6 +84,9 @@
           this.height = -(document.querySelector('#header').clientHeight - 64)
           this.isChild = false
         }
+      },
+      getTitle (route) {
+        document.querySelectorAll('head>meta')[5].content = document.title = `${route.meta.label ? route.meta.label[this.language] + ' - ' : ''}${this.title}`
       }
     },
     watch: {
@@ -91,10 +94,11 @@
         this.childDetect()
         this.toggleNavbar({ opened: false })
         window.scrollTo(0, 0)
-        document.title = `${route.meta.label ? route.meta.label[this.language] + ' - ' : ''}李梅樹紀念館`
+        this.getTitle(route)
       },
       language () {
         this.$ua.changeSessionLanguage(this.language)
+        this.getTitle(this.$route)
       }
     }
   }

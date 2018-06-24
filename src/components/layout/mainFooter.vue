@@ -17,7 +17,10 @@
         </p>
       </div>
     </div>
-    <div class="copyright" v-html="copyright[language]"></div>
+    <div class="copyright">
+      <p>&copy; 1995 - {{`${new Date().getFullYear()} ${title}`}}</p>
+      <p v-html="copyright[language]"></p>
+    </div>
   </div>
 </template>
 
@@ -28,8 +31,8 @@ export default {
     return {
       selectLang: '',
       langLocalize: {
-        'zh-TW': '繁體中文',
-        'en-US': 'English',
+        'zh': '繁體中文',
+        'en': 'English',
         'ja': '日本語',
         'ko': '한국어'
       },
@@ -66,7 +69,7 @@ export default {
         }
       ],
       policy: {
-        'zh-TW': [
+        'zh': [
           {
             name: '隱私權政策',
             link: '/about/privacy'
@@ -76,7 +79,7 @@ export default {
             link: '/about/privacy#cookie'
           }
         ],
-        'en-US': [
+        'en': [
           {
             name: 'Privacy Notice',
             link: '/about/privacy'
@@ -108,15 +111,15 @@ export default {
         ]
       },
       copyright: {
-        'zh-TW': `<p>© 1995 - ${new Date().getFullYear()} 李梅樹紀念館</p><p>本著作係採用 <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT 授權條款</a> 授權.</p><p>我們推薦使用 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 瀏覽以獲得更好的瀏覽體驗。</p>`,
-        'en-US': `<p>© 1995 - ${new Date().getFullYear()} Li Mei-shu Memorial Gallery</p><p>This work is licensed under the <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT License</a>.</p><p>We recommend <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> for a better browsing experience.</p>`,
-        'ja': `<p>© 1995 - ${new Date().getFullYear()} 李梅樹記念館</p><p>この作品は、<a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT ライセンス</a> の下でライセンスされています。</p><p>より良いブラウジングエクスペリエンスのために <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> をお勧めします。</p>`,
-        'ko': `<p>© 1995 - ${new Date().getFullYear()} 리메이수(李梅樹)기념관</p><p>이 작품은 <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT 라이센스</a> 하에서 허가 된입니다.</p><p>더 좋은 브라우징 경험을 위해 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 권장합니다.</p>`
+        'zh': `本著作係採用 <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT 授權條款</a> 授權.</p><p>我們推薦使用 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 瀏覽以獲得更好的瀏覽體驗。`,
+        'en': `This work is licensed under the <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT License</a>.</p><p>We recommend <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> for a better browsing experience.`,
+        'ja': `この作品は、<a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT ライセンス</a> の下でライセンスされています。</p><p>より良いブラウジングエクスペリエンスのために <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> をお勧めします。`,
+        'ko': `이 작품은 <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT 라이센스</a> 하에서 허가 된입니다.</p><p>더 좋은 브라우징 경험을 위해 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 권장합니다.`
       }
     }
   },
   computed: {
-    ...mapGetters(['language'])
+    ...mapGetters(['language', 'title'])
   },
   created () {
     this.selectLang = this.language

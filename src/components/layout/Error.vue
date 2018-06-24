@@ -14,26 +14,26 @@
       return {
         warnMsg: {
           '404': {
-            'zh-TW': ['頁面不存在', '迷路了？要不小憩之女我帶你去別的地方看看吧'],
-            'en-US': ['Not Found', 'Sorry, that page does not exist. Go Back'],
+            'zh': ['頁面不存在', '迷路了？要不小憩之女我帶你去別的地方看看吧'],
+            'en': ['Not Found', 'Sorry, that page does not exist. Go Back'],
             'ja': ['Not Found', '이 페이지를 찾을 수 없습니다. 돌아 가기'],
             'ko': ['Not Found', '']
           },
           '403': {
-            'zh-TW': ['你沒有權限', '迷路了？要不小憩之女我帶你去別的地方看看吧'],
-            'en-US': ['Forbidden', 'Sorry, that page does not exist. Go Back'],
+            'zh': ['你沒有權限', '迷路了？要不小憩之女我帶你去別的地方看看吧'],
+            'en': ['Forbidden', 'Sorry, that page does not exist. Go Back'],
             'ja': ['禁じられた', 'このページは見つかりませんでした。戻る'],
             'ko': ['금지 된', '이 페이지를 찾을 수 없습니다. 돌아 가기']
           },
           '-1': {
-            'zh-TW': ['頁面維護中或未建立', '迷路了？要不小憩之女我帶你去別的地方看看吧'],
-            'en-US': ['Site Maintenance', 'This page is under maintenance. Go Back'],
+            'zh': ['頁面維護中或未建立', '迷路了？要不小憩之女我帶你去別的地方看看吧'],
+            'en': ['Site Maintenance', 'This page is under maintenance. Go Back'],
             'ja': ['サイトのメンテナンス', 'このページはメンテナンス中です。 戻る'],
             'ko': ['사이트 관리', '이 페이지는 공사중입니다. 돌아 가기']
           },
           '!': {
-            'zh-TW': ['大黑黑母湯喔', '太閒了？要不要加入李梅樹紀念館資訊組？'],
-            'en-US': ['Hacking Us?', 'Good luck and have fun!'],
+            'zh': ['大黑黑母湯喔', '太閒了？要不要加入李梅樹紀念館資訊組？'],
+            'en': ['Hacking Us?', 'Good luck and have fun!'],
             'ja': ['ハッキング?', 'アハハハハハハ'],
             'ko': ['해킹?', '아하하하하하하']
           }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="paragraph" v-show="language === 'zh-TW'">
+    <div class="paragraph" v-show="language === 'zh'">
       <h1>關於紀念館</h1>
       <h2>簡介</h2>
       <p>本館初設於1990年，原名為「劉清港醫師李梅樹教授昆仲紀念館」；1995年4月遷入現址：台北市三峽區中華路43巷10號，並正式定名為「李梅樹紀念館」。</p>
@@ -60,7 +60,7 @@
       <p>各界の美術愛好者の皆様からの李梅樹文教基金会へのご支援・ご寄付をお待ちしております。</p>
       <a href="https://nas.limeishu.org.tw/share/%E5%9F%BA%E9%87%91%E6%9C%83%E7%AB%A0%E7%A8%8B.pdf" class="button"><span>基金会規約</span><font-awesome-icon icon="angle-right" /></a>
     </div>
-    <div class="paragraph" v-show="language === 'en-US'">
+    <div class="paragraph" v-show="language === 'en'">
       <h1>About the Memorial Gallery</h1>
       <h2>Introduction</h2>
       <p>The gallery was established in 1990  and previously named as “Liu Qing Gang Physician and Professor Li Mei-Shu Memorial Hall.” In April 1995, the galley was relocated to the current location: No. 10, LN. 43, Zhonghua Road., Sanxia Dist., New Taipei City and officially renamed to “Li Mei-Shu Memorial Gallery.” </p>

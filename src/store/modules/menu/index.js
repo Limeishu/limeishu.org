@@ -8,8 +8,8 @@ const state = {
       path: '/',
       meta: {
         label: {
-          'zh-TW': '首頁',
-          'en-US': 'Home',
+          'zh': '首頁',
+          'en': 'Home',
           'ja': 'ホーム',
           'ko': '홈'
         },
@@ -22,8 +22,8 @@ const state = {
       path: '/culture',
       meta: {
         label: {
-          'zh-TW': '文化活動',
-          'en-US': 'Culture',
+          'zh': '文化活動',
+          'en': 'Culture',
           'ja': '文化活動',
           'ko': '문화 활동'
         },
@@ -36,8 +36,8 @@ const state = {
           path: '/culture/news',
           meta: {
             label: {
-              'zh-TW': '活動消息',
-              'en-US': 'News',
+              'zh': '活動消息',
+              'en': 'News',
               'ja': 'ニュース',
               'ko': '뉴스'
             }
@@ -49,8 +49,8 @@ const state = {
           path: '/culture/report',
           meta: {
             label: {
-              'zh-TW': '相關報導',
-              'en-US': 'Reports',
+              'zh': '相關報導',
+              'en': 'Reports',
               'ja': '報道',
               'ko': '보도'
             }
@@ -62,8 +62,8 @@ const state = {
           path: '/msm',
           meta: {
             label: {
-              'zh-TW': '梅樹月',
-              'en-US': 'Mei-Shu Month',
+              'zh': '梅樹月',
+              'en': 'Mei-Shu Month',
               'ja': '梅樹月',
               'ko': '梅樹月'
             }
@@ -77,8 +77,8 @@ const state = {
           path: '/culture/temple',
           meta: {
             label: {
-              'zh-TW': '三峽祖師廟',
-              'en-US': 'Sanxia Zushi Temple',
+              'zh': '三峽祖師廟',
+              'en': 'Sanxia Zushi Temple',
               'ja': '三峡祖師廟',
               'ko': '삼협 소시 묘'
             }
@@ -92,8 +92,8 @@ const state = {
       path: '/about',
       meta: {
         label: {
-          'zh-TW': '關於我們',
-          'en-US': 'About',
+          'zh': '關於我們',
+          'en': 'About',
           'ja': '私たちに関しては',
           'ko': '우리 관해서는'
         },
@@ -106,8 +106,8 @@ const state = {
           path: '/about/gallery',
           meta: {
             label: {
-              'zh-TW': '關於紀念館',
-              'en-US': 'Gallery',
+              'zh': '關於紀念館',
+              'en': 'Gallery',
               'ja': '記念館について',
               'ko': '기념관 대해'
             }
@@ -119,8 +119,8 @@ const state = {
           path: '/about/cooperation',
           meta: {
             label: {
-              'zh-TW': '與我們合作',
-              'en-US': 'Cooperation',
+              'zh': '與我們合作',
+              'en': 'Cooperation',
               'ja': 'ご協力',
               'ko': '협력'
             }
@@ -132,8 +132,8 @@ const state = {
           path: '/about/privacy',
           meta: {
             label: {
-              'zh-TW': '隱私權政策',
-              'en-US': 'Privacy Notice',
+              'zh': '隱私權政策',
+              'en': 'Privacy Notice',
               'ja': 'プライバシー通知',
               'ko': '개인 정보 보호 알림'
             }
@@ -154,8 +154,8 @@ const state = {
       path: '/intro',
       meta: {
         label: {
-          'zh-TW': '認識李梅樹',
-          'en-US': 'Li-Mei Shu',
+          'zh': '認識李梅樹',
+          'en': 'Li-Mei Shu',
           'ja': '李梅樹',
           'ko': '李梅 나무'
         },
@@ -168,8 +168,8 @@ const state = {
           path: '/intro/article',
           meta: {
             label: {
-              'zh-TW': '畫家介紹',
-              'en-US': 'Introduction to Artist',
+              'zh': '畫家介紹',
+              'en': 'Introduction to Artist',
               'ja': '画家の紹介',
               'ko': '화가의 소개'
             }
@@ -181,8 +181,8 @@ const state = {
           path: '/intro/statement',
           meta: {
             label: {
-              'zh-TW': '畫家自述',
-              'en-US': 'Personal Statement',
+              'zh': '畫家自述',
+              'en': 'Personal Statement',
               'ja': '画家の言葉',
               'ko': '화가의 말'
             }
@@ -194,8 +194,8 @@ const state = {
           path: '/intro/history',
           meta: {
             label: {
-              'zh-TW': '年度大記事',
-              'en-US': 'Annual Chronicles',
+              'zh': '年度大記事',
+              'en': 'Annual Chronicles',
               'ja': '画家年表',
               'ko': '화가 연표'
             }
@@ -207,8 +207,8 @@ const state = {
           path: '/intro/museum',
           meta: {
             label: {
-              'zh-TW': '線上美術館',
-              'en-US': 'Online Museum',
+              'zh': '線上美術館',
+              'en': 'Online Museum',
               'ja': 'デジタル美術館',
               'ko': '디지털 미술관'
             }
@@ -222,8 +222,8 @@ const state = {
       path: '/open',
       meta: {
         label: {
-          'zh-TW': '開源 × 文史',
-          'en-US': 'Open Source × Culture',
+          'zh': '開源 × 文史',
+          'en': 'Open Source × Culture',
           'ja': 'オープンソース × 文化活動',
           'ko': '오픈 소스 × 문화 활동'
         }

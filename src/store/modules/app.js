@@ -12,11 +12,18 @@ const state = {
   effect: {
     translate3d: true
   },
-  language: ['en-US', 'zh-TW', 'ja', 'ko'].find(e => { return e === window.navigator.language }) ? window.navigator.language : 'en-US'
+  language: ['en', 'zh', 'ja', 'ko'].find(e => { return e === window.navigator.language.split('-')[0] }) ? window.navigator.language.split('-')[0] : 'en',
+  title: {
+    'en': 'The Li Mei-Shu Memorial Gallery',
+    'zh': '李梅樹紀念館',
+    'ja': '李梅樹記念館',
+    'ko': '李梅樹 기념관'
+  }
 }
 
 const getters = {
-  language: state => state.language
+  language: state => state.language,
+  title: state => state.title[state.language]
 }
 
 const mutations = {

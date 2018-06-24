@@ -72,7 +72,7 @@ require('./assets/images/favicon.ico')
 
 // require('./assets/images/favicon.ico')
 // Enable devtools
-Vue.config.devtools = false
+Vue.config.devtools = true
 
 sync(store, router)
 

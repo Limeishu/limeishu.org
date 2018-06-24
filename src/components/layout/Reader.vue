@@ -19,14 +19,14 @@
       return {
         news: {},
         share: {
-          'zh-TW': '分享至',
+          'zh': '分享至',
           'ja': 'シェア',
-          'en-US': 'Share To'
+          'en': 'Share To'
         }
       }
     },
     computed: {
-      ...mapGetters(['language'])
+      ...mapGetters(['language', 'title'])
     },
     mounted () {
       this.getNews()
@@ -41,7 +41,7 @@
           const res = await this.getNewsByID(this.$route.params.id)
           if (res.data) {
             this.news = res.data
-            document.title = `${this.news.title} - 李梅樹紀念館`
+            document.title = `${this.news.title} - ${this.title}`
             let head = document.querySelectorAll('head>meta')
             head[4].content = head[10].content = res.data.content
             head[5].content = document.title

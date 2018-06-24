@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="paragraph" v-show="language === 'zh-TW'">
+    <div class="paragraph" v-show="language === 'zh'">
       <h1>畫家自述</h1>
       <h2>一甲子真善美的追尋</h2>
       <p>「我生長於藝術氣氛濃厚的家庭，因受環境薰陶影響，自幼對美術，音樂即有非常的興趣；尤其對繪畫更為醉心。1918 年考取日據時代台灣總督府國語學校（即今省立台北師專前身），開始接觸較正式之美術教育後，對繪事更加著迷，矢志以繪畫為業，計畫在師範學校畢業後，即赴日入東京美術學校（即今日日本國立東京藝術大學前身）進修；惜因先父不允，不克成行。不得已，於1922年師範學校畢業後，返鄉任教，並奉父命於是年完婚。</p>
@@ -12,7 +12,7 @@
       <p>藝術無涯，吾生有涯，欣然回首，一甲子之追尋探索，尚未能達到真善美之境界。」</p>
       <p>1982年10月</p>
     </div>
-    <div class="paragraph" v-show="language === 'en-US'">
+    <div class="paragraph" v-show="language === 'en'">
       <h1>Personal Statement of the Artist</h1>
       <h2>60 Years of pursuit in truth, benevolence and beauty</h2>
       <p>"I was born in a family of strong artistic atmosphere. Under the influence of the environment, I have grown great interests in art and music since very young; I am particularly indulged in painting. In 1918, I was admitted to Taiwan Governor-General's National Language School (namely the former Provincial Taipei Normal College today) during Japanese Ruling Period and started accessing formal art education. I then become more fascinated by painting and was inspired to devote my career in painting. I planned to go to the Tokyo Arts School (namely the former Tokyo University of the Arts today) in Japan for advanced study after graduating from the National Normal University.  Unfortunately my father disagreed and I could not go to Japan. Against my will, I returned home to teach after graduating from the National Normal University in 1922 and got married under the command of my father in the following year.</p>

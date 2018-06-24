@@ -1,8 +1,8 @@
 <template>
   <div id="home">
     <div class="spotlight half">
-      <h1 v-show="language === 'zh-TW'">最新消息</h1>
-      <h1 v-show="language === 'en-US'">What's New</h1>
+      <h1 v-show="language === 'zh'">最新消息</h1>
+      <h1 v-show="language === 'en'">What's New</h1>
       <h1 v-show="language === 'ja'">最新ニュース</h1>
       <h1 v-show="language === 'ko'">최신 뉴스</h1>
       <carousel class="slider-container"
@@ -31,7 +31,7 @@
     </div>
     <div class="spotlight right bg-light">
       <div class="image" :style="{ 'background-image': 'url(https://image.limeishu.org.tw/images/gallery.jpg)' }"></div>
-      <div class="content" v-show="language === 'zh-TW'">
+      <div class="content" v-show="language === 'zh'">
         <h1>關於紀念館</h1>
         <p>本館初設於 1990 年，原名為「劉清港醫師李梅樹教授昆仲紀念館」；1995 年 4 月遷入現址：新北市三峽區中華路 43 巷 10 號，並正式定名為「李梅樹紀念館」。</p>
         <p>紀念館設立之宗旨在紀念前輩畫家李梅樹教授。於三峽（三角湧）土生土長的李梅樹教授（1902-1983），生前致力於藝術創作，美術運動，一輩子堅持以東京美術學校習得的寫實路線，擁抱台灣鄉土之美，被稱為台灣美術運動中的「萬里長城」。</p>
@@ -44,7 +44,7 @@
           <font-awesome-icon icon="angle-right" />
         </router-link>
       </div>
-      <div class="content" v-show="language === 'en-US'">
+      <div class="content" v-show="language === 'en'">
         <h1>About the Memorial Gallery</h1>
         <p>The gallery was established in 1990 and previously named as “Liu Qing Gang Physician and Professor Li Mei-Shu Memorial
           Hall.” In April 1995, the galley was relocated to the current location: No. 10, LN. 43, Zhonghua Road., Sanxia
@@ -100,7 +100,7 @@
     </div>
     <div class="spotlight left">
       <div class="image" :style="{ 'background-image': 'url(https://image.limeishu.org.tw/images/hend.jpg)' }"></div>
-      <div class="content" v-show="language === 'zh-TW'">
+      <div class="content" v-show="language === 'zh'">
         <h1>認識李梅樹</h1>
         <p>李梅樹（1902～1983）早年就讀總督府國語學校師範部，深受西洋繪畫的薰染，習畫的意念油然興起。早期畫作 1927《靜物》；1928《三峽的町裡》先後入選第一、二屆臺展。1928 年赴東京，奔波習畫於川端、同舟社及本鄉三個繪畫研究所。翌年，通過東京美術學校（東京藝大前身）入學試，師事畫壇大師長原孝太郎、小林萬吾及岡田三郎助等，奠定其後寫實風格的深厚基礎。1934 年與友陳澄波、顏水龍、楊三郎、廖繼春、陳清汾、李石樵、立石鐵臣共創《臺陽美術協會》。1935 年《小憩之女》獲第九屆臺展特選第一席，受頒「臺灣總督獎」。1939 年，《紅衣》入選第三屆文展（原日本帝展）。1940 年《花與女》入選第四屆文展（奉祝展），自此奠定其為臺灣傑出之西洋美術家的歷史地位。1946 年應聘首屆省展審查委員，參展之《星期日》由省府購呈蔣總統。1948 年《黃昏》、《郊遊》等大幅畫作被視為具代表性之作品。1945 年臺灣光復後，除涉足三峽地方政治，並於 1947 年受公推主持長福巖清水祖師廟重建工作。此後畫作題材、風格日益趨向鄉土寫實，表現其特立獨行，傲視群倫的大家風範。1962 年以後歷任文化大學、國立藝專、師大等美術教授、主任等教職。指導藝專等雕塑科學生參與三峽祖師廟金屬浮雕工程，將學院專業技藝投注於傳統寺廟建築實務中，乃臺灣藝術教育史之創舉。李教授對美術教育推廣的貢獻，除學院正規教育外，並以嚴謹、精湛的美學素養，指導祖師廟聘請的諸多傳統木石雕刻師，造就祖師廟成為雕刻精品推砌而成的「東方藝術殿堂」，為臺灣現代寺廟建築的經典名作。晚年受美術界推選歷任油畫學會理事長、美協理事長、油畫學會榮譽理事長等崇高之職位。</p>
         <router-link to="/intro/statement" class="button">
@@ -108,7 +108,7 @@
           <font-awesome-icon icon="angle-right" />
         </router-link>
       </div>
-      <div class="content" v-show="language === 'en-US'">
+      <div class="content" v-show="language === 'en'">
         <h1>Introduction to Artist</h1>
         <p>Li Mei-Shu (1902～1983) studied at Teacher Training Department Taiwan Governor-General’s National Language in the
           early days and grew interest in painting under the profound influence from western painting. His early painting,
@@ -161,7 +161,7 @@
       </div>
     </div>
     <div class="spotlight bg-gray half">
-      <div class="list" v-show="language === 'zh-TW'">
+      <div class="list" v-show="language === 'zh'">
         <h1>參觀須知</h1>
         <ul>
           <li>本館採收費參觀制，清潔費每位 100 元、敬老 / 學生 / 軍警每位 80 元，身心障礙者及其必要陪伴者一人每人清潔費50元；嬰幼兒免費</li>
@@ -175,7 +175,7 @@
           </p>
         </ul>
       </div>
-      <div class="list" v-show="language === 'en-US'">
+      <div class="list" v-show="language === 'en'">
         <h1>Instructions for Visit</h1>
         <ul>
           <li>The gallery admission charges each person with a cleaning fee of NT100 and NT80 for elderly/student/military and police. The gallery admission for infants and babies are free.</li>
@@ -217,8 +217,8 @@
         <div class="contants">
           <div class="container">
             <div class="header">
-              <h1 v-show="language === 'zh-TW'">交通資訊</h1>
-              <h1 v-show="language === 'en-US'">Traffic Information</h1>
+              <h1 v-show="language === 'zh'">交通資訊</h1>
+              <h1 v-show="language === 'en'">Traffic Information</h1>
               <h1 v-show="language === 'ja'">交通信息</h1>
               <h1 v-show="language === 'ko'">교통안내</h1>
               <div class="bar">
@@ -237,7 +237,7 @@
             </div>
           </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0443806157864!2d121.37067131500416!3d24.93055798402082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681bec4aab9289%3A0x19406de61e70b2d4!2z5p2O5qKF5qi557SA5b-16aSo!5e0!3m2!1szh-TW!2stw!4v1516105422004" frameborder="0" class="map" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0443806157864!2d121.37067131500416!3d24.93055798402082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681bec4aab9289%3A0x19406de61e70b2d4!2z5p2O5qKF5qi557SA5b-16aSo!5e0!3m2!1szh!2stw!4v1516105422004" frameborder="0" class="map" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -251,29 +251,29 @@ export default {
       map: {
         bar: [
           {
-            'en-US': 'HSR & TRA',
-            'zh-TW': '高鐵＆火車',
+            'en': 'HSR & TRA',
+            'zh': '高鐵＆火車',
             'ja': '高鉄＆鉄道',
             'ko': '고속철도와 기차',
             icon: ['fas', 'train']
           },
           {
-            'en-US': 'MRT',
-            'zh-TW': '捷運',
+            'en': 'MRT',
+            'zh': '捷運',
             'ja': 'MRT（捷運）',
             'ko': '타이베이MRT',
             icon: ['fas', 'subway']
           },
           {
-            'en-US': 'Bus',
-            'zh-TW': '公車',
+            'en': 'Bus',
+            'zh': '公車',
             'ja': '路線バス',
             'ko': '버스',
             icon: ['fas', 'bus']
           },
           {
-            'en-US': 'Drive',
-            'zh-TW': '自行開車',
+            'en': 'Drive',
+            'zh': '自行開車',
             'ja': '自家用車',
             'ko': '자가용이용시',
             icon: ['fas', 'car']
@@ -281,13 +281,13 @@ export default {
         ],
         data: [
           {
-            'zh-TW': [
+            'zh': [
               '搭乘臺鐵或高鐵至板橋火車站',
               '循站內指標前往板橋公車站',
               '搭乘公車（台北客運 910 ）至安溪國小站（李梅樹紀念館）下車',
               '下車後步行約2分鐘內可到達李梅樹紀念館'
             ],
-            'en-US': [
+            'en': [
               'Take Taiwan Railway or HSR to Banqiao Train Station.',
               'Follow in-station signs to proceed to Banqiao Bus Stop.',
               'Take bus (910) to get off at Anxi Elementary School Stop (Li Mei-Shu Memorial Gallery).',
@@ -307,12 +307,12 @@ export default {
             ]
           },
           {
-            'zh-TW': [
+            'zh': [
               '乘坐臺北捷運BL藍線（板南線）。',
               '於新埔站、板橋站、永寧站及頂埔站皆可下車，循站內指標前往公車站。',
               '搭乘公車至李梅樹紀念館（參考「公車」路線標籤）。'
             ],
-            'en-US': [
+            'en': [
               'Take Taipei MRT BL Blue Line (Bannan Line).',
               'Get off the bus from Xinpu Stop, Banqiao Stop, Yongning Stop, and Dingpu Stop. Follow the sign for proceeding to bus stop.',
               'Take the bus to get to Li Mei-shi Memorial Gallery (refer to “Bus” Route Label).'
@@ -329,14 +329,14 @@ export default {
             ]
           },
           {
-            'zh-TW': [
+            'zh': [
               '板橋、新埔的朋友，你可以搭乘 910、940 路線公車到安溪國小（李梅樹紀念館）站下車，再步行約 3 分鐘就可到達',
               '土城、頂埔，可搭乘 705、706 公車到礁溪里站步行約 10 分鐘；或搭 916 公車到三峽老街站步行約 10 分鐘',
               '台北市東區，可搭 939 公車到台北大學三峽校區站，步行約 20 分鐘',
               '樹林、新莊，可搭 885、802 公車，到三峽老街站，再步行約 10 分',
               '中、永和，可搭 908 公車到三峽國小站，再步行約 15 分'
             ],
-            'en-US': [
+            'en': [
               'Take bus 910 and 940 from Banqiao and Xinpu to Anxi Elementary School (Li Mei-Shu Memorial Gallery) Stop to get off the bus and then walk for 3 minutes.',
               'Take Bus 705 and 706 from Tucheng and Dingpu to Jiaoxi Village Stop and then walk for about 10 minutes. Or take Bus 916 to Sanxia Old Street Stop and walk for about 10 minutes.',
               'Take Bus 939 from Eastern District of Taipei City and arrive to National Taipei University Sanxia Campus Stop. Walk for about 20 minutes.',
@@ -359,13 +359,13 @@ export default {
             ]
           },
           {
-            'zh-TW': [
+            'zh': [
               '行駛國道三號並於三峽交流道離開高速公路。',
               '下交流道後轉 110 縣道（復興路）並沿路直行。',
               '右轉中華路直行後在安溪國小前路口右轉。',
               '於長福停車場停車（長福停車場位於光明路右測）。'
             ],
-            'en-US': [
+            'en': [
               'Take National Highway No. 3 and get off Sanxia Interchange.',
               'After getting off the interchange, turn to County Road 110 (Fuxing Road) and go straight along the road.',
               'Turn right to Zhonghua Road and go straight. Turn right at the front intersection of “Anxi Elementary School”.',

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="paragraph" v-show="language === 'zh-TW'">
+    <div class="paragraph" v-show="language === 'zh'">
       <h1>三峽祖師廟</h1>
       <h2>緣起</h2>
       <p>三峽祖師廟創建於清乾隆三十四年（西元1769年），歷經三度重建。第一次因大地震原廟被毀，經於清道光十三年（西元1833年）重建。第二次因甲午戰爭失敗，清廷締約馬關，將台灣割讓給日本，三峽鎮民不願異族統治，以本廟為反抗大本營；事敗，廟堂遭日軍焚毀，至光緒二十五年（西元1899年）再度重建。</p>
@@ -8,7 +8,7 @@
       <p>全廟建築均以精彫細琢，歷經四十九年尚未完成；殿內之木雕、石刻、浮彫或銅鑄，無一不是匠心獨運鬼斧神工之傑作。三峽祖師廟實為一座代表傳統文化的藝術館，亦可稱為雕刻博物館，常年吸引無數中外遊客，藝術專家學者及友邦貴賓蒞臨觀賞，歎為觀止。</p>
       <h2>大事記</h2>
     </div>
-    <div class="paragraph" v-show="language === 'en-US'">
+    <div class="paragraph" v-show="language === 'en'">
       <h1>Sanxia Zushi Temple</h1>
       <h2>Origin</h2>
       <p>Sanxia Zushi Temple was initially built in 1769 and underwent three reconstructions. The first reconstruction was because of the demolition of original temple from a great earthquake and was reconstructed in 1833. The second reconstruction took place in 1899 after the temple was burned down by the Japanese army when Taiwan was ceded to Japan in the Treaty of Shimonoseki due to the loss by Qing Dynasty in the first Sino-Japanese War while Sanxia Township people were refused ruling by foreign country and using Zushi Temple as the anti-Japanese camp.</p>

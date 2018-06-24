@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="paragraph" v-show="language === 'zh-TW'">
+    <div class="paragraph" v-show="language === 'zh'">
       <h1>與我們合作</h1>
       <p>本館歡迎各式館際交流，也歡迎跨界合作</p>
       <h2>藝術，日常</h2>
@@ -37,7 +37,7 @@
       <a href="mailto:limeishu@gmail.com" class="button"><span>ご連絡方法</span><font-awesome-icon icon="angle-right" /></a>
       <a href="tel:0226730677" class="button"><span>記念館へのお電話</span><font-awesome-icon icon="angle-right" /></a>
     </div>
-    <div class="paragraph" v-show="language === 'en-US'">
+    <div class="paragraph" v-show="language === 'en'">
       <h1>Cooperation</h1>
       <p>The gallery encourages exchange with other galleries and interdisciplinary cooperation.</p>
       <h2>Arts &amp; Daily</h2>

@@ -25,18 +25,18 @@
         docs: {},
         tagTranslated: {
           centry: {
-            'zh-TW': '百年紀要',
-            'en-US': 'Centennial Chronicles',
+            'zh': '百年紀要',
+            'en': 'Centennial Chronicles',
             'ja': '百年紀要'
           },
           art: {
-            'zh-TW': '國內外藝壇',
-            'en-US': '',
+            'zh': '國內外藝壇',
+            'en': '',
             'ja': '国内外美術関係事項'
           },
           event: {
-            'zh-TW': '國內外社會重要記事',
-            'en-US': '',
+            'zh': '國內外社會重要記事',
+            'en': '',
             'ja': '国内外社会重要事項'
           }
         }
