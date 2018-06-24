@@ -18,7 +18,6 @@
 
 <script>
   import { mapGetters, mapActions } from 'vuex'
-  import * as BG from './assets/images/BG'
   import {
     Navbar,
     mainFooter
@@ -26,7 +25,7 @@
   export default {
     data () {
       return {
-        bannerBG: [BG.BG1, BG.BG2, BG.BG3, BG.BG4],
+        bannerBG: ['https://image.limeishu.org.tw/images/BG1.jpg', 'https://image.limeishu.org.tw/images/BG2.jpg', 'https://image.limeishu.org.tw/images/BG3.jpg', 'https://image.limeishu.org.tw/images/BG4.jpg'],
         bannerAt: 0,
         toggle: false,
         isChild: false,
