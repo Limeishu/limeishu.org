@@ -57,9 +57,13 @@
         this.rwdDetect()
       }
       this.rwdDetect()
+      this.scrollToHookFromUri()
     },
     methods: {
       ...mapActions(['toggleDevice', 'toggleNavbar']),
+      scrollToHookFromUri () {
+        if (this.$route.hash) setTimeout(() => window.scrollTo(0, document.querySelector(this.$route.hash).offsetTop), 100)
+      },
       changeBanner () {
         setInterval(() => {
           this.bannerAt++
@@ -95,6 +99,7 @@
         this.toggleNavbar({ opened: false })
         window.scrollTo(0, 0)
         this.getTitle(route)
+        this.scrollToHookFromUri()
       },
       language () {
         this.$ua.changeSessionLanguage(this.language)
