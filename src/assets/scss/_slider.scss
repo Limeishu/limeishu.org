@@ -5,6 +5,9 @@
   .VueCarousel-dot--active .VueCarousel-dot-inner {
     background-color: $tone !important;
   }
+  .VueCarousel-dot-container {
+    transform: translateY(-15px);
+  }
   .VueCarousel-navigation-button {
     z-index: 2;
     display: flex;

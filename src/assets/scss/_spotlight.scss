@@ -80,6 +80,7 @@
       color: $skin;
       letter-spacing: 1px;
       text-align: left;
+      list-style: circle;
       @media screen and (max-width: 768px) {
         font-size: 10pt;
       }

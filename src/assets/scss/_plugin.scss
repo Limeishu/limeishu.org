@@ -1,6 +1,6 @@
 .button {
   margin: 1rem 0;
-  color: inherit;
+  color: $tone;
   text-decoration: none;
   a {
     color: inherit;
@@ -108,7 +108,6 @@
         margin: 8pt 0;
       }
       a {
-        color: $black;
         &:hover {
           text-decoration-line: none;
         }
