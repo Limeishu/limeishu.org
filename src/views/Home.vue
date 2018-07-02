@@ -15,12 +15,12 @@
       navigationPrevLabel="<svg aria-hidden='true' data-fa-processed='' data-prefix='fas' data-icon='angle-left' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512' class='svg-inline--fa fa-angle-left fa-w-8'><path fill='currentColor' d='M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z' class=''></path></svg>">
         <slide v-for="(news, i) in news.data" :key="i" v-if="i <= 6">
           <div class="slider" @click="$router.push(`/culture/news/${news._id}`)">
-            <img :src="news.meta.image">
+            <img :src="news.meta.image" :alt="news.meta.imageAlt ? news.meta.imageAlt : news.title">
             <div class="content">
               <h2>{{ news.title }}</h2>
               <hr>
               <p>{{ `${news.content.substring(0, 100)}...` }}</p>
-              <router-link :to="`/culture/news/${news._id}`" class="button">
+              <router-link :to="`/culture/news/${news._id}`" class="button" alt="點一下來了解更多">
                 <span>了解更多</span>
                 <font-awesome-icon icon="angle-right" />
               </router-link>
@@ -30,7 +30,7 @@
       </carousel>
     </div>
     <div class="spotlight right bg-light">
-      <div class="image" :style="{ 'background-image': 'url(https://image.limeishu.org.tw/images/gallery.jpg)' }"></div>
+      <img class="image" src="https://image.limeishu.org.tw/images/gallery.jpg" alt="圖片：這是一張李梅樹紀念館大門口的照片">
       <div class="content" v-show="language === 'zh'">
         <h1>關於紀念館</h1>
         <p>本館初設於 1990 年，原名為「劉清港醫師李梅樹教授昆仲紀念館」；1995 年 4 月遷入現址：新北市三峽區中華路 43 巷 10 號，並正式定名為「李梅樹紀念館」。</p>
@@ -39,7 +39,7 @@
         <p>此外，熱心公益的李梅樹教授，於 1935 至 1958 年間，陸續以三峽街庄協議員，縣議員等身分服務鄉里。日後並於藝專 (現國立台灣藝術學院)、文化、師大等校任教。終其一生，李氏身兼藝術家，教育家，政治家與廟宇建築家，81 年多采多姿的藝術生涯，在台灣美術史上寫下燦爛傳奇的一頁。</p>
         <p>本館除了展出李梅樹教授不同時期的畫作，另一方面，李梅樹生前的書信文件，畫具和畫稿等，也於館內的文物陳列室一一展出；期盼透過本館的展覽，不僅使參觀者得以體會藝術家創作生涯的心路歷程，更能進一步明瞭，李梅樹的一生正是台灣美術走向本土化的縮影。</p>
         <p>期盼透過本館的展覽，不僅使參觀者得以體會藝術家創作生涯的心路歷程，更能進一步明瞭，李梅樹的一生正是台灣美術走向本土化的縮影。</p>
-        <router-link to="/about/gallery#more" class="button">
+        <router-link to="/about/gallery#more" class="button" alt="點一下來了解更多">
           <span>了解更多</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
@@ -66,7 +66,7 @@
           and sketches before Li’s death, were also displayed at the cultural display room of the gallery.</p>
         <p>The gallery expects to help visitors experience the course of the creation career as an artist through the exhibition
           but also further understand the life of Li Mei-Shu was a miniature of the progress of Taiwan’s art towards localization.</p>
-        <router-link to="/about/gallery" class="button">
+        <router-link to="/about/gallery" class="button" alt="Click to know more">
           <span>Read More</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
@@ -79,7 +79,7 @@
         <p>また、公共活動にも熱心であった李梅樹は、1935年から1958年の間、三峡街庄協議員、県議員等の役職に就いて郷里のために尽くしました。その後、国立台湾芸術専科学校(現在の国立台湾芸術大学)、文化大学、師範大学でも教壇に立ちました。その一生に渡って、李梅樹は芸術家・教育家・政治家・寺廟建築家といった身分を兼ね備え、81年間の多彩で多様なその芸術の生涯は、台湾美術史上において輝かしい一ページを残しました。</p>
         <p>本館では李梅樹の様々な時期の作品を展示しているほか、李梅樹の生前の書簡、絵画道具、画稿などを館内の文物陳列室にともに展示しています。</p>
         <p>本館の展示を通じ、ご来館の皆様にこの芸術家の画家人生における心の旅路を感じて頂くとともに、李梅樹の一生が台湾美術の本土化への縮図であったことを理解して頂くことを願っております。</p>
-        <router-link to="/about/gallery" class="button">
+        <router-link to="/about/gallery" class="button" alt="もっと知るためにクリック">
           <span>詳細</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
@@ -92,14 +92,14 @@
         <p>이외에 공익활동에도 열정적이셨던 리메이수(李梅樹)교수는 1935년~1958년까지 싼샤(三峽)가장(街庄)협의원(協議員)과 현(縣)의원의 직책을 맡고, 고향을 위해 봉사하였습니다. 일제시대이후에는 예술전문대학(현 국립대만예술대학) , 문화대학,사범대학등에서 교수를 역임하였고, 그는 평생에 걸쳐 예술가, 교육자, 정치인및 사원재건건축가등의 신분으로 81 년간 다채롭고 다양한 예술로 평생을 대만 미술 사상에 빛나는 한 페이지 장식하였습니다.</p>
         <p>본 기념관은 리메이수(李梅樹)교수의 시기별로 그림작품들이 전시되어 있을뿐만 아니라, 리메이수(李梅樹)생전의 편지와 그림도구와 초고(草稿)등이 기념관내의 유물 전시실에 함께 전시하고 있습니다.</p>
         <p>본 기념관의 전시를 통해서, 관람객여러분들이 예술가의 창작생애를 좀 더 깊이 이해하고 , 리메이수(李梅樹)의 일생은 대만예술의 본토화를 상징함을 알아주셨으면 합니다.</p>
-        <router-link to="/about/gallery" class="button">
+        <router-link to="/about/gallery" class="button" alt="더 알기 위해 클릭">
           <span>더 읽기</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
       </div>
     </div>
     <div class="spotlight left">
-      <div class="image" :style="{ 'background-image': 'url(https://image.limeishu.org.tw/images/hend.jpg)' }"></div>
+      <img class="image" src="https://image.limeishu.org.tw/images/hend.jpg" alt="圖片：李梅樹教授黑白照片，上半身">
       <div class="content" v-show="language === 'zh'">
         <h1>認識李梅樹</h1>
         <p>李梅樹（1902～1983）早年就讀總督府國語學校師範部，深受西洋繪畫的薰染，習畫的意念油然興起。早期畫作 1927《靜物》；1928《三峽的町裡》先後入選第一、二屆臺展。1928 年赴東京，奔波習畫於川端、同舟社及本鄉三個繪畫研究所。翌年，通過東京美術學校（東京藝大前身）入學試，師事畫壇大師長原孝太郎、小林萬吾及岡田三郎助等，奠定其後寫實風格的深厚基礎。</p>
@@ -107,7 +107,7 @@
         <p>1940 年《花與女》入選第四屆文展（奉祝展），自此奠定其為臺灣傑出之西洋美術家的歷史地位。1946 年應聘首屆省展審查委員，參展之《星期日》由省府購呈蔣總統。1948 年《黃昏》、《郊遊》等大幅畫作被視為具代表性之作品。1945 年臺灣光復後，除涉足三峽地方政治，並於 1947 年受公推主持長福巖清水祖師廟重建工作。此後畫作題材、風格日益趨向鄉土寫實，表現其特立獨行，傲視群倫的大家風範。</p>
         <p>1962 年以後歷任文化大學、國立藝專、師大等美術教授、主任等教職。指導藝專等雕塑科學生參與三峽祖師廟金屬浮雕工程，將學院專業技藝投注於傳統寺廟建築實務中，乃臺灣藝術教育史之創舉。</p>
         <p>李教授對美術教育推廣的貢獻，除學院正規教育外，並以嚴謹、精湛的美學素養，指導祖師廟聘請的諸多傳統木石雕刻師，造就祖師廟成為雕刻精品推砌而成的「東方藝術殿堂」，為臺灣現代寺廟建築的經典名作。晚年受美術界推選歷任油畫學會理事長、美協理事長、油畫學會榮譽理事長等崇高之職位。</p>
-        <router-link to="/intro/statement" class="button">
+        <router-link to="/intro/statement" class="button" alt="點一下來了解更多">
           <span>了解更多</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
@@ -142,7 +142,7 @@
           and Zushi Temple became the classic masterpiece of modern temple building in Taiwan. In his late years, he was
           recommended by the Art Industry and selected as the Oil Painting Association Director, Art Association Director,
           Oil Painting Association Honorary Director, and may esteemed positions. </p>
-        <router-link to="/intro/statement" class="button">
+        <router-link to="/intro/statement" class="button" alt="Click to know more">
           <span>Read More</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
@@ -150,7 +150,7 @@
       <div class="content" v-show="language === 'ja'">
         <h1>画家の紹介</h1>
         <p>李梅樹（1902～1983）は、早年に総督府国語学校師範部に学び、そこで西洋絵画の薫陶を受けて、絵画を学びたいという願いが湧き起こりました。初期の作品である1927年の《静物》、1928年の《三峡の町裏》は、第一回、第二回台湾美術展覧会にそれぞれ入選。1928年には東京に渡り、川端美術学校、同舟社、本郷美術学校の三ヵ所の絵画研究所で絵を学びました。翌年、東京美術学校（東京芸大の前身）の入学試験に合格し、長原孝太郎、小林萬吾、岡田三郎助ら当時の画壇の重鎮に師事、その後に続く写実的スタイルの基礎を固めました。1934年に友人の陳澄波、顔水龍、楊三郎、廖継春、陳清汾、李石樵、立石鉄臣らとともに「台陽美術協会」を創設。1935年に《憩ふ女》が第九回台展の特選第一等となり、「台湾総督賞」を受賞します。1939年には、《赤い衣》が日本で第三回新文展に入選、1940年に《花と女》が第三回新文展（奉祝展）に入選するなど、以後台湾の優れた西洋美術家としての歴史地位を確かなものとしました。1946年、第一回台湾省美術展覧会の審査委員となり、出品した《星期日（日曜日）》は台湾省政府から蒋介石総統に贈呈されました。1948年の《黄昏》、《郊遊（ピクニック）》といった大作は、画家の代表作とされています。1945年の台湾光復後、三峡の地方政治に足を踏み入れたほか、1947年には長福巌清水祖師廟再建工事の責任者に推挙されました。その後から、作品の題材やスタイルはしだいに郷土の写実へと向かい、その表現は独自の道を歩み、傑出した大家としての風格を帯びて行きます。1962年以後は、文化大学、国立芸術専科学校、師範大学などの美術教授や主任などの教職を歴任。芸専等の雕塑科学生を指導して三峡祖師廟の金属浮雕工事に参加させ、アカデミックな専門技術を伝統寺廟建築の現場に投入したことは、台湾芸術教育史において初めての試みでした。李梅樹による美術教育推進への貢献は、大学での正規教育以外にも、厳粛で精緻な美的素養でもって、祖師廟に招いた多くの伝統的木彫・石彫師らを指導し、祖師廟は彫刻の名品がつまった「東方芸術の殿堂」へと作り上げられ、現代台湾寺廟建築の古典的名作となりました。晩年には、美術界からの推薦により、油画学会理事長、美協理事長、油画学会栄誉理事長等の職を歴任しました。</p>
-        <router-link to="/intro/statement" class="button">
+        <router-link to="/intro/statement" class="button" alt="もっと知るためにクリック">
           <span>詳細</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
@@ -158,7 +158,7 @@
       <div class="content" v-show="language === 'ko'">
         <h1>화가소개</h1>
         <p>리메이수（ 李梅樹, 1902～1983）어려서 일본총독부 중국어(國語)학교사범부에서 교육을 받았으며, 서양화에 깊은 영향을 받아 , 그림을 배우고 싶다는 생각을 자연스럽게  가지게 되었습니다. 초기작품 1927년 "정물「靜物」",1928년 "싼샤읍내「三峽的町裡」"제 1 회, 제 2 회 대만미술대전(臺灣美術展覽會)에서 각각 입선하였습니다. 1928 년에 도쿄로 건너가 가와바타미술학교(川端畵學校), 도슈샤(同舟社 ), 혼고양화연구소(本鄕洋画硏究所) 세 군데 회화 연구소에서 그림을 배웠습니다. 다음해에  도쿄미술대학 입시시험에 합격하였고, 일본 화단의 거장 나가하라 고타로 (長原孝太郎) , 고바야시 만고 (小林 萬吾 ),오카다 사부로스케(岡田三郎助)등에게 그림을 배워서 사실주의의 기초를 다졌습니다. 1934년 천청보(陳澄波)、옌쉐이롱(顏水龍)、양산랑(楊三郎)、랴오지춘(廖繼春)、천칭펀(陳清汾)、리스차오(李石樵)、다테이시 데쯔오미 (立石鐵臣)가 모여 타이양미술협회(臺陽美術協會)를 결성하였습니다.  1935년 작품 " 휴식을 취하는 여성「小憩之女」"은 제 9회 대만미술대전에서 특1등에 당선되었으며 ,  대만총독부상(臺灣總督獎)을 수상하였습니다. 1939년  작품 "빨간옷「紅衣」"제3회 일본미술전람회(日本美術展覽會, 이전의 제국미술전람회)에서 입선하였습니다. 1940년 작품 "꽃과여인「花與女」" 제 4회 일본미술전람회(日本美術展覽會)에서 입선함으로써 대만의 걸출한 서양미술가의 역사적인 지위를 확고히 했습니다. 1946년 제1회 대만성전람회「省展」 심사위원으로 참여하였고, 작품 "일요일「星期日」" 을 출품하였는데 , 이 작품은 지방정부관료가 구입하여 장제스 (蔣介石 )총통에게 증여하였습니다.  1948년 작품" 황혼「黃昏」"、"야유회「郊遊」"같은 대작은 화가의 대표작이 되었습니다. 1945 년 대만광복 한 후에  싼샤(三峽)의 지방 정치에 발을 들여 놓은 것 이외에 1947 년에는 싼샤주스절(三峽祖師廟)재건사업의 책임자로 추대되었습니다. 이때부터 작품의 소재와 스타일은 점차 향토를 주제로 사실적으로 표현하는 독자적인 스타일을 만들어 사실주의 거장이 되었습니다.  1962 년 이후 문화대학, 국립예술학교, 사범 대학 등의 미술학과교수 및 주임 등의 교직을 역임하였습니다. 자신이 지도한  국립예술학교 조소학과 학생들을  싼샤주스절(三峽祖師廟) 금속부조작업 공정에 참여시켰습니다. 이는 학술적 기술을 전통 사찰 건축 현장에 투입 한 것으로  대만 예술교육사에서는 처음 시도되는 것이였습니다.  리메이수(李梅樹)교수가 대만미술교육에 공헌한것으로는 대학의 정규 교육 뿐만 아니라 엄격하고 심도 깊은 미적 소양을 가지고, 싼샤주스절(三峽祖師廟)의  초대 많은 전통 목조 • 석조조각가들을 지도하여, 싼샤주스절(三峽祖師廟) 는  조각 명품이 걸린 '동방 예술의 전당'으로 탄생시켰습니다.  현대 대만 사찰건축의 고전 명작이되었습니다. 노년에는 대만화단의 유화학회이사장, 미술협회 이사장, 유화학회 명예이사장등의 고위직에 추대 되었습니다.</p>
-        <router-link to="/intro/statement" class="button">
+        <router-link to="/intro/statement" class="button" alt="더 알기 위해 클릭">
           <span>더 읽기</span>
           <font-awesome-icon icon="angle-right" />
         </router-link>
@@ -226,12 +226,12 @@
               <h1 v-show="language === 'ja'">交通信息</h1>
               <h1 v-show="language === 'ko'">교통안내</h1>
               <div class="bar">
-                <div class="item" v-for="(item, i) in map.bar" :class="{ 'active': i === map.choosed }" @click="map.choosed = i" :key="i">
+                <a class="item" v-for="(item, i) in map.bar" :alt="item[language]" :class="{ 'active': i === map.choosed }" @click="map.choosed = i" :key="i">
                   <div class="icon">
                     <font-awesome-icon :icon="item.icon" />
                   </div>
                   <span>{{ item[language] }}</span>
-                </div>
+                </a>
               </div>
             </div>
             <div class="content">
@@ -264,7 +264,7 @@ export default {
           {
             'en': 'MRT',
             'zh': '捷運',
-            'ja': 'MRT（捷運）',
+            'ja': 'MRT',
             'ko': '타이베이MRT',
             icon: ['fas', 'subway']
           },
@@ -398,6 +398,8 @@ export default {
   },
   mounted () {
     this.getNews()
+    document.querySelector('.VueCarousel-navigation-prev').setAttribute('alt', '上一頁最新消息')
+    document.querySelector('.VueCarousel-navigation-next').setAttribute('alt', '下一頁最新消息')
   },
   methods: {
     ...mapActions({ getNews: 'getAllNews' }),

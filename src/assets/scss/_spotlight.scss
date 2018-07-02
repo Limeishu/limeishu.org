@@ -31,17 +31,17 @@
   }
   .image {
     width: 25rem;
+    height: 25rem;
     position: relative;
     border-radius: 50%;
-    background-size: cover;
     margin: 0 1rem;
     @media screen and (max-width: 768px) {
-      width: calc(100% - 2rem);
+      width: 20rem;
+      height: 20rem;
     }
-    &:before {
-      content: "";
-      display: block;
-      padding-top: 100%;
+    @media screen and (max-width: 320px) {
+      width: 18rem;
+      height: 18rem;
     }
   }
   >.content {
