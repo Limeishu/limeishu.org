@@ -1,18 +1,18 @@
 <template>
   <div id="nav" class="menu">
     <div class="mobile">
-      <div class="toggle-btn" @click="toggle({ opened: !navbar.opened })">
+      <div aria-label="選單" class="toggle-btn" @click="toggle({ opened: !navbar.opened })">
         <font-awesome-icon icon="bars" v-show="!navbar.opened" />
         <font-awesome-icon icon="angle-right" v-show="navbar.opened" />
       </div>
-      <img src="../../assets/images/icons/logo.svg" alt="">
+      <img src="../../assets/images/icons/logo.svg" alt="李梅樹紀念館 Logo">
     </div>
-    <ul>
+    <ul aria-label="網站目錄">
       <li v-for="(item, i) in menu" :key="i" :class="{'active': selected[0] === i}" @click="selected= [i, null]">
         <router-link :to="item.children ? '' : item.path" v-if="item.path">
           <span>{{ item.meta.label[language] || item.name }}</span><span class="icon"><font-awesome-icon v-if="device.isMobile && item.children" icon="angle-right" /></span>
         </router-link>
-        <ul v-if="item.children">
+        <ul v-if="item.children" :aria-label="`${item.meta.label[language] || item.name}的子目錄`">
           <li v-for="(item, j) in item.children" :key="j" :class="{'active': selected[0] === i && selected[1] === j}">
             <router-link :to="item.path" v-if="item.path">
               <span>{{ item.meta.label[language] || item.name }}</span>
