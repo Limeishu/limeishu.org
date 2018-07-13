@@ -122,12 +122,31 @@
     padding: 1.2rem;
     max-width: calc(100vw - 1.2rem * 2);
   }
-  img {
+  img, iframe {
     width: 100%;
+  }
+  iframe {
+    height: 405px;
+    @media screen and (max-width: 600px) {
+      height: 320px;
+    }
+    @media screen and (max-width: 414px) {
+      height: 210px;
+    }
+    @media screen and (max-width: 375px) {
+      height: 190px;
+    }
+    @media screen and (max-width: 320px) {
+      height: 160px;
+    }
   }
   h1 {
     margin: 3rem 0 1rem 0;
     font-weight: 500;
+    text-align: left;
+    @media screen and (max-width: 414px) {
+      font-size: 18pt;
+    }
   }
   p,
   ul {
