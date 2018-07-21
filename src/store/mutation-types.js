@@ -8,6 +8,8 @@ export const LANGUAGE  = 'LANGUAGE'
 
 export const NEWS = 'NEWS'
 
+export const POST = 'POST'
+
 export const CREATION = 'CREATION'
 
 export default {
