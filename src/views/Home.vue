@@ -428,11 +428,13 @@ export default {
   },
   mounted () {
     this.getNews()
+    this.getPost()
     document.querySelector('.VueCarousel-navigation-prev').setAttribute('alt', '上一頁最新消息')
     document.querySelector('.VueCarousel-navigation-next').setAttribute('alt', '下一頁最新消息')
   },
   methods: {
     ...mapActions({ getNews: 'getAllNews' }),
+    ...mapActions({ getPost: 'getAllPost' }),
     next () {
       this.$refs.flickity.next()
     },
