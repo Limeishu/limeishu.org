@@ -45,14 +45,14 @@ const state = {
           components: lazyLoader('components/Culture/News')
         },
         {
-          name: 'Report',
-          path: '/culture/report',
+          name: 'Post',
+          path: '/culture/post',
           meta: {
             label: {
-              'zh': '相關報導',
-              'en': 'Reports',
-              'ja': '報道',
-              'ko': '보도'
+              'zh': '推薦閱讀',
+              'en': 'Recommended Reading',
+              'ja': 'お勧めの読書',
+              'ko': '추천 독서'
             }
           },
           components: lazyLoader('components/Culture/Report')

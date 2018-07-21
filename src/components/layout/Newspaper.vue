@@ -1,8 +1,8 @@
 <template>
   <div class="spotlight inner">
     <div class="reader paragraph">
-      <h1>{{ post.title }}</h1>
-      <div v-html="post.paragraph"></div>
+      <h1>{{ news.title }}</h1>
+      <div v-html="news.paragraph"></div>
       <div class="share">
         <div class="icon"><font-awesome-icon icon="share-alt" /><span>{{ share[language] }}</span></div>
         <div class="icon facebook" @click="shareWindow('https://www.facebook.com/sharer/sharer.php?u=')"><font-awesome-icon :icon="['fab', 'facebook-f']" /><span>Facebook</span></div>
@@ -17,7 +17,7 @@
   export default {
     data () {
       return {
-        post: {},
+        news: {},
         share: {
           'zh': '分享至',
           'ja': 'シェア',
@@ -29,19 +29,19 @@
       ...mapGetters(['language', 'title'])
     },
     mounted () {
-      this.getPost()
+      this.getNews()
     },
     methods: {
-      ...mapActions(['getPostByID']),
+      ...mapActions(['getNewsByID']),
       shareWindow (url, social) {
         window.open(`${url}${window.location.href}`, '', 'height=480,width=640,toolbar=no,status=no,location=no')
       },
-      async getPost () {
+      async getNews () {
         try {
-          const res = await this.getPostByID(this.$route.params.id)
+          const res = await this.getNewsByID(this.$route.params.id)
           if (res.data) {
-            this.post = res.data
-            document.title = `${this.post.title} - ${this.title}`
+            this.news = res.data
+            document.title = `${this.news.title} - ${this.title}`
             let head = document.querySelectorAll('head>meta')
             head[4].content = head[10].content = res.data.content
             head[5].content = document.title
