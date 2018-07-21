@@ -29,9 +29,14 @@ const router =  new Router({
       component: (resolve) => { require(['@/components/layout/Error.vue'], resolve) }
     },
     {
+      name: 'Post',
+      path: '/culture/post/:id/index.html',
+      component: (resolve) => { require(['@/components/layout/Reader.vue'], resolve) }
+    },
+    {
       name: 'News',
       path: '/culture/news/:id/index.html',
-      component: (resolve) => { require(['@/components/layout/Reader.vue'], resolve) }
+      component: (resolve) => { require(['@/components/layout/Newspaper.vue'], resolve) }
     },
     {
       path: '*',

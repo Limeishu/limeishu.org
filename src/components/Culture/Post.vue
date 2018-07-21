@@ -9,7 +9,7 @@
         <div class="content">
           <span class="date">{{ new Date(post.date).toLocaleDateString() }}</span>
           <p>{{ `${post.content.substring(0, 50)}...` }}</p>
-          <router-link :to="`/culture/post/${post._id}/index.html`" class="button" alt="點一下來閱讀全文">
+          <router-link :to="`/culture/post/${post._id}`" class="button" alt="點一下來閱讀全文">
             <span>閱讀全文</span>
             <font-awesome-icon icon="angle-right" />
           </router-link>
