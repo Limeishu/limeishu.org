@@ -8,7 +8,7 @@ const router =  new Router({
   mode: 'history',
   routes: [
     {
-      path: '/culture/report',
+      path: '/culture/post',
       redirect: '/error/-1'
     },
     ...generateRoutesFromMenu(menuModule.state.items),
