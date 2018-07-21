@@ -55,7 +55,7 @@ const state = {
               'ko': '추천 독서'
             }
           },
-          components: lazyLoader('components/Culture/Report')
+          components: lazyLoader('components/Culture/Post')
         },
         {
           name: 'Mei-shu Month',

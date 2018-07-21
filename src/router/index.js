@@ -7,10 +7,6 @@ Vue.use(Router)
 const router =  new Router({
   mode: 'history',
   routes: [
-    {
-      path: '/culture/post',
-      redirect: '/error/-1'
-    },
     ...generateRoutesFromMenu(menuModule.state.items),
     {
       name: 'News',
