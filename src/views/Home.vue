@@ -164,36 +164,6 @@
         </router-link>
       </div>
     </div>
-    <div class="spotlight half">
-      <h1 v-show="language === 'zh'">推薦閱讀</h1>
-      <h1 v-show="language === 'en'">Recommended Reading</h1>
-      <h1 v-show="language === 'ja'">お勧めの読書</h1>
-      <h1 v-show="language === 'ko'">추천 독서</h1>
-      <carousel class="slider-container"
-      :loop="true"
-      :autoplayTimeout="3000"
-      :perPage="device.isMobile ? 1 : 3"
-      :autoplayHoverPause="true"
-      :navigationEnabled="true"
-      navigationNextLabel="<svg aria-hidden='true' data-fa-processed='' data-prefix='fas' data-icon='angle-right' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512' class='svg-inline--fa fa-angle-right fa-w-8'><path fill='currentColor' d='M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z'></path></svg>"
-      navigationPrevLabel="<svg aria-hidden='true' data-fa-processed='' data-prefix='fas' data-icon='angle-left' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512' class='svg-inline--fa fa-angle-left fa-w-8'><path fill='currentColor' d='M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z' class=''></path></svg>">
-        <slide v-for="(post, i) in post.data" :key="i" v-if="i <= 6">
-          <div class="slider" @click="$router.push(`/culture/post/${post._id}`)">
-            <img v-if="post.meta.image" :src="post.meta.image" :alt="post.meta.imageAlt ? post.meta.imageAlt : post.title">
-            <iframe v-if="post.meta.video" :src="post.meta.video" frameborder="0"></iframe>
-            <div class="content">
-              <h2>{{ post.title }}</h2>
-              <hr>
-              <p>{{ `${post.content.substring(0, 100)}...` }}</p>
-              <router-link :to="`/culture/post/${post._id}`" class="button" alt="點一下來閱讀全文">
-                <span>閱讀全文</span>
-                <font-awesome-icon icon="angle-right" />
-              </router-link>
-            </div>
-          </div>
-        </slide>
-      </carousel>
-    </div>
     <div class="spotlight bg-gray half">
       <div class="list" v-show="language === 'zh'">
         <h1>參觀須知</h1>
@@ -245,6 +215,36 @@
           <p>기타관람문의는<br>전화： <a href="tel:0226732333">(02)2673-2333</a>, 혹은 이메일：<a href="malito:limeishu@gmail.com">limeishu@gmail.com</a>로 문의 바랍니다.</p>
         </ul>
       </div>
+    </div>
+    <div class="spotlight half">
+      <h1 v-show="language === 'zh'">推薦閱讀</h1>
+      <h1 v-show="language === 'en'">Recommended Reading</h1>
+      <h1 v-show="language === 'ja'">お勧めの読書</h1>
+      <h1 v-show="language === 'ko'">추천 독서</h1>
+      <carousel class="slider-container"
+      :loop="true"
+      :autoplayTimeout="3000"
+      :perPage="device.isMobile ? 1 : 3"
+      :autoplayHoverPause="true"
+      :navigationEnabled="true"
+      navigationNextLabel="<svg aria-hidden='true' data-fa-processed='' data-prefix='fas' data-icon='angle-right' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512' class='svg-inline--fa fa-angle-right fa-w-8'><path fill='currentColor' d='M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z'></path></svg>"
+      navigationPrevLabel="<svg aria-hidden='true' data-fa-processed='' data-prefix='fas' data-icon='angle-left' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512' class='svg-inline--fa fa-angle-left fa-w-8'><path fill='currentColor' d='M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z' class=''></path></svg>">
+        <slide v-for="(post, i) in post.data" :key="i" v-if="i <= 6">
+          <div class="slider" @click="$router.push(`/culture/post/${post._id}`)">
+            <img v-if="post.meta.image" :src="post.meta.image" :alt="post.meta.imageAlt ? post.meta.imageAlt : post.title">
+            <iframe v-if="post.meta.video" :src="post.meta.video" frameborder="0"></iframe>
+            <div class="content">
+              <h2>{{ post.title }}</h2>
+              <hr>
+              <p>{{ `${post.content.substring(0, 100)}...` }}</p>
+              <router-link :to="`/culture/post/${post._id}`" class="button" alt="點一下來閱讀全文">
+                <span>閱讀全文</span>
+                <font-awesome-icon icon="angle-right" />
+              </router-link>
+            </div>
+          </div>
+        </slide>
+      </carousel>
     </div>
     <div class="spotlight bg-light">
       <div class="traffic">

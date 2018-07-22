@@ -6,19 +6,14 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  &:first-child {
-    margin-top: 10rem;
-    @media screen and (max-width: 768px) {
-      margin-top: 2rem;
-    }
-  }
   &.left {
     flex-direction: row-reverse;
   }
   &.right {
     flex-direction: row;
   }
-  &.left, &.right {
+  &.left,
+  &.right {
     min-height: auto;
     padding: 2rem 0;
     @media screen and (max-width: 768px) {
@@ -28,6 +23,12 @@
   &.half {
     flex-direction: column;
     min-height: 50vh;
+    &:not(.bg-gray) {
+      margin-top: 10rem;
+      @media screen and (max-width: 768px) {
+        margin-top: 2rem;
+      }
+    }
   }
   .image {
     width: 25rem;
@@ -75,7 +76,8 @@
     h1 {
       margin-bottom: 1rem;
     }
-    li, p {
+    li,
+    p {
       line-height: 32px;
       color: $skin;
       letter-spacing: 1px;
