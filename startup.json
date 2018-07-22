@@ -1,6 +1,6 @@
 {
   "apps": [{
-    "name": "Beta-LMS-Webroot",
+    "name": "limeishu.org",
     "script": "./server/index.js",
     "watch": true
   }]
