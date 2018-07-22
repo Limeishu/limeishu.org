@@ -1,6 +1,6 @@
 node {
 	def app
-	def project_name = 'LMS-Website'
+	def project_name = 'limeishu.org'
 
 	stage('Clone repo'){
 		checkout scm
