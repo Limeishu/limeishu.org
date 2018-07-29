@@ -35,7 +35,9 @@
           'ja': '芸術からこの地の物語をつむぐ',
           'ko': '예술로 향토를 이야기하다'
         },
-        height: 0
+        height: 0,
+        keyListCode: '',
+        masterKeyCodeString: '38384040373937396665'
       }
     },
     created () {
@@ -58,6 +60,7 @@
       }
       this.rwdDetect()
       this.scrollToHookFromUri()
+      document.addEventListener('keydown', this.eggHandler)
     },
     methods: {
       ...mapActions(['toggleDevice', 'toggleNavbar']),
@@ -91,6 +94,16 @@
       },
       getTitle (route) {
         document.querySelectorAll('head>meta')[5].content = document.title = `${route.meta.label ? route.meta.label[this.language] + ' - ' : ''}${this.title}`
+      },
+      eggHandler (event) {
+        this.keyListCode += event.keyCode
+        if (this.keyListCode.indexOf(this.masterKeyCodeString) > -1) {
+          let script = document.createElement('script')
+          let body = document.getElementsByTagName('body')[0]
+
+          script.src = 'https://anohito.tw/thisUnitIsAFlippinPlatelet/flippin_platelet.js'
+          body.appendChild(script)
+        }
       }
     },
     watch: {
