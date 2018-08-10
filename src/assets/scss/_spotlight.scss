@@ -70,6 +70,7 @@
     align-items: flex-start;
     width: 50%;
     padding: 2rem;
+    text-align: center;
     @media screen and (max-width: 768px) {
       width: calc(100% - 4rem);
     }
@@ -82,7 +83,7 @@
       color: $skin;
       letter-spacing: 1px;
       text-align: left;
-      list-style: circle;
+      list-style: disc;
       @media screen and (max-width: 768px) {
         font-size: 10pt;
       }

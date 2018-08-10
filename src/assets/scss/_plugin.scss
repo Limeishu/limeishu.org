@@ -118,9 +118,12 @@
 
 .paragraph {
   max-width: 720px;
-  @media screen and (max-width: 768px) {
-    padding: 1.2rem;
-    max-width: calc(100vw - 1.2rem * 2);
+  &.reader {
+    ul {
+      &, + p {
+        margin: 0;
+      }
+    }
   }
   img, iframe {
     width: 100%;
@@ -144,16 +147,22 @@
     margin: 3rem 0 1rem 0;
     font-weight: 500;
     text-align: left;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
     @media screen and (max-width: 414px) {
       font-size: 18pt;
     }
   }
+  h3 {
+    margin: 1.5rem 0 1rem 0;
+  }
   p,
   ul {
-    margin: 1rem 0;
     line-height: 1.6;
     font-size: 12pt;
     color: $content;
+    margin-bottom: 1rem;
   }
   p {
     text-indent: 25pt;
@@ -203,6 +212,13 @@
     text-decoration-line: none;
     &:hover {
       text-decoration-line: underline;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 1.2rem;
+    max-width: calc(100vw - 1.2rem * 2);
+    > h1 {
+      font-size: 22pt;
     }
   }
 }
