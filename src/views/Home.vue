@@ -165,7 +165,7 @@
       </div>
     </div>
     <div class="spotlight bg-gray half">
-      <h1>參觀須知</h1>
+      <h1 v-show="language === 'zh'">參觀須知</h1>
       <div class="rules-container" v-show="language === 'zh'">
         <div class="rule">
           <div class="title">

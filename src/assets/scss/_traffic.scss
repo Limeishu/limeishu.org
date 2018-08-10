@@ -21,6 +21,9 @@
     width: calc(70% - 4rem);
     border-radius: 3pt;
     box-shadow: 1pt 1pt 2pt rgba($black, .5);
+    @media screen and (max-width: 1360px) {
+      width: calc(50% - 2rem);
+    }
     @media screen and (max-width: 768px) {
       width: 100%;
       height: 80vh;
@@ -35,6 +38,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 1360px) {
+      width: calc(50% - 2rem);
+    }
     @media screen and (max-width: 768px) {
       width: 100%;
       height: 100vh;
