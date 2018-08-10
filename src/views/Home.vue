@@ -165,19 +165,48 @@
       </div>
     </div>
     <div class="spotlight bg-gray half">
-      <div class="list" v-show="language === 'zh'">
-        <h1>參觀須知</h1>
-        <ul>
-          <li>本館採收費參觀制，清潔費每位 100 元、敬老 / 學生 / 軍警每位 80 元，身心障礙者及其必要陪伴者一人每人清潔費50元；嬰幼兒免費</li>
-          <li>開放參觀時間: 每週六、日，10:00AM ~ 05:00PM。其餘時段，歡迎團體預約參觀（團體預約參觀時間，可提早自上午九點開始，詳情請洽詢本館）</li>
-          <li>額外行程視情況酌收額外導覽費</li>
-          <li>入館參觀請勿攝影、飲食、吸煙</li>
-          <li>未滿 12 歲兒童請由家長陪伴參觀</li>
-          <p>其他參觀細則請洽
-            <a href="tel:0226732333">(02)2673-2333</a> 或 E-mail :
-            <a href="malito:limeishu@gmail.com">limeishu@gmail.com</a>
-          </p>
-        </ul>
+      <h1>參觀須知</h1>
+      <div class="rules-container" v-show="language === 'zh'">
+        <div class="rule">
+          <div class="title">
+            <div class="icon"><font-awesome-icon icon="dollar-sign" /></div>
+            <h3>本館採收費參觀制</h3>
+          </div>
+          <div class="content">
+            <p><span>成人</span><span>100 元 / 每位</span></p>
+            <p><span>敬老 / 學生 / 軍警</span><span>80 元 / 每位</span></p>
+            <p><span>身心障礙者<br />及其必要陪伴者一位</span><span>50 元 / 每位</span></p>
+            <p><span>嬰幼兒</span><span>免費</span></p>
+            <p>酌收之參觀費用，本館將作為清潔費用途使用</p>
+          </div>
+        </div>
+        <div class="rule">
+          <div class="title">
+            <div class="icon"><font-awesome-icon icon="clock" /></div>
+            <h3>開放時間</h3>
+          </div>
+          <div class="content">
+            <p><span>每週六、日</span><span>10:00 AM ～ 05:00 PM</span></p>
+            <p>
+              其餘時段歡迎團體預約參觀<br />
+              （團體預約參觀時間，可提早自上午九點開始，詳情請洽詢本館）
+            </p>
+          </div>
+        </div>
+        <div class="rule">
+          <div class="title">
+            <div class="icon"><font-awesome-icon icon="exclamation" /></div>
+            <h3>注意事項</h3>
+          </div>
+          <div class="content merge">
+            <p>額外行程視情況酌收額外導覽費</p>
+            <p>入館參觀請勿攝影、飲食、吸煙</p>
+            <p>未滿 12 歲兒童請由家長陪伴參觀</p>
+            <p>其他參觀細則請洽 <a href="tel:0226732333">(02)2673-2333</a><br />
+              E-mail : <a href="malito:limeishu@gmail.com">limeishu@gmail.com</a>
+            </p>
+          </div>
+        </div>
       </div>
       <div class="list" v-show="language === 'en'">
         <h1>Instructions for Visit</h1>

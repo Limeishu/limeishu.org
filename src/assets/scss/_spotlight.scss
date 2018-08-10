@@ -23,6 +23,7 @@
   &.half {
     flex-direction: column;
     min-height: 50vh;
+    padding: 2rem 0;
     &:not(.bg-gray) {
       margin-top: 10rem;
       @media screen and (max-width: 768px) {
@@ -99,6 +100,76 @@
     @media screen and (max-width: 768px) {
       padding-top: 0;
       min-height: calc(100vh);
+    }
+  }
+  .rules-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    .rule {
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      width: 20rem;
+      border: 1px solid $white;
+      border-radius: 10pt;
+      padding: 1rem;
+      .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .icon {
+          font-size: 28pt;
+        }
+        h3 {
+          font-size: 16pt;
+          font-weight: 600;
+          margin: 1rem;
+        }
+      }
+      .content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &.merge p {
+          justify-content: center;
+          &:last-child {
+            display: block;
+            a {
+              color: $tone;
+            }
+          }
+        }
+        p {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 12pt;
+          margin: 3pt 0;
+          text-align: center;
+          &:last-child {
+            font-size: 10pt;
+            color: rgba($white, .8);
+            justify-content: center;
+            margin-top: 1rem;
+          }
+          span {
+            color: $white;
+            font-size: 12pt;
+            text-align: left;
+            &:last-child {
+              text-align: right;
+              max-width: 12rem;
+            }
+          }
+        }
+      }
     }
   }
 }
