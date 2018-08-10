@@ -65,7 +65,7 @@
     methods: {
       ...mapActions(['toggleDevice', 'toggleNavbar']),
       scrollToHookFromUri () {
-        if (this.$route.hash) setTimeout(() => window.scrollTo(0, document.querySelector(this.$route.hash).offsetTop), 100)
+        if (this.$route.hash) setTimeout(() => window.scrollTo(0, document.querySelector(decodeURI(this.$route.hash)).offsetTop), 100)
       },
       changeBanner () {
         setInterval(() => {
