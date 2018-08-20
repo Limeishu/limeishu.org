@@ -42,7 +42,19 @@ const router =  new Router({
       path: '*',
       redirect: '/error/404'
     }
-  ]
+  ],
+  scrollBehavior (to) {
+    if (to.hash) {
+      return {
+        selector: to.hash
+      }
+    } else {
+      return {
+        x: 0,
+        y: 0
+      }
+    }
+  }
 })
 
 function generateRoutesFromMenu (menu = [], routes = []) {
