@@ -59,14 +59,10 @@
         this.rwdDetect()
       }
       this.rwdDetect()
-      this.scrollToHookFromUri()
       document.addEventListener('keydown', this.eggHandler)
     },
     methods: {
       ...mapActions(['toggleDevice', 'toggleNavbar']),
-      scrollToHookFromUri () {
-        if (this.$route.hash) setTimeout(() => window.scrollTo(0, document.querySelector(decodeURI(this.$route.hash)).offsetTop), 100)
-      },
       changeBanner () {
         setInterval(() => {
           this.bannerAt++
@@ -110,9 +106,7 @@
       $route (route) {
         this.childDetect()
         this.toggleNavbar({ opened: false })
-        window.scrollTo(0, 0)
         this.getTitle(route)
-        this.scrollToHookFromUri()
       },
       language () {
         this.$ua.changeSessionLanguage(this.language)
