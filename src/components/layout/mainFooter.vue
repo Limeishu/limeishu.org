@@ -122,7 +122,11 @@ export default {
     ...mapGetters(['language', 'title'])
   },
   created () {
-    this.selectLang = this.language
+    if (Object.keys(this.langLocalize).find(e => (e === this.$route.query.lang))) {
+      this.selectLang = this.$route.query.lang
+    } else {
+      this.selectLang = this.language
+    }
   },
   methods: {
     ...mapActions(['changeLang'])
