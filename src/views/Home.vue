@@ -17,8 +17,7 @@
           <div class="slider" @click="$router.push(`/culture/news/${news._id}`)">
             <img :src="news.meta.image" :alt="news.meta.imageAlt ? news.meta.imageAlt : news.title">
             <div class="content">
-              <h2>{{ news.title }}</h2>
-              <hr>
+              <h2>{{ news.title }}</h2>             
               <p>{{ `${news.content.substring(0, 100)}...` }}</p>
               <router-link :to="`/culture/news/${news._id}`" class="button" alt="點一下來了解更多">
                 <span>了解更多</span>
@@ -263,8 +262,7 @@
             <img v-if="post.meta.image" :src="post.meta.image" :alt="post.meta.imageAlt ? post.meta.imageAlt : post.title">
             <iframe v-if="post.meta.video" :src="post.meta.video" frameborder="0"></iframe>
             <div class="content">
-              <h2>{{ post.title }}</h2>
-              <hr>
+              <h2>{{ post.title }}</h2>          
               <p>{{ `${post.content.substring(0, 100)}...` }}</p>
               <router-link :to="`/culture/post/${post._id}`" class="button" alt="點一下來閱讀全文">
                 <span>閱讀全文</span>
@@ -300,7 +298,9 @@
             </div>
           </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0443806157864!2d121.37067131500416!3d24.93055798402082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681bec4aab9289%3A0x19406de61e70b2d4!2z5p2O5qKF5qi557SA5b-16aSo!5e0!3m2!1szh!2stw!4v1516105422004" frameborder="0" class="map" allowfullscreen></iframe>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0443806157864!2d121.37067131500416!3d24.93055798402082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681bec4aab9289%3A0x19406de61e70b2d4!2z5p2O5qKF5qi557SA5b-16aSo!5e0!3m2!1szh!2stw!4v1516105422004" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
