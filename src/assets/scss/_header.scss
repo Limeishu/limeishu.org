@@ -218,7 +218,7 @@
       padding: 0 calc((100% - 720px) / 2);
       height: 4rem;
       grid-template-areas: "parent parent  parent  parent" "active child-0 child-1 child-2";
-      grid-template-columns: auto .2fr .2fr .2fr;
+      grid-template-columns: repeat(4, auto);
       grid-template-rows: 1fr 26pt;
       .parent {
         display: flex;
@@ -237,19 +237,23 @@
         letter-spacing: 1px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         justify-content: flex-end;
         height: 26pt;
         a {
           text-align: center;
           color: inherit;
           text-decoration: none;
-          line-height: 16pt;
+          line-height: 1.2;
+          padding-bottom: 5pt;
         }
         &.active {
           align-items: flex-start;
           grid-area: active;
           font-size: 22pt;
+          a {
+            padding: 0;
+          }
         }
       }
     }

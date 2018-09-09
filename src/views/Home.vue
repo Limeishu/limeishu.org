@@ -300,7 +300,9 @@
             </div>
           </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0443806157864!2d121.37067131500416!3d24.93055798402082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681bec4aab9289%3A0x19406de61e70b2d4!2z5p2O5qKF5qi557SA5b-16aSo!5e0!3m2!1szh!2stw!4v1516105422004" frameborder="0" class="map" allowfullscreen></iframe>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.0443806157864!2d121.37067131500416!3d24.93055798402082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681bec4aab9289%3A0x19406de61e70b2d4!2z5p2O5qKF5qi557SA5b-16aSo!5e0!3m2!1szh!2stw!4v1516105422004" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
