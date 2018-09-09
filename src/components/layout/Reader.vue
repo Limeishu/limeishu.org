@@ -45,6 +45,7 @@
             let head = document.querySelectorAll('head>meta')
             head[4].content = head[10].content = res.data.content
             head[5].content = document.title
+            head[7].content = `https://limeishu.org.tw${document.location.pathname}`
             head[8].content = res.data.meta.video ? '' : res.data.meta.image
             head[11].content = res.data.meta.video || ''
           } else {
