@@ -91,7 +91,7 @@
       getTitle (route) {
         const head = document.querySelectorAll('head>meta')
         head[5].content = document.title = `${route.meta.label ? route.meta.label[this.language] + ' - ' : ''}${this.title}`
-        head[7].content = `https://limeishu.org.tw${document.location.pathname}}`
+        head[7].content = `https://limeishu.org.tw${document.location.pathname}`
       },
       eggHandler (event) {
         this.keyListCode += event.keyCode
