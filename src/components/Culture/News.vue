@@ -4,9 +4,9 @@
     <div class="card-container">
       <div class="card" v-for="(news, i) in news.data" :key="i">
         <div class="image" :style="{ 'background-image': `url(${news.meta.image})` }">
-          <h2>{{ news.title }}</h2>
         </div>
         <div class="content">
+          <h1>{{ news.title }}</h1>
           <span class="date">{{ new Date(news.date).toLocaleDateString() }}</span>
           <p>{{ `${news.content.substring(0, 50)}...` }}</p>
           <router-link :to="`/culture/news/${news._id}`" class="button" alt="點一下來閱讀全文">

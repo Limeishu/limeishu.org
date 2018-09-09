@@ -2,9 +2,11 @@
   margin: 1rem 0;
   color: $tone;
   text-decoration: none;
+
   a {
     color: inherit;
   }
+
   span {
     margin-right: 1rem;
   }
@@ -24,10 +26,12 @@
     transform: translateY(0em);
     opacity: 0;
   }
+
   50% {
     transform: translateY(4em);
     opacity: 0.8;
   }
+
   100% {
     transform: translateY(0em);
     opacity: 0;
@@ -45,9 +49,11 @@
   filter: drop-shadow(0 0 8px $black);
   -webkit-filter: drop-shadow(0 0 8px $black);
   cursor: pointer;
+
   @media screen and (max-width: 667px) {
     transform: scale(.7);
   }
+
   img {
     animation: downArrow 2s infinite;
     width: 108pt;
@@ -59,7 +65,10 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 720px;
-  justify-content: center;
+  @media screen and (max-width: 700px) {
+    justify-content: center;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
@@ -67,10 +76,11 @@
     min-width: 320px;
     margin: 4pt;
     position: relative;
-    box-shadow: 1pt 1pt 2pt rgba($black, .5);
-    border-radius: 2pt;
+    box-shadow: 1pt 1pt 5pt rgba($black, .3);
+    border-radius: 10pt;
     overflow: hidden;
-    .image {
+
+    .image, iframe {
       border-radius: 0;
       height: 200px;
       width: 100%;
@@ -81,34 +91,35 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      &:before {
-        top: 0;
-        z-index: 0;
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        position: absolute;
-        content: '';
-        background-color: rgba($black, .5);
-      }
-      h2 {
-        z-index: 1;
-        padding: 8pt;
-        color: $white;
-        font-size: 16pt;
-      }
     }
+
     .content {
+      display: flex;
+      flex-direction: column;
       margin: 8pt;
       width: calc(100% - 16pt);
+      height: calc(100% - 200px - 16pt);
+
+      h1 {
+        margin: 8pt 0;
+        z-index: 1;
+        font-size: 14pt;
+        text-align: left;
+      }
+
       .date {
         color: $skin-dark;
         font-size: 10pt;
       }
+
       p {
         margin: 8pt 0;
+        font-size: 11pt;
       }
+
       a {
+        margin: auto 0 0 auto;
+        font-size: 11pt;
         &:hover {
           text-decoration-line: none;
         }
@@ -119,45 +130,61 @@
 
 .paragraph {
   max-width: 720px;
+
   &.reader {
     ul {
-      &, + p {
+
+      &,
+      +p {
         margin: 0;
       }
     }
   }
-  img, iframe {
+
+  img,
+  iframe {
     width: 100%;
+    border-radius: 10pt;
   }
+
   iframe {
     height: 405px;
+
     @media screen and (max-width: 600px) {
       height: 320px;
     }
+
     @media screen and (max-width: 414px) {
       height: 210px;
     }
+
     @media screen and (max-width: 375px) {
       height: 190px;
     }
+
     @media screen and (max-width: 320px) {
       height: 160px;
     }
   }
+
   h1 {
     margin: 3rem 0 1rem 0;
     font-weight: 500;
     text-align: left;
+
     @media screen and (max-width: 768px) {
       text-align: center;
     }
+
     @media screen and (max-width: 414px) {
       font-size: 18pt;
     }
   }
+
   h3 {
     margin: 1.5rem 0 1rem 0;
   }
+
   p,
   ul {
     line-height: 1.6;
@@ -165,37 +192,46 @@
     color: $content;
     margin-bottom: 1rem;
   }
+
   p {
     text-indent: 25pt;
+
     >a {
       margin: 0;
     }
   }
+
   p>img {
     transform: translateX(-25pt);
   }
+
   ul {
     background-color: $light;
     padding: 1rem;
-    border-radius: 2pt;
+    border-radius: 10pt;
+
     li {
       text-indent: 0;
       list-style: disc;
       margin: 0 0 1rem 1rem;
       line-height: 1.6;
+
       &:last-child {
         margin-bottom: 0;
       }
+
       >a {
         margin: 0;
       }
     }
   }
+
   h2 {
     position: relative;
     padding-left: 2rem;
     margin: 2rem 0 1rem 0;
     font-weight: 500;
+
     &:before {
       pointer-events: none;
       transform: translateX(-2rem);
@@ -206,19 +242,23 @@
       width: 100%;
     }
   }
+
   a {
     margin-right: 2rem;
     color: $tone;
     font-weight: 500;
     text-decoration-line: none;
+
     &:hover {
       text-decoration-line: underline;
     }
   }
+
   @media screen and (max-width: 768px) {
     padding: 1.2rem;
     max-width: calc(100vw - 1.2rem * 2);
-    > h1 {
+
+    >h1 {
       font-size: 22pt;
     }
   }
@@ -229,42 +269,51 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
   .timeline {
     display: flex;
     flex-direction: row;
     position: relative;
     width: 100%;
     overflow: hidden;
+
     @media screen and (max-width: 768px) {
       flex-direction: column;
     }
+
     &:nth-child(odd) {
       background-color: rgba($tone, .1)
     }
+
     .date {
       font-size: 12pt;
       width: 15rem;
       padding: .5rem;
       display: flex;
       justify-content: flex-end;
+
       @media screen and (max-width: 768px) {
         justify-content: flex-start;
         width: auto;
         padding: 0 1.5rem;
       }
+
       span {
         line-height: 1.6;
       }
     }
+
     .content {
       font-size: 12pt;
       width: calc(100% - 10rem);
       display: flex;
       flex-direction: column;
       padding: 0 1.5rem;
+
       @media screen and (max-width: 768px) {
         width: auto;
       }
+
       &:before {
         top: calc(6px + .5rem);
         border: 6px solid $tone;
@@ -272,24 +321,29 @@
         position: absolute;
         border-radius: 50%;
         transform: translateX(calc(-100% - 1.5rem / 2));
+
         @media screen and (max-width: 768px) {
           top: 7px;
           transform: translateX(calc(-100% - 7px));
         }
       }
+
       &:after {
         border: 1px solid $tone;
         content: "";
         position: absolute;
         transform: translateX(calc(-1.5rem + 5px));
         height: 100%;
+
         @media screen and (max-width: 768px) {
           transform: translateX(calc(-100% - 12px));
         }
       }
+
       h3 {
         margin: .5rem 0;
       }
+
       p {
         line-height: 1.6;
         margin: .5rem 0;
@@ -307,17 +361,21 @@
   background-position: center;
   justify-content: center;
   align-items: center;
+
   .msg {
     color: $white;
     text-align: center;
     filter: drop-shadow(0 0 5pt rgba($black, 1));
+
     h1 {
       line-height: 32pt;
       font-size: 150pt;
+
       span {
         font-size: 32pt;
       }
     }
+
     p {
       font-size: 18pt;
     }
@@ -332,9 +390,11 @@
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid $skin_dark;
+
   @media screen and (max-width: 768px) {
     justify-content: center;
   }
+
   .icon {
     cursor: pointer;
     display: flex;
@@ -342,15 +402,19 @@
     align-items: center;
     margin: 0 10pt;
     transition: color .3s;
+
     &:hover {
       color: $tone;
+
       &.facebook {
         color: $facebook;
       }
+
       &.twitter {
         color: $twitter;
       }
     }
+
     span {
       font-size: 10pt;
       margin: 5pt;

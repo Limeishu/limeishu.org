@@ -19,8 +19,8 @@
     border: 0;
     height: 80%;
     width: calc(70% - 4rem);
-    border-radius: 3pt;
-    box-shadow: 1pt 1pt 2pt rgba($black, .5);
+    border-radius: 10pt;
+    box-shadow: 1pt 1pt 5pt rgba($black, .3);
     @media screen and (max-width: 1360px) {
       width: calc(50% - 2rem);
     }
@@ -49,8 +49,8 @@
       overflow: hidden;
       width: 100%;
       height: 100%;
-      border-radius: 3pt;
-      box-shadow: 1pt 1pt 2pt rgba($black, .5);
+      border-radius: 10pt;
+      box-shadow: 1pt 1pt 5pt rgba($black, .3);
       display: flex;
       flex-direction: column;
       background: $white;
