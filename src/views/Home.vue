@@ -17,8 +17,7 @@
           <div class="slider" @click="$router.push(`/culture/news/${news._id}`)">
             <img :src="news.meta.image" :alt="news.meta.imageAlt ? news.meta.imageAlt : news.title">
             <div class="content">
-              <h2>{{ news.title }}</h2>
-              <hr>
+              <h2>{{ news.title }}</h2>             
               <p>{{ `${news.content.substring(0, 100)}...` }}</p>
               <router-link :to="`/culture/news/${news._id}`" class="button" alt="點一下來了解更多">
                 <span>了解更多</span>
@@ -263,8 +262,7 @@
             <img v-if="post.meta.image" :src="post.meta.image" :alt="post.meta.imageAlt ? post.meta.imageAlt : post.title">
             <iframe v-if="post.meta.video" :src="post.meta.video" frameborder="0"></iframe>
             <div class="content">
-              <h2>{{ post.title }}</h2>
-              <hr>
+              <h2>{{ post.title }}</h2>          
               <p>{{ `${post.content.substring(0, 100)}...` }}</p>
               <router-link :to="`/culture/post/${post._id}`" class="button" alt="點一下來閱讀全文">
                 <span>閱讀全文</span>
