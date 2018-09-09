@@ -11,9 +11,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    .VueCarousel-dot-inner {
+      transition: ease-in-out all .3s;
+      border-radius: 5px;
+      background-color: $skin !important;
+    }
   }
   .VueCarousel-dot--active .VueCarousel-dot-inner {
     background-color: $tone !important;
+    width: 25px !important;
   }
   .VueCarousel-navigation,
   .VueCarousel-pagination {
@@ -47,12 +53,12 @@
   }
   .slider {
     z-index: 1;
-    margin: 1rem .5rem;
-    padding: 1rem;
+    margin: 1rem;
+    overflow: hidden;
     height: calc(100% - 2rem);
-    border-radius: 3pt;
+    border-radius: 10pt;
     box-sizing: border-box;
-    box-shadow: 1pt 1pt 2pt rgba($black, .5);
+    box-shadow: 1pt 1pt 5pt rgba($black, .3);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -61,8 +67,6 @@
     img {
       width: 100%;
       display: flex;
-      box-shadow: 0 0 1pt rgba($black, .5);
-      margin-bottom: 1rem;
       background-color: $tone;
       &:before {
         content: "";
@@ -76,8 +80,8 @@
       margin-bottom: 1rem;
     }
     .content {
-      margin-top: auto;
-      width: 100%;
+      margin: 1rem;
+      width: calc(100% - 2rem);
       flex-direction: column;
       h2 {
         font-size: 20px;
