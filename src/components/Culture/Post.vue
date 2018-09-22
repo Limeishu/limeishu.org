@@ -2,7 +2,7 @@
   <div class="paragraph">
     <h1>{{ $route.meta.label[language] }}</h1>
     <div class="card-container">
-      <div class="card" v-for="(post, i) in post.data" :key="i">
+      <div class="card" v-for="(post, i) in post.data" :key="i" @click="$router.push(`/culture/post/${post._id}`)">
         <iframe v-if="post.meta.video" :src="post.meta.video" frameborder="0"></iframe>
         <div v-else class="image" :style="{ 'background-image': `url(${post.meta.image})` }"></div>
         <div class="content">
