@@ -2,7 +2,7 @@
   <div class="paragraph">
     <h1>{{ $route.meta.label[language] }}</h1>
     <div class="card-container">
-      <div class="card" v-for="(news, i) in news.data" :key="i">
+      <div class="card" v-for="(news, i) in news.data" :key="i" @click="$router.push(`/culture/news/${news._id}`)">
         <div class="image" :style="{ 'background-image': `url(${news.meta.image})` }">
         </div>
         <div class="content">

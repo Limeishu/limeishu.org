@@ -8,17 +8,15 @@ import VueCarousel  from 'vue-carousel'
 import VueAnalytics from 'vue-ua'
 
 // Fontawesome
-// the component
 import { FontAwesomeIcon }  from '@fortawesome/vue-fontawesome'
-// the library
 import { library }          from '@fortawesome/fontawesome-svg-core'
-// add more icon categories as you want them, even works with pro packs
 import { fab }              from '@fortawesome/free-brands-svg-icons'
 import { fas }              from '@fortawesome/free-solid-svg-icons'
 
 import App          from './App'
 import router       from './router'
 import store        from './store'
+import * as pkgInfo from '../package.json'
 
 Vue.router = router
 Vue.use(VueAxios, axios)
@@ -29,7 +27,7 @@ Vue.use(VueCookie)
 
 Vue.use(VueAnalytics, {
   appName: 'limeishu.org',
-  appVersion: 'v2.0.0',
+  appVersion: pkgInfo.version,
   trackingId: 'UA-97328395-1',
   vueRouter: router
 })
@@ -45,7 +43,6 @@ Vue.config.devtools = true
 
 sync(store, router)
 
-// const { state } = store
 const app = new Vue({
   router,
   store,
