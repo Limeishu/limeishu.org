@@ -6,8 +6,8 @@
         <div class="image" :style="{ 'background-image': `url(${news.meta.image})` }">
         </div>
         <div class="content">
-          <h1>{{ news.title }}</h1>
           <span class="date">{{ new Date(news.date).toLocaleDateString() }}</span>
+          <h1>{{ news.title }}</h1>
           <p>{{ `${news.content.substring(0, 50)}...` }}</p>
           <router-link :to="`/culture/news/${news._id}`" class="button" alt="點一下來閱讀全文">
             <span>閱讀全文</span>
