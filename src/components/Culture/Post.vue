@@ -6,8 +6,8 @@
         <iframe v-if="post.meta.video" :src="post.meta.video" frameborder="0"></iframe>
         <div v-else class="image" :style="{ 'background-image': `url(${post.meta.image})` }"></div>
         <div class="content">
-          <h1>{{ post.title }}</h1>
           <span class="date">{{ new Date(post.date).toLocaleDateString() }}</span>
+          <h1>{{ post.title }}</h1>
           <p>{{ `${post.content.substring(0, 50)}...` }}</p>
           <router-link :to="`/culture/post/${post._id}`" class="button" alt="點一下來閱讀全文">
             <span>閱讀全文</span>
