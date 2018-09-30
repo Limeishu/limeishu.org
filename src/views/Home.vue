@@ -315,8 +315,8 @@ export default {
         bar: [
           {
             'en': 'HSR&TRA',
-            'zh': '高鐵＆火車',
-            'ja': '高鉄＆鉄道',
+            'zh': '高鐵/火車',
+            'ja': '高鉄/鉄道',
             'ko': '고속철도와 기차',
             icon: ['fas', 'train']
           },
