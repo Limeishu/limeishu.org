@@ -131,6 +131,7 @@
 
 .paragraph {
   max-width: 720px;
+  padding: 1rem 0;
 
   &.reader {
     ul {
@@ -139,6 +140,9 @@
       +p {
         margin: 0;
       }
+    }
+    h1 {
+      display: block;
     }
   }
 
@@ -168,12 +172,17 @@
     }
   }
 
+  > h1 {
+    display: none;
+  }
+
   h1 {
     margin: 3rem 0 1rem 0;
     font-weight: 500;
     text-align: left;
 
     @media screen and (max-width: 768px) {
+      display: block;
       text-align: center;
     }
 
