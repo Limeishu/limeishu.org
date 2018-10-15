@@ -111,10 +111,10 @@ export default {
         ]
       },
       copyright: {
-        'zh': `本著作係採用 <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT 授權條款</a> 授權.</p><p>我們推薦使用 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 瀏覽以獲得更好的瀏覽體驗。`,
-        'en': `This work is licensed under the <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT License</a>.</p><p>We recommend <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> for a better browsing experience.`,
-        'ja': `この作品は、<a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT ライセンス</a> の下でライセンスされています。</p><p>より良いブラウジングエクスペリエンスのために <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> をお勧めします。`,
-        'ko': `이 작품은 <a href="https://raw.githubusercontent.com/Limeishu/limeishu.org/master/LICENSE" target="_blank">MIT 라이센스</a> 하에서 허가 된입니다.</p><p>더 좋은 브라우징 경험을 위해 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 권장합니다.`
+        'zh': `本著作係採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0 授權條款</a> 授權.</p><p>我們推薦使用 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 瀏覽以獲得更好的瀏覽體驗。`,
+        'en': `This work is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0 License</a>.</p><p>We recommend <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> for a better browsing experience.`,
+        'ja': `この作品は、<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0 ライセンス</a> の下でライセンスされています。</p><p>より良いブラウジングエクスペリエンスのために <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> をお勧めします。`,
+        'ko': `이 작품은 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0 라이센스</a> 하에서 허가 된입니다.</p><p>더 좋은 브라우징 경험을 위해 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 권장합니다.`
       }
     }
   },

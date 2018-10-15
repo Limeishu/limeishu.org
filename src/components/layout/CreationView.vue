@@ -2,7 +2,7 @@
   <div class="spotlight inner">
     <div class="reader paragraph" v-if="creation.meta">
       <h1>{{ creation.name }}</h1>
-      <img :src="`https://image.limeishu.org.tw/images/museum/${creation.image}.jpg`" :alt="`${creation.name}, 李梅樹`">
+      <img :src="`https://image.limeishu.org.tw/images/museum/${creation.image}.jpg`" :alt="`${creation.name}, 李梅樹`" copyright="cc-by-sa Li Mei-Shu">
       <ul>
         <li>{{ creation.category }}</li>
         <li>{{ `${creation.meta.type} ${creation.meta['size-cm']} (${creation.meta.size})` }}</li>
