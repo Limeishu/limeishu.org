@@ -1,6 +1,6 @@
 <template>
   <div class="spotlight inner">
-    <div class="reader paragraph">
+    <div class="reader paragraph independence-title">
       <h1>{{ post.title }}</h1>
       <div v-html="post.paragraph"></div>
       <div class="share">
