@@ -141,6 +141,9 @@
         margin: 0;
       }
     }
+  }
+
+  &.independence-title {
     h1 {
       display: block;
     }
@@ -150,6 +153,7 @@
   iframe {
     width: 100%;
     border-radius: 10pt;
+    margin-bottom: 1rem;
   }
 
   iframe {
