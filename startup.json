@@ -2,6 +2,8 @@
   "apps": [{
     "name": "limeishu.org",
     "script": "./server/index.js",
+    "instances" : "max",
+    "exec_mode" : "cluster",
     "watch": true
   }]
 }
