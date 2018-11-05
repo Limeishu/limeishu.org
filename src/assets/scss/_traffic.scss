@@ -7,6 +7,9 @@
   padding: 4rem;
   justify-content: space-between;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    min-height: 770px;
+  }
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 1rem;
