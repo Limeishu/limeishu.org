@@ -14,8 +14,7 @@
   }
   .icon {
     display: grid;
-    width: 20%;
-    margin: 1rem 2rem;
+    margin: 1rem;
     padding: 1rem;
     font-size: 12px;
     grid-template-areas:
@@ -90,8 +89,7 @@
     align-items: flex-start;
     justify-content: center;
     font-size: 12px;
-    width: 20%;
-    margin: 1rem 2rem;
+    margin: 1rem;
     @media screen and (max-width: 768px) {
       width: 100%;
       align-items: center;
