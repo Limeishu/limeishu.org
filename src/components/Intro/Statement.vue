@@ -2,6 +2,7 @@
   <div>
     <div class="paragraph" v-show="language === 'zh'">
       <h1>畫家自述</h1>
+      <p><img src="https://api.limeishu.org.tw/images/lms-20181116-14358973.jpg" alt=""></p>
       <h2>一甲子真善美的追尋</h2>
       <p>「我生長於藝術氣氛濃厚的家庭，因受環境薰陶影響，自幼對美術，音樂即有非常的興趣；尤其對繪畫更為醉心。1918 年考取日據時代台灣總督府國語學校（即今省立台北師專前身），開始接觸較正式之美術教育後，對繪事更加著迷，矢志以繪畫為業，計畫在師範學校畢業後，即赴日入東京美術學校（即今日日本國立東京藝術大學前身）進修；惜因先父不允，不克成行。不得已，於1922年師範學校畢業後，返鄉任教，並奉父命於是年完婚。</p>
       <p>父親之意，希望藉此打消我東渡日本求學的意念。但是歲月的飛逝，不僅無法平息我追求藝術的熱情，反而使我更加殷切盼望，能夠早日實現衷心嚮往的理想。因此課餘之暇，更加專心致力研究畫藝，並利用暑假返回母校，參加石川欽一郎先生所組之[暑期美術講習會]。工作之餘所繪作品，連續入選第一，二屆台展，家人也因而了解我的稟賦與志向，不再堅持要我往政治方面發展。</p>
@@ -14,6 +15,7 @@
     </div>
     <div class="paragraph" v-show="language === 'en'">
       <h1>Personal Statement of the Artist</h1>
+      <p><img src="https://api.limeishu.org.tw/images/lms-20181116-14358973.jpg" alt=""></p>
       <h2>60 Years of pursuit in truth, benevolence and beauty</h2>
       <p>"I was born in a family of strong artistic atmosphere. Under the influence of the environment, I have grown great interests in art and music since very young; I am particularly indulged in painting. In 1918, I was admitted to Taiwan Governor-General's National Language School (namely the former Provincial Taipei Normal College today) during Japanese Ruling Period and started accessing formal art education. I then become more fascinated by painting and was inspired to devote my career in painting. I planned to go to the Tokyo Arts School (namely the former Tokyo University of the Arts today) in Japan for advanced study after graduating from the National Normal University.  Unfortunately my father disagreed and I could not go to Japan. Against my will, I returned home to teach after graduating from the National Normal University in 1922 and got married under the command of my father in the following year.</p>
       <p>My father’s intention was to reckon my hope to study in Japan. However as time passed by, my passion for pursuit of arts did not diminish but motivated me to look forward to this inspiration of realizing my dreams. During my spare time, I focused on the study of arts and painting even more and retuned to my school during summer vacation, participating in the “Summer Art Seminar” formed by Mr. Ishikawa Kin’ichiro. My works painted during the spare time from work have been selected into the first and second Taiwan Exhibition in a row. My family no longer insisted me in developing in politics after understanding my talents and inspiration.</p>
@@ -26,6 +28,7 @@
     </div>
     <div class="paragraph" v-show="language === 'ja'">
       <h1>画家の言葉</h1>
+      <p><img src="https://api.limeishu.org.tw/images/lms-20181116-14358973.jpg" alt=""></p>
       <h2>六十年の真善美の追求</h2>
       <p>「私は芸術的雰囲気の豊かな家庭で育ち、その環境から薫陶を受けたため、幼いころから美術や音楽に非常に興味があり、特に絵画に心酔していた。1918年に日本統治期の台湾総督府国語学校（現在の省立台北師範専門学校の前身）に合格し、正式な美術教育に触れ始めた後には、さらに絵に夢中になり、絵画で身を立てようと、師範学校卒業後は日本に行って東京美術学校（現在の日本の国立東京芸術大学の前身）に進学しようと計画した。だが残念にも父がそれを許さず、実行は出来なかった。仕方なく、1922年に師範学校を卒業後、故郷に帰って教員となり、父の命に従ってこの年結婚した。</p>
       <p>父の願いは、これで私が日本に渡って勉強したいという考えを無くすことだった。しかし、月日の流れは私の芸術追求の情熱を静まらせるどころか、かえってさらなる切望に駆り立て、早くこの心からの理想が実現することを願うようになった。そのため、授業の余暇にはさらに画法の研究に専念し、また夏休みを利用して母校に戻り、石川欽一郎先生の組織された「夏期美術講習会」に参加した。仕事の合間に描いた作品は、台展の第一回、第二回に連続入選し、家族もそのため私の素質と志向を理解してくれ、私を頑なに政治方面の道に進ませようとすることは無くなった。</p>
@@ -38,6 +41,7 @@
     </div>
     <div class="paragraph" v-show="language === 'ko'">
       <h1>화가의 자기소개서</h1>
+      <p><img src="https://api.limeishu.org.tw/images/lms-20181116-14358973.jpg" alt=""></p>
       <h2>60년진선미(真善美)의 추구 </h2>
       <p>저는 예술적 분위기가 풍부한 가정환경에서 자랐으며, 유년시절부터 미술이나 음악에 관심이 많았습니다. 특히 그림그리기에 심취했습니다. 1918년 일제시대 대만총동부국어학교(현재 타이베이교육대학교)에 합격하여 정식으로 미술교육을 받게 됩니다. 이후 회화에 더욱 매료되어 화가가 되기로 결심하게 됩니다.  졸업후 일본도쿄미술학교[東京美術學校](현재 일본국립도쿄예술대학의 전신) 유학계획을 하게 됩니다. 그러나 아버님의 반대로 뜻을 이루지못하였고, 1922년 교육대학을 졸업후 고향으로 돌아와 아버님의 뜻에 따라 결혼하게됩니다.</p>
       <p>아버님은 제가 일본유학의 뜻을 접기를 바라셨습니다. 그러나 세월이 지나도 저의 예술에 대한 열정은 더욱더 강렬해졌고, 빨리 그 이상이 실현되기를 바랬습니다. 이로 인해 일을 마친후 화법연구에 전념하게 되었고, 여름방학을 이용해 모교로 돌아가  키니치로 이시카와(石川欽一郎)선생님이 만든 여름방학미술워크샵[暑期美術講習會] 에 참가합니다. 일하는 틈틈히 그려왔던 작품들은 제 1회,제2회 대만미술전람회(臺灣美術展覽會)에서 입선하게 되고, 가족들도 결국 저의  재능과 포부를 이해하고, 더이상 정치가가 되어야 한다고 바라지않았습니다.</p>

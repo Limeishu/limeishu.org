@@ -240,6 +240,18 @@
     }
   }
 
+  img.img-round {
+    width: 50%;
+    float: left;
+    transform: none;
+    margin: 0 10pt 10pt 0;
+    @media screen and (max-width: 768px) {
+      float: none;
+      width: 100%;
+      transform: translateX(-25pt);
+    }
+  }
+
   h2 {
     position: relative;
     padding-left: 2rem;
