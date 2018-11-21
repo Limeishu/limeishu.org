@@ -153,11 +153,11 @@
   iframe {
     width: 100%;
     border-radius: 10pt;
-    margin-bottom: 1rem;
   }
 
   iframe {
     height: 405px;
+    margin-bottom: 1rem;
 
     @media screen and (max-width: 600px) {
       height: 320px;
