@@ -54,6 +54,11 @@ const actions = {
     commit(types.TOGGLE_NAVBAR, status)
   },
 
+  async toggleDevice ({ commit },
+  status) {
+    commit(types.TOGGLE_DEVICE, status)
+  },
+
   expandMenu ({ commit },
     menuItem) {
     if (menuItem) {
