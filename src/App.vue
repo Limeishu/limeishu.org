@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header id="header">
-      <div v-if="!isChild" class="image" v-for="(img, i) in bannerBG" v-show="i === bannerAt % 4" :style="{ 'background-image': `url(${img})` }" :key="i">
+      <div v-if="!isChild" class="image" :style="{ 'background-image': `url(${bannerBG[bannerAt % 4]})` }">
         <div class="next" v-scroll-to="'#home, 0'"><img src="./assets/images/down-arrow.svg" alt=""></div>
       </div>
       <div v-if="!isChild" id="logo">
@@ -62,7 +62,7 @@
       changeBanner () {
         setInterval(() => {
           this.bannerAt++
-        }, 5000)
+        }, 7500)
       },
       scroll () {
         let scrolled = document.querySelector('#app').getBoundingClientRect().y
