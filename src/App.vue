@@ -55,38 +55,21 @@
       this.childDetect()
       this.changeBanner()
       window.addEventListener('scroll', this.scroll)
-      window.onresize = () => {
-        this.rwdDetect()
-      }
-      this.rwdDetect()
       document.addEventListener('keydown', this.eggHandler)
     },
     methods: {
-      ...mapActions(['toggleDevice', 'toggleNavbar']),
+      ...mapActions(['toggleNavbar']),
       changeBanner () {
         setInterval(() => {
           this.bannerAt++
-        }, 7500)
-      },
-      rwdDetect () {
-        this.toggleDevice(document.querySelector('#app').offsetWidth <= 768 ? 'mobile' : null)
+        }, 5000)
       },
       scroll () {
         let scrolled = document.querySelector('#app').getBoundingClientRect().y
-        if (scrolled < this.height) {
-          this.toggle = true
-        } else {
-          this.toggle = false
-        }
+        this.toggle = scrolled < this.height
       },
       childDetect () {
-        if (this.$route.name !== 'Home') {
-          this.isChild = true
-          this.height = -64
-        } else {
-          this.height = -(document.querySelector('#header').clientHeight - 64)
-          this.isChild = false
-        }
+        this.isChild = this.$route.name !== 'Home'
       },
       getTitle (route) {
         const head = document.querySelectorAll('head>meta')
