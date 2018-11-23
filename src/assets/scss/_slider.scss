@@ -9,20 +9,20 @@
     margin-top: 0 !important;
     padding: 0 10px !important;
     height: 3rem;
-    display: flex;
+    display: inline-flex !important;
     flex-direction: column;
     justify-content: center;
 
-    .VueCarousel-dot-inner {
+    .VueCarousel-dot-button {
       transition: ease-in-out all .3s;
       border-radius: 5px;
       background-color: $skin !important;
     }
   }
 
-  .VueCarousel-dot--active .VueCarousel-dot-inner {
+  .VueCarousel-dot--active .VueCarousel-dot-button {
     background-color: $tone !important;
-    width: 25px !important;
+    // width: 25px !important;
   }
 
   .VueCarousel-navigation,
@@ -49,7 +49,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: $tone;
+    background-color: $tone !important;
     color: $white !important;
     border-radius: 50%;
     font-family: 'FontAwesome';

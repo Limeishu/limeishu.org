@@ -5,7 +5,7 @@
         <img src="../../assets/images/icons/logo-min.svg" alt="">
       </div>
       <ul>
-        <li v-for="(link, i) in socialLink" :key="i"><a target="_blank" :href="link.href"><font-awesome-icon :icon="link.icon" /></a></li>
+        <li v-for="(link, i) in socialLink" :key="i"><a target="_blank" rel="nofollow noopener noreferrer" :href="link.href"><font-awesome-icon :icon="link.icon" /></a></li>
       </ul>
       <div class="policy">
         <router-link v-for="item in policy[language]" :to="item.link" :key="item.name">{{ item.name }}</router-link>
@@ -111,10 +111,10 @@ export default {
         ]
       },
       copyright: {
-        'zh': `本著作係採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0 授權條款</a> 授權.</p><p>我們推薦使用 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 瀏覽以獲得更好的瀏覽體驗。`,
-        'en': `This work is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0 License</a>.</p><p>We recommend <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> for a better browsing experience.`,
-        'ja': `この作品は、<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0 ライセンス</a> の下でライセンスされています。</p><p>より良いブラウジングエクスペリエンスのために <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> をお勧めします。`,
-        'ko': `이 작품은 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0 라이센스</a> 하에서 허가 된입니다.</p><p>더 좋은 브라우징 경험을 위해 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 권장합니다.`
+        'zh': `本著作係採用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow noopener noreferrer" target="_blank">CC BY-SA 4.0 授權條款</a> 授權.</p><p>我們推薦使用 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 瀏覽以獲得更好的瀏覽體驗。`,
+        'en': `This work is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow noopener noreferrer" target="_blank">CC BY-SA 4.0 License</a>.</p><p>We recommend <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> for a better browsing experience.`,
+        'ja': `この作品は、<a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow noopener noreferrer" target="_blank">CC BY-SA 4.0 ライセンス</a> の下でライセンスされています。</p><p>より良いブラウジングエクスペリエンスのために <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> をお勧めします。`,
+        'ko': `이 작품은 <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="nofollow noopener noreferrer" target="_blank">CC BY-SA 4.0 라이센스</a> 하에서 허가 된입니다.</p><p>더 좋은 브라우징 경험을 위해 <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox Quantum</a> 권장합니다.`
       }
     }
   },

@@ -2,7 +2,7 @@
 
 @keyframes banner {
   0% {
-    opacity: 0.1; // background-position: top;
+    opacity: 0.1;
   }
   10% {
     opacity: 1;
@@ -11,7 +11,7 @@
     opacity: 1;
   }
   100% {
-    opacity: 0.1; // background-position: bottom;
+    opacity: 0.1; 
   }
 }
 
@@ -62,7 +62,6 @@
     background: $white;
     background-position: center;
     animation: banner 7.5s infinite;
-    transition: all .3s;
     background-size: cover;
     background-repeat: no-repeat;
   }

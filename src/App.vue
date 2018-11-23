@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header id="header">
-      <div v-if="!isChild" class="image" v-for="(img, i) in bannerBG" v-show="i === bannerAt % 4" :style="{ 'background-image': `url(${img})` }" :key="i">
+      <div v-if="!isChild" class="image" :style="{ 'background-image': `url(${bannerBG[bannerAt % 4]})` }">
         <div class="next" v-scroll-to="'#home, 0'"><img src="./assets/images/down-arrow.svg" alt=""></div>
       </div>
       <div v-if="!isChild" id="logo">
@@ -55,11 +55,11 @@
       this.childDetect()
       this.changeBanner()
       window.addEventListener('scroll', this.scroll)
+      document.addEventListener('keydown', this.eggHandler)
       window.onresize = () => {
         this.rwdDetect()
       }
       this.rwdDetect()
-      document.addEventListener('keydown', this.eggHandler)
     },
     methods: {
       ...mapActions(['toggleDevice', 'toggleNavbar']),
@@ -73,20 +73,10 @@
       },
       scroll () {
         let scrolled = document.querySelector('#app').getBoundingClientRect().y
-        if (scrolled < this.height) {
-          this.toggle = true
-        } else {
-          this.toggle = false
-        }
+        this.toggle = scrolled < this.height
       },
       childDetect () {
-        if (this.$route.name !== 'Home') {
-          this.isChild = true
-          this.height = -64
-        } else {
-          this.height = -(document.querySelector('#header').clientHeight - 64)
-          this.isChild = false
-        }
+        this.isChild = this.$route.name !== 'Home'
       },
       getTitle (route) {
         const head = document.querySelectorAll('head>meta')

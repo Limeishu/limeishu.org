@@ -1,141 +1,5 @@
-/*
-* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
- */
- @font-face {
-  font-family: 'Noto Sans TC';
-  font-style: normal;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'),
-       url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'),
-       url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
-}
-@font-face {
-  font-family: 'Noto Sans TC';
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'),
-       url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'),
-       url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
-}
-@font-face {
-   font-family: 'Noto Sans TC';
-   font-style: normal;
-   font-weight: 400;
-   src: url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'),
-        url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'),
-        url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
- }
-@font-face {
-   font-family: 'Noto Sans TC';
-   font-style: normal;
-   font-weight: 500;
-   src: url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format('woff2'),
-        url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format('woff'),
-        url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format('opentype');
- }
-@font-face {
-   font-family: 'Noto Sans TC';
-   font-style: normal;
-   font-weight: 700;
-   src: url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format('woff2'),
-        url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format('woff'),
-        url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format('opentype');
- }
-@font-face {
-   font-family: 'Noto Sans TC';
-   font-style: normal;
-   font-weight: 900;
-   src: url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format('woff2'),
-        url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format('woff'),
-        url(https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format('opentype');
- }
-
- /*
-* Noto Sans Japanese (japanese) http://www.google.com/fonts/earlyaccess
- */
-@font-face {
-  font-family: 'Noto Sans Japanese';
-  font-style: normal;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff2) format('woff2'),
-       url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.woff) format('woff'),
-       url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Thin.otf) format('opentype');
-}
-@font-face {
-  font-family: 'Noto Sans Japanese';
-  font-style: normal;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.woff2) format('woff2'),
-       url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.woff) format('woff'),
-       url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Light.otf) format('opentype');
-}
-@font-face {
-   font-family: 'Noto Sans Japanese';
-   font-style: normal;
-   font-weight: 300;
-   src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff2) format('woff2'),
-        url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.woff) format('woff'),
-        url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-DemiLight.otf) format('opentype');
-}
-@font-face {
-   font-family: 'Noto Sans Japanese';
-   font-style: normal;
-   font-weight: 400;
-   src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2) format('woff2'),
-        url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff) format('woff'),
-        url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf) format('opentype');
- }
-@font-face {
-   font-family: 'Noto Sans Japanese';
-   font-style: normal;
-   font-weight: 500;
-   src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff2) format('woff2'),
-        url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.woff) format('woff'),
-        url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Medium.otf) format('opentype');
- }
-@font-face {
-   font-family: 'Noto Sans Japanese';
-   font-style: normal;
-   font-weight: 700;
-   src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2) format('woff2'),
-        url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff) format('woff'),
-        url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf) format('opentype');
- }
-@font-face {
-   font-family: 'Noto Sans Japanese';
-   font-style: normal;
-   font-weight: 900;
-   src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff2) format('woff2'),
-        url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.woff) format('woff'),
-        url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Black.otf) format('opentype');
- }
-
-/*
- * cwTeXMing (Chinese Traditional) http://www.google.com/fonts/earlyaccess
- */
- @font-face {
-  font-family: 'cwTeXMing';
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/ea/cwtexming/v3/cwTeXMing-zhonly.eot);
-  src: url(https://fonts.gstatic.com/ea/cwtexming/v3/cwTeXMing-zhonly.eot?#iefix) format('embedded-opentype'),
-       url(https://fonts.gstatic.com/ea/cwtexming/v3/cwTeXMing-zhonly.woff2) format('woff2'),
-       url(https://fonts.gstatic.com/ea/cwtexming/v3/cwTeXMing-zhonly.woff) format('woff'),
-       url(https://fonts.gstatic.com/ea/cwtexming/v3/cwTeXMing-zhonly.ttf) format('truetype');
-}
-/*
- * cwTeXKai (Chinese Traditional) http://www.google.com/fonts/earlyaccess
- */
- @font-face {
-  font-family: 'cwTeXKai';
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/ea/cwtexkai/v3/cwTeXKai-zhonly.eot);
-  src: url(https://fonts.gstatic.com/ea/cwtexkai/v3/cwTeXKai-zhonly.eot?#iefix) format('embedded-opentype'),
-       url(https://fonts.gstatic.com/ea/cwtexkai/v3/cwTeXKai-zhonly.woff2) format('woff2'),
-       url(https://fonts.gstatic.com/ea/cwtexkai/v3/cwTeXKai-zhonly.woff) format('woff'),
-       url(https://fonts.gstatic.com/ea/cwtexkai/v3/cwTeXKai-zhonly.ttf) format('truetype');
-}
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&subset=chinese-traditional,japanese');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
 
 h1,
 h2,
@@ -149,17 +13,13 @@ ul,
 li,
 span {
   line-height: 1.4;
-  font-family: 'Noto Sans TC', 'Noto Sans Japanese', sans-serif;
+  font-family: 'Noto Sans CJK TC', 'Noto Sans TC', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
 }
 
-.kai {
-  font-family: 'cwTeXKai', serif; 
-}
-
 .ming {
-  font-family: 'cwTeXMing', serif; 
+  font-family: 'Noto Serif', serif; 
 }
 
 .uppercase {
@@ -167,7 +27,6 @@ span {
   &.soli{
     &::first-letter {
       font-size: 110%;
-      // font-family: sans-serif;
       font-weight: 400;
     }
   }

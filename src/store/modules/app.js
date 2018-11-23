@@ -55,8 +55,8 @@ const actions = {
   },
 
   async toggleDevice ({ commit },
-  device) {
-    commit(types.TOGGLE_DEVICE, device)
+  status) {
+    commit(types.TOGGLE_DEVICE, status)
   },
 
   expandMenu ({ commit },
