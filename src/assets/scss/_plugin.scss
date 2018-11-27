@@ -79,6 +79,7 @@
     box-shadow: 1pt 1pt 5pt rgba($black, .3);
     border-radius: 10pt;
     overflow: hidden;
+    -webkit-transform: translateZ(0);
 
     .image, iframe {
       border-radius: 0;

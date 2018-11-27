@@ -61,6 +61,7 @@
     z-index: 1;
     margin: 1rem;
     overflow: hidden;
+    -webkit-transform: translateZ(0);
     height: calc(100% - 2rem);
     border-radius: 10pt;
     box-sizing: border-box;
