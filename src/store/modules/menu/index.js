@@ -141,11 +141,17 @@ const state = {
           components: lazyLoader('components/About/Privacy')
         },
         {
-          name: 'Cookie',
-          path: '/about/privacy#cookie',
+          name: 'Sponsor',
+          path: '/about/sponsor',
           meta: {
-            label: {}
-          }
+            label: {
+              'zh': '支持我們',
+              'en': 'Sponsor',
+              'ja': 'スポンサー',
+              'ko': '스폰서'
+            }
+          },
+          components: lazyLoader('components/About/Sponsor')
         }
       ]
     },
