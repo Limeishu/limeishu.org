@@ -75,8 +75,8 @@ export default {
             link: '/about/privacy'
           },
           {
-            name: 'Cookies',
-            link: '/about/privacy#cookie'
+            name: '支持我們',
+            link: '/about/sponsor'
           }
         ],
         'en': [
@@ -85,8 +85,8 @@ export default {
             link: '/about/privacy'
           },
           {
-            name: 'Cookies',
-            link: '/about/privacy#cookie'
+            name: 'Sponsor',
+            link: '/about/sponsor'
           }
         ],
         'ja': [
@@ -95,8 +95,8 @@ export default {
             link: '/about/privacy'
           },
           {
-            name: 'Cookies',
-            link: '/about/privacy#cookie'
+            name: 'スポンサー',
+            link: '/about/sponsor'
           }
         ],
         'ko': [
@@ -105,8 +105,8 @@ export default {
             link: '/about/privacy'
           },
           {
-            name: 'Cookies',
-            link: '/about/privacy#cookie'
+            name: '스폰서',
+            link: '/about/sponsor'
           }
         ]
       },
