@@ -2,14 +2,19 @@
   <div class="spotlight inner">
     <div class="paragraph independence-title" v-if="creation.meta">
       <h1>{{ creation.name }}</h1>
-      <img :src="`https://image.limeishu.org.tw/images/museum/${creation.image}.jpg`" :alt="`${creation.name}, 李梅樹`" copyright="cc-by-sa Li Mei-Shu">
+      <p>
+        <img :src="`https://image.limeishu.org.tw/images/museum/${creation.image}.jpg`" :alt="`${creation.name}, 李梅樹`" copyright="cc-by-sa Li Mei-Shu">
+      </p>
       <ul>
         <li>{{ creation.category }}</li>
         <li>{{ `${creation.meta.type} ${creation.meta['size-cm']} (${creation.meta.size})` }}</li>
         <li>李梅樹, {{ creation.date }}</li>
       </ul>
       <p v-for="(content, i) in creation.content[language]" :key="i">{{ content }}</p>
-      <p v-if="creation.meta.wikiLink">本畫作同時以 CC BY-SA 4.0 方式授權並分享於維基媒體。<a :href="creation.meta.wikiLink" target="_blank" class="button"><span>點此前往查看</span><font-awesome-icon icon="angle-right" /></a></p>
+      <ul v-if="creation.meta.wikiLink">
+        <li v-if="creation.meta.wikiLink.commons"><a :href="creation.meta.wikiLink.commons" target="_blank" class="button">至維基共享資源察看或取用資源</a></li>
+        <li v-if="creation.meta.wikiLink.dataID">WikiData ID： <a :href="`https://www.wikidata.org/wiki/${creation.meta.wikiLink.dataID}`" target="_blank">{{ creation.meta.wikiLink.dataID }}</a></li>
+      </ul>
     </div>
   </div>
 </template>
