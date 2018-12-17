@@ -1,7 +1,7 @@
 {
   "name": "limeishu.org",
-  "version": "2.4",
-  "description": "A Vue.js project",
+  "version": "2.5",
+  "description": "Li Mei-Shu Memorial Gallery Official Website.",
   "author": "Aries Cs <aries0d0f@gmail.com>",
   "private": true,
   "scripts": {
