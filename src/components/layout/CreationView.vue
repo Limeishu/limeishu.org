@@ -12,7 +12,7 @@
       </ul>
       <p v-for="(content, i) in creation.content[language]" :key="i">{{ content }}</p>
       <ul v-if="creation.meta.wikiLink">
-        <li v-if="creation.meta.wikiLink.commons"><a :href="creation.meta.wikiLink.commons" target="_blank" class="button">至維基共享資源察看或取用資源</a></li>
+        <li v-if="creation.meta.wikiLink.commons"><a :href="creation.meta.wikiLink.commons" target="_blank" class="button">至維基共享資源查看或取用資源</a></li>
         <li v-if="creation.meta.wikiLink.dataID">WikiData ID： <a :href="`https://www.wikidata.org/wiki/${creation.meta.wikiLink.dataID}`" target="_blank">{{ creation.meta.wikiLink.dataID }}</a></li>
       </ul>
     </div>
