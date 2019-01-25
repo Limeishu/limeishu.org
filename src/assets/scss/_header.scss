@@ -11,7 +11,7 @@
     opacity: 1;
   }
   100% {
-    opacity: 0.1; 
+    opacity: 0.1;
   }
 }
 
@@ -267,6 +267,7 @@
       flex-direction: row;
       justify-content: center;
       box-shadow: 0 2pt 2pt -2pt rgba($black, .5);
+      background-color: $white;
       /* #REGIN RWD for mobile */
       @media screen and (max-width: 768px) {
         background-color: $paper;

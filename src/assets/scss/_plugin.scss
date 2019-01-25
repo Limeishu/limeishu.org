@@ -209,15 +209,11 @@
   }
 
   p {
-    text-indent: 25pt;
+    // text-indent: 25pt;
 
     >a {
       margin: 0;
     }
-  }
-
-  p>img {
-    transform: translateX(-25pt);
   }
 
   ul {
@@ -256,7 +252,6 @@
       float: none;
       width: 100%;
       margin: 0;
-      transform: translateX(-25pt);
     }
   }
 
