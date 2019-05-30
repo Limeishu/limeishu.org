@@ -17,7 +17,7 @@
           <div class="slider" @click="$router.push(`/culture/news/${news._id}`)">
             <img :src="news.meta.image" :alt="news.meta.imageAlt ? news.meta.imageAlt : news.title">
             <div class="content">
-              <h2>{{ news.title }}</h2>             
+              <h2>{{ news.title }}</h2>
               <p>{{ `${news.content.substring(0, 100)}...` }}</p>
               <router-link :to="`/culture/news/${news._id}`" class="button" alt="點一下來了解更多">
                 <span>了解更多</span>
@@ -202,7 +202,7 @@
             <p>入館參觀請勿攝影、飲食、吸煙</p>
             <p>未滿 12 歲兒童請由家長陪伴參觀</p>
             <p>其他參觀細則請洽 <a href="tel:0226732333">(02)2673-2333</a><br />
-              E-mail : <a href="malito:limeishu@gmail.com">limeishu@gmail.com</a>
+              E-mail : <a href="malito:support@limeishu.org">support@limeishu.org</a>
             </p>
           </div>
         </div>
@@ -217,7 +217,7 @@
           <li>Children visiting under 12 years old require the company of parents.</li>
             <p>Please contact
               <a href="tel:0226732333">(02)2673-2333</a> or E-mail :
-              <a href="malito:limeishu@gmail.com">limeishu@gmail.com</a>for more information on the visit.
+              <a href="malito:support@limeishu.org">support@limeishu.org</a>for more information on the visit.
             </p>
         </ul>
       </div>
@@ -229,7 +229,7 @@
           <li>これ以外のコースについては、状況により追加ガイド費を徴収する場合があります。</li>
           <li>入館時における、写真撮影・飲食・喫煙はご遠慮下さい。</li>
           <li>12歳未満の児童の参観には、保護者の方の付き添いが必要です。</li>
-          <p>その他、参観に関することについては、こちらまでお問合せ下さい。<br>電話 : <a href="tel:0226732333">(02)2673-2333</a>、E-mail : <a href="malito:limeishu@gmail.com">limeishu@gmail.com</a></p>
+          <p>その他、参観に関することについては、こちらまでお問合せ下さい。<br>電話 : <a href="tel:0226732333">(02)2673-2333</a>、E-mail : <a href="malito:support@limeishu.org">support@limeishu.org</a></p>
         </ul>
       </div>
       <div class="list" v-show="language === 'ko'">
@@ -240,7 +240,7 @@
           <li>이외 일정은 소액의 가이드비용이 추가됩니다. </li>
           <li>본 기념관내에서는 촬영 및 음식물섭취를 금지하고 있으며, 금연구역입니다.</li>
           <li>12세미만아동은 보호자가 동행하여야만 관람이 가능합니다.</li>
-          <p>기타관람문의는<br>전화： <a href="tel:0226732333">(02)2673-2333</a>, 혹은 이메일：<a href="malito:limeishu@gmail.com">limeishu@gmail.com</a>로 문의 바랍니다.</p>
+          <p>기타관람문의는<br>전화： <a href="tel:0226732333">(02)2673-2333</a>, 혹은 이메일：<a href="malito:support@limeishu.org">support@limeishu.org</a>로 문의 바랍니다.</p>
         </ul>
       </div>
     </div>
@@ -262,7 +262,7 @@
             <img v-if="post.meta.image" :src="post.meta.image" :alt="post.meta.imageAlt ? post.meta.imageAlt : post.title">
             <iframe v-if="post.meta.video" :src="post.meta.video" frameborder="0"></iframe>
             <div class="content">
-              <h2>{{ post.title }}</h2>          
+              <h2>{{ post.title }}</h2>
               <p>{{ `${post.content.substring(0, 100)}...` }}</p>
               <router-link :to="`/culture/post/${post._id}`" class="button" alt="點一下來閱讀全文">
                 <span>閱讀全文</span>

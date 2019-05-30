@@ -55,7 +55,7 @@ export default {
         {
           icon: ['fas', 'envelope'],
           name: '電子郵件',
-          href: 'mailto:limeishugallery@gmail.com'
+          href: 'mailto:support@limeishu.org'
         },
         {
           icon: ['fab', 'github'],
