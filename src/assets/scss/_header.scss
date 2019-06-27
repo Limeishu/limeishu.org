@@ -287,9 +287,6 @@
         box-sizing: border-box;
         /* #REGIN RWD for mobile */
         @media screen and (min-width: 769px) {
-          &:last-child a span {
-            padding: 0 1rem;
-          }
           &:hover {
             transition: all .3s;
             color: $tone;
