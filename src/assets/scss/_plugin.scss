@@ -51,7 +51,7 @@
   cursor: pointer;
 
   @media screen and (max-width: 667px) {
-    transform: scale(.7);
+    transform: scale(0.7);
   }
 
   img {
@@ -76,12 +76,13 @@
     min-width: 320px;
     margin: 4pt;
     position: relative;
-    box-shadow: 1pt 1pt 5pt rgba($black, .3);
+    box-shadow: 1pt 1pt 5pt rgba($black, 0.3);
     border-radius: 10pt;
     overflow: hidden;
     -webkit-transform: translateZ(0);
 
-    .image, iframe {
+    .image,
+    iframe {
       border-radius: 0;
       height: 180px;
       width: 100%;
@@ -136,9 +137,8 @@
 
   &.reader {
     ul {
-
       &,
-      +p {
+      + p {
         margin: 0;
       }
     }
@@ -211,7 +211,7 @@
   p {
     // text-indent: 25pt;
 
-    >a {
+    > a {
       margin: 0;
     }
   }
@@ -231,7 +231,7 @@
         margin-bottom: 0;
       }
 
-      >a {
+      > a {
         margin: 0;
       }
     }
@@ -287,7 +287,7 @@
     padding: 1.2rem;
     max-width: calc(100vw - 1.2rem * 2);
 
-    >h1 {
+    > h1 {
       font-size: 22pt;
     }
   }
@@ -311,13 +311,13 @@
     }
 
     &:nth-child(odd) {
-      background-color: rgba($tone, .1)
+      background-color: rgba($tone, 0.1);
     }
 
     .date {
       font-size: 12pt;
       width: 15rem;
-      padding: .5rem;
+      padding: 0.5rem;
       display: flex;
       justify-content: flex-end;
 
@@ -344,7 +344,7 @@
       }
 
       &:before {
-        top: calc(6px + .5rem);
+        top: calc(6px + 0.5rem);
         border: 6px solid $tone;
         content: "";
         position: absolute;
@@ -370,12 +370,12 @@
       }
 
       h3 {
-        margin: .5rem 0;
+        margin: 0.5rem 0;
       }
 
       p {
         line-height: 1.6;
-        margin: .5rem 0;
+        margin: 0.5rem 0;
         color: $content;
       }
     }
@@ -386,7 +386,7 @@
   display: flex;
   height: 70vh;
   width: 100%;
-  background-image: url('https://image.limeishu.org.tw/images/404.jpg');
+  background-image: url("https://image.limeishu.org.tw/images/404.jpg");
   background-position: center;
   justify-content: center;
   align-items: center;
@@ -430,7 +430,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 10pt;
-    transition: color .3s;
+    transition: color 0.3s;
 
     &:hover {
       color: $tone;

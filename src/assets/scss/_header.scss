@@ -21,13 +21,13 @@
 
 @keyframes rotate {
   0% {
-    transform: rotate(-180deg)
+    transform: rotate(-180deg);
   }
   80% {
-    transform: rotate(30deg)
+    transform: rotate(30deg);
   }
   100% {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 }
 
@@ -93,7 +93,7 @@
       /* #REGIN RWD for 5.5' mobile display: template: iPhone 6s Plus */
       @media screen and (max-width: 768px) {
         font-size: 14pt;
-        margin: 1.2rem .8rem;
+        margin: 1.2rem 0.8rem;
       }
       /* #ENDREGIN */
     }
@@ -137,15 +137,15 @@
     flex-direction: row;
     justify-content: center;
     color: $white;
-    transition: all .3s;
+    transition: all 0.3s;
     background: $white;
     color: $black;
     opacity: 0;
     pointer-events: none;
-    >.mobile {
+    > .mobile {
       display: none;
       background-color: $tone;
-      >img {
+      > img {
         max-height: 15vh;
       }
       .toggle-btn {
@@ -153,15 +153,15 @@
         transform: translateX(-4rem);
         height: 3rem;
         width: 3rem;
-        margin: .5rem;
+        margin: 0.5rem;
         background: $white;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 1pt 1pt 5pt rgba($black, .3);
+        box-shadow: 1pt 1pt 5pt rgba($black, 0.3);
         svg {
-          animation: rotate .3s;
+          animation: rotate 0.3s;
         }
       }
     }
@@ -174,13 +174,13 @@
       opacity: 1;
       pointer-events: initial;
       transform: translateX(100%);
-      >.mobile {
+      > .mobile {
         display: flex;
         height: 7rem;
       }
       &.toggle {
         transform: translateX(0);
-        box-shadow: 0 0 16pt rgba($black, .5);
+        box-shadow: 0 0 16pt rgba($black, 0.5);
       }
     }
     /* #ENDREGIN */
@@ -190,7 +190,7 @@
       opacity: 1;
     }
     &.toggle .mobile .toggle-btn {
-      box-shadow: 0 0 16pt rgba($black, .5);
+      box-shadow: 0 0 16pt rgba($black, 0.5);
     }
     &.is-child {
       @media screen and (min-width: 769px) {
@@ -201,14 +201,14 @@
         &.toggle .page-nav {
           position: fixed;
           top: 0;
-          box-shadow: 0 0 2pt rgba($black, .5);
+          box-shadow: 0 0 2pt rgba($black, 0.5);
           background-color: $white;
         }
       }
     }
     .page-nav {
       background-color: $paper;
-      transition: box-shadow ease .3s;
+      transition: box-shadow ease 0.3s;
       z-index: -2;
       position: absolute;
       display: none;
@@ -259,14 +259,14 @@
         }
       }
     }
-    >ul {
+    > ul {
       width: 100%;
       height: 100%;
       position: relative;
       display: flex;
       flex-direction: row;
       justify-content: center;
-      box-shadow: 0 2pt 2pt -2pt rgba($black, .5);
+      box-shadow: 0 2pt 2pt -2pt rgba($black, 0.5);
       background-color: $white;
       /* #REGIN RWD for mobile */
       @media screen and (max-width: 768px) {
@@ -278,7 +278,7 @@
         padding-top: 1rem;
       }
       /* #ENDREGIN */
-      >li {
+      > li {
         min-width: 9rem;
         height: 100%;
         position: relative;
@@ -288,15 +288,15 @@
         /* #REGIN RWD for mobile */
         @media screen and (min-width: 769px) {
           &:hover {
-            transition: all .3s;
+            transition: all 0.3s;
             color: $tone;
             background-color: $white;
             .icon {
-              transition: transform .2s;
+              transition: transform 0.2s;
               transform: rotate(90deg);
             }
-            >ul {
-              transition: all .3;
+            > ul {
+              transition: all 0.3;
               display: flex;
             }
           }
@@ -305,26 +305,26 @@
           width: 100%;
           height: auto;
           &.active {
-            transition: all .3s;
+            transition: all 0.3s;
             color: $tone;
             background-color: $white;
             .icon {
-              transition: transform .2s;
+              transition: transform 0.2s;
               transform: rotate(90deg);
             }
-            >ul {
-              transition: all .3;
+            > ul {
+              transition: all 0.3;
               display: flex;
             }
           }
         }
         /* #ENDREGIN */
         &:first-child {
-          >a:before {
+          > a:before {
             border-color: transparent;
           }
         }
-        >a {
+        > a {
           z-index: 0;
           width: 100%;
           height: 100%;
@@ -342,7 +342,7 @@
             height: 3rem;
             width: auto;
             span {
-              margin-right: .5rem;
+              margin-right: 0.5rem;
             }
             &:before {
               display: none;
@@ -355,12 +355,12 @@
             height: 1.2rem;
             position: absolute;
             box-sizing: border-box;
-            border-left: 1px solid rgba($black, .5);
+            border-left: 1px solid rgba($black, 0.5);
             content: "";
           }
         }
-        >ul {
-          transition: all .3s;
+        > ul {
+          transition: all 0.3s;
           z-index: -1;
           display: none;
           position: fixed;
@@ -370,11 +370,11 @@
           height: 4rem;
           top: 4rem;
           left: 0;
-          box-shadow: 0 2pt 2pt -2pt rgba($black, .5);
+          box-shadow: 0 2pt 2pt -2pt rgba($black, 0.5);
           background: $paper;
           /* #REGIN RWD for mobile */
           @media screen and (max-width: 768px) {
-            animation: slidedown .3s ease-in-out;
+            animation: slidedown 0.3s ease-in-out;
             justify-content: flex-start;
             position: relative;
             flex-direction: column;
@@ -385,13 +385,13 @@
             background: none;
           }
           /* #ENDREGIN */
-          >li {
+          > li {
             width: 9rem;
             height: 100%;
             display: flex;
             position: relative;
             color: $black;
-            transition: all .3s;
+            transition: all 0.3s;
             /* #REGIN RWD for mobile */
             @media screen and (max-width: 768px) {
               width: 100%;

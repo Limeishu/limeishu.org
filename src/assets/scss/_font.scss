@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&subset=chinese-traditional,japanese');
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&subset=chinese-traditional,japanese");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
 
 h1,
 h2,
@@ -13,18 +13,18 @@ ul,
 li,
 span {
   line-height: 1.4;
-  font-family: 'Noto Sans CJK TC', 'Noto Sans TC', sans-serif;
+  font-family: "Noto Sans CJK TC", "Noto Sans TC", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
 }
 
 .ming {
-  font-family: 'Noto Serif', serif; 
+  font-family: "Noto Serif", serif;
 }
 
 .uppercase {
   text-transform: uppercase;
-  &.soli{
+  &.soli {
     &::first-letter {
       font-size: 110%;
       font-weight: 400;

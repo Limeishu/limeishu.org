@@ -46,7 +46,7 @@
       height: 18rem;
     }
   }
-  >.content {
+  > .content {
     display: flex;
     flex-direction: column;
     max-width: calc(100% - 29rem);
@@ -155,7 +155,7 @@
           text-align: center;
           &:last-child {
             font-size: 10pt;
-            color: rgba($white, .8);
+            color: rgba($white, 0.8);
             justify-content: center;
             margin-top: 1rem;
           }
