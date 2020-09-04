@@ -19,7 +19,7 @@
     "cors": "^2.8.4",
     "koa": "^2.4.1",
     "koa-static": "^4.0.2",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.13.1",
     "sass-loader": "^6.0.6"
   },
   "devDependencies": {
